@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github-world-radar.local/schema/run.schema.json",
+  "title": "GitHub World Radar daily run",
+  "description": "Canonical daily evidence record. Null numeric or activity fields mean the value was not reliably available.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "date", "generated_at", "window", "summary", "trends", "projects"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "run_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$" },
+    "date": { "type": "string", "format": "date" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date" }
+      }
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "trends": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "projects": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/project" } }
+  },
+  "$defs": {
+    "repository_name": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,99}/[A-Za-z0-9][A-Za-z0-9_.-]{0,99}$"
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "url", "observed_at"],
+      "properties": {
+        "type": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "observed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "legacy_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "url", "checked_at"],
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "checked_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stars", "forks", "latest_commit_at", "latest_release_at", "license"],
+      "properties": {
+        "stars": { "type": ["integer", "null"], "minimum": 0 },
+        "forks": { "type": ["integer", "null"], "minimum": 0 },
+        "contributors": { "type": ["integer", "null"], "minimum": 0 },
+        "latest_commit_at": { "type": ["string", "null"], "format": "date-time" },
+        "latest_release_at": { "type": ["string", "null"], "format": "date-time" },
+        "license": { "type": ["string", "null"] }
+      }
+    },
+    "momentum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stars_7d", "stars_30d", "proxy_signals"],
+      "properties": {
+        "stars_7d": { "type": ["integer", "null"], "minimum": 0 },
+        "stars_30d": { "type": ["integer", "null"], "minimum": 0 },
+        "proxy_signals": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "alt", "license"],
+      "properties": {
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "alt": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 }
+      }
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo_id", "url", "domain", "tags", "why_now", "metrics", "momentum", "stage", "risks", "confidence", "recommended_action"],
+      "allOf": [
+        { "anyOf": [{ "required": ["full_name"] }, { "required": ["repository"] }] },
+        { "anyOf": [{ "required": ["summary"] }, { "required": ["description"] }] },
+        { "anyOf": [{ "required": ["what_it_signals"] }, { "required": ["signal"] }] },
+        { "anyOf": [{ "required": ["category"] }, { "required": ["change_type"] }] },
+        { "anyOf": [{ "required": ["evidence"] }, { "required": ["sources"] }] }
+      ],
+      "properties": {
+        "repo_id": {
+          "oneOf": [
+            { "type": "string", "minLength": 1 },
+            { "type": "integer", "minimum": 0 }
+          ]
+        },
+        "full_name": { "$ref": "#/$defs/repository_name" },
+        "repository": { "$ref": "#/$defs/repository_name" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://github\\.com/" },
+        "domain": { "type": "string", "minLength": 1 },
+        "tags": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "category": { "enum": ["established_momentum", "overlooked_cross_domain", "surprising_and_experimental"] },
+        "change_type": { "enum": ["new", "rising", "cooling", "major_progress", "exited", "previous_judgement_revised", "stable"] },
+        "summary": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "why_now": { "type": "string", "minLength": 1 },
+        "what_it_signals": { "type": "string", "minLength": 1 },
+        "signal": { "type": "string", "minLength": 1 },
+        "metrics": { "$ref": "#/$defs/metrics" },
+        "momentum": { "$ref": "#/$defs/momentum" },
+        "evidence": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/evidence" } },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "oneOf": [{ "$ref": "#/$defs/evidence" }, { "$ref": "#/$defs/legacy_source" }] }
+        },
+        "stage": { "enum": ["concept_experiment", "early_exploration", "rapid_growth", "stable_development", "reviving_mature"] },
+        "risks": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "recommended_action": { "type": "string", "minLength": 1 },
+        "image": { "$ref": "#/$defs/image" },
+        "stars": { "type": ["integer", "null"], "minimum": 0 },
+        "forks": { "type": ["integer", "null"], "minimum": 0 },
+        "last_activity": { "type": ["string", "null"], "format": "date" },
+        "license": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

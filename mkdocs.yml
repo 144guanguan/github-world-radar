@@ -1,0 +1,65 @@
+site_name: GitHub 世界雷达
+site_description: 从 GitHub 的跨领域公开创造中持续发现正在发生的新变化
+site_url: https://144guanguan.github.io/github-world-radar/
+edit_uri: ""
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/144guanguan/github-world-radar
+      name: GitHub 仓库
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+nav:
+  - 首页: index.md
+  - 最新雷达: latest.md
+  - 研究方法: methodology.md
+  - 领域分类: domains.md
+  - 历史归档: archive.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+strict: true

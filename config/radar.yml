@@ -1,0 +1,75 @@
+version: 1
+
+schedule:
+  timezone: Asia/Shanghai
+  daily_time: "08:30"
+  weekly_day: sunday
+
+editions:
+  daily:
+    lookback_days: [1, 7, 30, 90]
+    candidate_target: 60
+    selected_min: 6
+    selected_max: 10
+    minimum_domains: 4
+    maximum_projects_per_domain: 2
+    surprising_discoveries: 2
+  weekly:
+    lookback_days: [7, 30, 90]
+    candidate_target: 100
+    selected_min: 15
+    selected_max: 20
+    minimum_domains: 8
+    maximum_projects_per_domain: 3
+    surprising_discoveries: 3
+
+discovery_mix:
+  established_momentum: 0.50
+  overlooked_cross_domain: 0.30
+  surprising_and_experimental: 0.20
+
+score_weights:
+  momentum: 0.30
+  activity: 0.20
+  originality_and_impact: 0.25
+  credibility: 0.15
+  cognitive_gain: 0.10
+
+required_evidence:
+  - repository
+  - readme
+  - recent_activity
+  - license_status
+
+preferred_evidence:
+  - release
+  - commit
+  - issue_or_pull_request
+  - paper_or_dataset
+  - official_demo_or_website
+
+exclude:
+  forks: true
+  mirrors: true
+  duplicate_repositories: true
+  empty_concept_only: true
+  obvious_star_manipulation: true
+  opaque_license_penalty: true
+  inactive_without_recent_event: true
+
+continuity:
+  compare_previous_runs: true
+  classifications:
+    - new
+    - rising
+    - cooling
+    - major_progress
+    - exited
+    - previous_judgement_revised
+
+output:
+  language: zh-CN
+  facts_inferences_unknowns_separated: true
+  absolute_dates_required: true
+  direct_evidence_links_required: true
+  empty_numeric_value: null

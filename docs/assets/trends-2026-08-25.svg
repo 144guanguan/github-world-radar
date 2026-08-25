@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">2026-08-25 项目领域分布</title>
+<desc id="desc">共 10 个项目，覆盖 10 个领域。</desc>
+<rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+<text x="32" y="42" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#0f172a">GitHub 世界雷达 · 2026-08-25</text>
+<text x="32" y="68" font-family="system-ui,sans-serif" font-size="14" fill="#475569">项目领域分布（按本期收录数）</text>
+<text x="32" y="113" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">AI 与开发生态</text>
+<rect x="245" y="96" width="610" height="24" rx="6" fill="#2563eb"/>
+<text x="865" y="114" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="155" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">公共治理与参与式民主</text>
+<rect x="245" y="138" width="610" height="24" rx="6" fill="#059669"/>
+<text x="865" y="156" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="197" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">创意文化与音乐体验</text>
+<rect x="245" y="180" width="610" height="24" rx="6" fill="#7c3aed"/>
+<text x="865" y="198" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="239" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">地理信息与空间分析</text>
+<rect x="245" y="222" width="610" height="24" rx="6" fill="#ea580c"/>
+<text x="865" y="240" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="281" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">天文科普与教育</text>
+<rect x="245" y="264" width="610" height="24" rx="6" fill="#2563eb"/>
+<text x="865" y="282" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="323" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">开放硬件与机器人</text>
+<rect x="245" y="306" width="610" height="24" rx="6" fill="#059669"/>
+<text x="865" y="324" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="365" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">文化遗产与开放图录</text>
+<rect x="245" y="348" width="610" height="24" rx="6" fill="#7c3aed"/>
+<text x="865" y="366" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="407" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">法律与公共数据</text>
+<rect x="245" y="390" width="610" height="24" rx="6" fill="#ea580c"/>
+<text x="865" y="408" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="449" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">生命科学与调控基因组学</text>
+<rect x="245" y="432" width="610" height="24" rx="6" fill="#2563eb"/>
+<text x="865" y="450" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="491" font-family="system-ui,sans-serif" font-size="14" fill="#1e293b">离线教育与知识普惠</text>
+<rect x="245" y="474" width="610" height="24" rx="6" fill="#059669"/>
+<text x="865" y="492" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#0f172a">1</text>
+<text x="32" y="540" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Run: baseline-2026-08-25</text>
+</svg>

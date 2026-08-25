@@ -1,0 +1,48 @@
+version: 1
+
+domains:
+  - id: science
+    name: 科学研究
+    examples: [物理, 化学, 天文, 数学, 论文复现]
+  - id: health_life_science
+    name: 医疗健康与生命科学
+    examples: [生物信息, 药物发现, 公共卫生, 医疗数据]
+  - id: climate_energy_earth
+    name: 气候、能源与地球
+    examples: [气候观测, 清洁能源, 地理, 海洋, 农业]
+  - id: society_public_interest
+    name: 社会、公共事务与公益
+    examples: [公共治理, 人道主义, 无障碍, 公民科技]
+  - id: education_knowledge
+    name: 教育与知识传播
+    examples: [开放课程, 知识库, 数字档案, 文化遗产]
+  - id: business_economics_finance
+    name: 商业、经济与金融
+    examples: [市场数据, 经济模型, 金融基础设施, 商业协作]
+  - id: art_design_media
+    name: 艺术、设计与媒体
+    examples: [视觉艺术, 音乐, 影视, 创意工具, 数字创作]
+  - id: games_interactive
+    name: 游戏与互动体验
+    examples: [游戏, 模拟, 交互叙事, 虚拟世界]
+  - id: hardware_robotics_maker
+    name: 硬件、机器人与 Maker
+    examples: [开放硬件, 机器人, 制造, 传感器, 芯片]
+  - id: data_maps_archives
+    name: 数据、地图与档案
+    examples: [开放数据, 地理信息, 数据集, 数字保存]
+  - id: ai_software_security
+    name: AI、软件与网络安全
+    examples: [人工智能, 开发工具, 基础设施, 安全, 隐私]
+  - id: personal_life_productivity
+    name: 个人生活与生产力
+    examples: [个人工具, 健康习惯, 家庭, 旅行, 自我管理]
+  - id: interdisciplinary_experimental
+    name: 跨学科与实验项目
+    examples: [古怪实验, 新型协作, 未形成稳定分类的探索]
+
+classification_rules:
+  primary_domain_required: true
+  secondary_domains_allowed: 2
+  prefer_problem_domain_over_implementation_technology: true
+  interdisciplinary_requires_explanation: true

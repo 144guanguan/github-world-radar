@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "run_id": "baseline-2026-08-25",
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T11:17:45+08:00",
+  "window": {
+    "start": "2026-07-26",
+    "end": "2026-08-25"
+  },
+  "summary": "首期基线显示，GitHub 的近期活跃不只来自 AI：专业 GIS、消费级开放机器人、生命科学工作流、数字公共基础设施和文化档案正在同时演进。由于尚无历史快照，7 日和 30 日增量保持为空，本期只用创建时间、当前规模、近期提交和 Release 作为代理信号。",
+  "trends": [
+    "专业能力正在被封装成浏览器、移动端或消费级可体验产品。",
+    "公共数据正从静态文件转向可计算、可复用的开放基础设施。",
+    "GitHub 正在承载开放出版、文化档案和行业记忆，而不只是代码。",
+    "显性热度仍高度集中于 AI，但极端增长需要连续快照复核。",
+    "许可证不明确是创意和文化类项目的主要采用风险。"
+  ],
+  "projects": [
+    {
+      "repo_id": "1333065091",
+      "full_name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "domain": "AI 与开发生态",
+      "tags": ["ai-agents", "plugins", "developer-tools"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方将其描述为一切皆插件的 AI Harness。",
+      "why_now": "项目创建于 2026-08-13，截至本次观察已显示 192534 Star 和 21597 Fork，是本期无法忽略的强热度信号。",
+      "what_it_signals": "AI Agent 生态正在把扩展能力进一步抽象为插件化运行层。",
+      "metrics": {
+        "stars": 192534,
+        "forks": 21597,
+        "contributors": null,
+        "latest_commit_at": "2026-08-21T12:35:08Z",
+        "latest_release_at": null,
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["创建时间很短但累计 Star 和 Fork 极高", "2026-08-21 仍有提交"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/deepseek-ai/deepseek-harness", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/deepseek-ai/deepseek-harness/commit/b150a551b8d465e31e418e1b2eaf5e79bbb7d28e", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": ["极短时间内的异常高热度尚无历史快照解释，不能直接等同于长期价值。", "尚无正式 Release。"],
+      "confidence": "medium",
+      "recommended_action": "持续跟踪，并用后续每日快照验证真实增长路径。"
+    },
+    {
+      "repo_id": "1251648409",
+      "full_name": "opengeos/GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "domain": "地理信息与空间分析",
+      "tags": ["gis", "geospatial", "maplibre", "duckdb"],
+      "category": "established_momentum",
+      "change_type": "major_progress",
+      "summary": "一个面向浏览器、桌面、移动端和 Jupyter 的轻量云原生 GIS 平台。",
+      "why_now": "项目创建约三个月，2026-08-22 发布 v2.7.0，2026-08-25 仍有提交。",
+      "what_it_signals": "专业空间分析工具正在转向跨端、轻量和交互式体验。",
+      "metrics": {
+        "stars": 6693,
+        "forks": 669,
+        "contributors": null,
+        "latest_commit_at": "2026-08-25T02:45:45Z",
+        "latest_release_at": "2026-08-22T04:19:17Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["近期正式发布 v2.7.0", "观察当日仍有代码推送"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/opengeos/GeoLibre", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "release", "url": "https://github.com/opengeos/GeoLibre/releases/tag/v2.7.0", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/opengeos/GeoLibre/commit/3fcd87886324f59cba7847200c48e80d268f0ca3", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": ["多运行环境的一致性和大规模数据性能仍需真实验证。"],
+      "confidence": "high",
+      "recommended_action": "亲自体验浏览器版本，并观察后续 Release 节奏。"
+    },
+    {
+      "repo_id": "1264722786",
+      "full_name": "makerspet/oomwoo",
+      "url": "https://github.com/makerspet/oomwoo",
+      "domain": "开放硬件与机器人",
+      "tags": ["robotics", "ros2", "lidar", "esp32", "3d-printing"],
+      "category": "overlooked_cross_domain",
+      "change_type": "rising",
+      "summary": "一个结合 3D 打印、ESP32、LiDAR 和 ROS2 的开源扫地机器人项目。",
+      "why_now": "项目创建约两个半月，当前已有 9246 Star，并在 2026-08-24 保持提交。",
+      "what_it_signals": "消费级机器人正在从封闭成品转向社区可复现的硬件与软件组合。",
+      "metrics": {
+        "stars": 9246,
+        "forks": 479,
+        "contributors": null,
+        "latest_commit_at": "2026-08-24T07:33:18Z",
+        "latest_release_at": null,
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["年轻项目已形成较高关注", "近期仍有提交"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/makerspet/oomwoo", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/makerspet/oomwoo/commit/3b579820911254f19d4d769e665c0546af9bd699", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": ["尚无正式 Release。", "BOM 完整性、复现成本和实际清扫性能需要构建案例验证。"],
+      "confidence": "high",
+      "recommended_action": "阅读硬件清单和社区构建记录。"
+    },
+    {
+      "repo_id": "1257186289",
+      "full_name": "XxHuberrr/Mineradio",
+      "url": "https://github.com/XxHuberrr/Mineradio",
+      "domain": "创意文化与音乐体验",
+      "tags": ["music", "immersive-ui", "creative-experience"],
+      "category": "overlooked_cross_domain",
+      "change_type": "stable",
+      "summary": "一款以电影镜头、粒子视觉和歌词舞台为核心的沉浸式音乐播放器。",
+      "why_now": "年轻项目已超过一万 Star，并于 2026-07-31 发布 v2.1.0。",
+      "what_it_signals": "开源音乐产品正在从功能型播放器转向舞台化和电影化体验。",
+      "metrics": {
+        "stars": 10218,
+        "forks": 788,
+        "contributors": null,
+        "latest_commit_at": "2026-08-01T12:21:29Z",
+        "latest_release_at": "2026-07-31T19:33:09Z",
+        "license": "NOASSERTION"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["项目创建时间较短但关注度较高", "近期完成 2.1.0 发布"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/XxHuberrr/Mineradio", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "release", "url": "https://github.com/XxHuberrr/Mineradio/releases/tag/v2.1.0", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["GitHub 未识别出标准许可证。", "2026-08-01 后暂无代码推送，持续维护性需观察。"],
+      "confidence": "medium",
+      "recommended_action": "体验产品表现，同时等待许可证与维护节奏进一步明确。"
+    },
+    {
+      "repo_id": "1265362983",
+      "full_name": "oncologylab/fp-tools",
+      "url": "https://github.com/oncologylab/fp-tools",
+      "domain": "生命科学与调控基因组学",
+      "tags": ["bioinformatics", "atac-seq", "regulatory-genomics", "single-cell"],
+      "category": "overlooked_cross_domain",
+      "change_type": "major_progress",
+      "summary": "面向 ATAC-seq footprinting、motif 分析和可复现交互报告的命令行工作流。",
+      "why_now": "2026-08-19 发布 v0.1.18，并在 2026-08-22 继续提交。",
+      "what_it_signals": "专业生命科学分析正被收束为更易复现、更易交付的命令式工具链。",
+      "metrics": {
+        "stars": 271,
+        "forks": 3,
+        "contributors": null,
+        "latest_commit_at": "2026-08-22T17:11:30Z",
+        "latest_release_at": "2026-08-19T20:56:43Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["近期 Release", "Release 后继续提交"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/oncologylab/fp-tools", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "release", "url": "https://github.com/oncologylab/fp-tools/releases/tag/v0.1.18", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/oncologylab/fp-tools/commit/5c4834ce28838fcd7895272e5efd7b2cd61a240e", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["真实科研采用、基准准确性和独立复现仍需论文或外部案例支持。"],
+      "confidence": "high",
+      "recommended_action": "阅读方法和复现文档，暂不把仓库热度等同于科研认可。"
+    },
+    {
+      "repo_id": "1267008278",
+      "full_name": "hyqzz/Solar-Wanderer",
+      "url": "https://github.com/hyqzz/Solar-Wanderer",
+      "domain": "天文科普与教育",
+      "tags": ["astronomy", "nasa", "simulation", "education", "webgl"],
+      "category": "surprising_and_experimental",
+      "change_type": "rising",
+      "summary": "一个结合 NASA JPL 星历、实时尺度和浏览器 3D 的太阳系探索器。",
+      "why_now": "项目在 2026-08-23 仍有提交，且已发布包含行星大气视觉改进的 v2.2.0。",
+      "what_it_signals": "科研数据正在直接转化为普通人可探索的交互式教育体验。",
+      "metrics": {
+        "stars": 717,
+        "forks": 44,
+        "contributors": null,
+        "latest_commit_at": "2026-08-23T16:05:32Z",
+        "latest_release_at": "2026-06-21T12:10:15Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["近期仍活跃", "同时连接天文数据、模拟和教育体验"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/hyqzz/Solar-Wanderer", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "release", "url": "https://github.com/hyqzz/Solar-Wanderer/releases/tag/v2.2.0", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/hyqzz/Solar-Wanderer/commit/9bdb4812d55e5e65bf8095f7c23ef56695ea422e", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["天体尺度和大气效果的科学准确性尚未独立核验。"],
+      "confidence": "high",
+      "recommended_action": "作为今日意外发现亲自体验，并核对其科学说明。"
+    },
+    {
+      "repo_id": "1270872206",
+      "full_name": "dososo/chinese-traditional-patterns",
+      "url": "https://github.com/dososo/chinese-traditional-patterns",
+      "domain": "文化遗产与开放图录",
+      "tags": ["chinese-culture", "design-resources", "open-data", "digital-archive"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "一个将中国传统纹样整理为多语种数字图录的开放项目。",
+      "why_now": "2026-06-16 新建，项目方已整理 100 个高清纹样并规划扩展至 800 个。",
+      "what_it_signals": "GitHub 正在成为文化遗产数字化、开放出版和设计资源协作的基础设施。",
+      "metrics": {
+        "stars": 291,
+        "forks": 33,
+        "contributors": null,
+        "latest_commit_at": "2026-06-16T06:54:15Z",
+        "latest_release_at": null,
+        "license": "NOASSERTION"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["认知价值高于绝对热度", "多语种文化图录形态较少见"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/dososo/chinese-traditional-patterns", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/dososo/chinese-traditional-patterns/commit/64dccd203a5cde5514eeda1096052c7b9bb69663", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "concept_experiment",
+      "risks": ["2026-06-16 后没有新推送。", "项目描述声明 CC BY-NC 4.0，但 GitHub License 检测为 NOASSERTION。"],
+      "confidence": "medium",
+      "recommended_action": "阅读图录与授权说明，观察是否继续扩充。"
+    },
+    {
+      "repo_id": "1304687666",
+      "full_name": "Vaquill-AI/open-us-law",
+      "url": "https://github.com/Vaquill-AI/open-us-law",
+      "domain": "法律与公共数据",
+      "tags": ["law", "government-data", "open-data", "dataset"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其提供美国主要法律文本的开放结构化语料及构建管线。",
+      "why_now": "项目创建于 2026-07-18，并在 2026-08-21 继续更新。",
+      "what_it_signals": "公共法律文本正在从网页和文档转化为机器可读、可持续构建的数据基础设施。",
+      "metrics": {
+        "stars": 51,
+        "forks": 14,
+        "contributors": null,
+        "latest_commit_at": "2026-08-21T09:22:13Z",
+        "latest_release_at": null,
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["新项目近期仍在维护", "提供数据及构建管线而非单次导出"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/Vaquill-AI/open-us-law", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/Vaquill-AI/open-us-law/commit/6941c0e44cdf68721e64e79745e081786e682a06", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["覆盖 200 万以上法律条目属于项目方声明，尚未逐州抽样核验。", "数据完整性和授权边界需要持续检查。"],
+      "confidence": "medium",
+      "recommended_action": "阅读数据构建方法，并等待独立覆盖率验证。"
+    },
+    {
+      "repo_id": "65914086",
+      "full_name": "decidim/decidim",
+      "url": "https://github.com/decidim/decidim",
+      "domain": "公共治理与参与式民主",
+      "tags": ["civic-tech", "democracy", "digital-public-goods", "participation"],
+      "category": "established_momentum",
+      "change_type": "major_progress",
+      "summary": "一个持续维护的参与式民主和公共协作框架。",
+      "why_now": "成熟项目在 2026-07-30 发布 v0.32.1，并于 2026-08-25 保持推送。",
+      "what_it_signals": "参与式治理软件正作为数字公共基础设施持续产品化，而不是一次性实验。",
+      "metrics": {
+        "stars": 1807,
+        "forks": 476,
+        "contributors": null,
+        "latest_commit_at": "2026-08-25T01:29:44Z",
+        "latest_release_at": "2026-07-30T08:20:38Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["成熟项目近期发布新版本", "观察当日仍有提交"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/decidim/decidim", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "release", "url": "https://github.com/decidim/decidim/releases/tag/v0.32.1", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/decidim/decidim/commit/356ef0b3bfbb8d491fc73c5c0c34eee82e2fa560", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "reviving_mature",
+      "risks": ["当前是否出现新增部署或社区采用尚无外部证据。"],
+      "confidence": "high",
+      "recommended_action": "持续追踪 Release 和真实公共机构采用案例。"
+    },
+    {
+      "repo_id": "92666218",
+      "full_name": "iiab/iiab",
+      "url": "https://github.com/iiab/iiab",
+      "domain": "离线教育与知识普惠",
+      "tags": ["education", "offline", "raspberry-pi", "community-networks"],
+      "category": "established_momentum",
+      "change_type": "stable",
+      "summary": "通过 Raspberry Pi 建立离线知识库和社区教育资源的长期项目。",
+      "why_now": "项目在 2026-08-24 仍有提交，显示其在最新正式 Release 之后继续维护。",
+      "what_it_signals": "知识普惠并不只依赖云端服务，离线基础设施仍连接教育、人权和社区网络。",
+      "metrics": {
+        "stars": 1937,
+        "forks": 140,
+        "contributors": null,
+        "latest_commit_at": "2026-08-24T20:47:56Z",
+        "latest_release_at": "2025-01-01T03:18:09Z",
+        "license": "GPL-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["长期项目近期仍有维护", "跨越教育、社区网络和数字公平"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/iiab/iiab", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "release", "url": "https://github.com/iiab/iiab/releases/tag/release-8.2", "observed_at": "2026-08-25T11:17:45+08:00"},
+        {"type": "commit", "url": "https://github.com/iiab/iiab/commit/9ff12763540ecac52c02a89dc60470dad0292baf", "observed_at": "2026-08-25T11:17:45+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["最近正式 Release 是 2025-01-01，代码活跃不等于近期形成新版本或新增部署。"],
+      "confidence": "high",
+      "recommended_action": "阅读部署案例，持续跟踪下一次正式发布。"
+    }
+  ]
+}
