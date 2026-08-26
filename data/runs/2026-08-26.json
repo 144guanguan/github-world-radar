@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "run_id": "github-radar-2026-08-26-110052",
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T11:07:00+08:00",
+  "window": {
+    "start": "2026-07-27",
+    "end": "2026-08-26"
+  },
+  "summary": "本期通过 GitHub Trending、Search 与 API 建立约 60 个跨领域候选，并核验仓库、默认分支活动、Release 与许可证。最终选择 8 个项目、覆盖 7 个领域：显性关注仍被 AI 插件生态吸引，但医疗隐私、海洋模拟、公共规划、纯文本记账和开放硬件都有可验证的新进展。当前只有相隔约一天的两次本地快照，因此 7 日和 30 日 Star 增量继续保留为 null；对连续项目仅把可复核的一日差值写入代理信号。",
+  "trends": [
+    "显性关注与开发事件正在分离：deepseek-harness 一日净增 3123 Star，但默认分支最新提交仍停留在 2026-08-21。",
+    "专业工具继续产品化：医疗文本去标识、海洋流体模拟和纯文本复式记账都在最近五天内发布新版本。",
+    "公共利益软件的现实价值不由 Star 决定：Planning Alerts 只有 115 Star，却仍在维护面向居民的地方规划数据映射。",
+    "开放硬件正在与表演和公民科学交叉：LED 合成器与树莓派鸟声监测把软件、实体装置和现实观察连接起来。",
+    "因尚无完整 7 日与 30 日历史快照，本期不把累计规模或一日变化冒充中期增长率。"
+  ],
+  "projects": [
+    {
+      "repo_id": "1333065091",
+      "full_name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "domain": "AI、软件与网络安全",
+      "tags": ["ai-agents", "plugins", "developer-tools"],
+      "category": "established_momentum",
+      "change_type": "rising",
+      "summary": "项目方将其描述为“一切皆插件”的 AI Harness。",
+      "why_now": "从 2026-08-25 到 2026-08-26 的相邻快照中，Star 从 192534 增至 195657、Fork 从 21597 增至 22148；但默认分支最新提交仍是 2026-08-21。",
+      "what_it_signals": "推断：插件化 Agent 运行层仍在快速吸引注意力，但传播热度与代码进展需要分开观察。",
+      "metrics": {
+        "stars": 195657,
+        "forks": 22148,
+        "contributors": null,
+        "latest_commit_at": "2026-08-21T12:35:08Z",
+        "latest_release_at": null,
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["相邻一日快照净增 3123 Star 和 551 Fork", "2026-08-21 后未发现新的默认分支提交", "尚无正式 Release"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/deepseek-ai/deepseek-harness", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/deepseek-ai/deepseek-harness/commit/b150a551b8d465e31e418e1b2eaf5e79bbb7d28e", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": ["极端热度没有完整的外部传播归因，不能等同于长期价值。", "一日差值不是 7 日或 30 日增长率。", "尚无正式 Release。"],
+      "confidence": "medium",
+      "recommended_action": "持续跟踪默认分支提交和正式 Release，等待完整 7 日快照后再判断增长持续性。"
+    },
+    {
+      "repo_id": "1251648409",
+      "full_name": "opengeos/GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "domain": "数据、地图与档案",
+      "tags": ["gis", "geospatial", "maplibre", "duckdb"],
+      "category": "established_momentum",
+      "change_type": "rising",
+      "summary": "项目方将其描述为可运行于浏览器、桌面、移动端和 Jupyter 的轻量云原生 GIS 平台。",
+      "why_now": "2026-08-22 发布 v2.7.0，2026-08-26 默认分支继续修正文档与应用的一致性；相邻一日快照中 Star 增加 45、Fork 增加 5。",
+      "what_it_signals": "推断：专业地理分析能力正在继续向跨端、轻量和交互式产品形态迁移。",
+      "metrics": {
+        "stars": 6738,
+        "forks": 674,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T02:48:06Z",
+        "latest_release_at": "2026-08-22T04:19:17Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["相邻一日快照净增 45 Star 和 5 Fork", "四天内发布 v2.7.0", "观察当日仍有默认分支提交"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/opengeos/GeoLibre", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "release", "url": "https://github.com/opengeos/GeoLibre/releases/tag/v2.7.0", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/opengeos/GeoLibre/commit/5ecb05760e622c91f6782b05369a3f74058c0596", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": ["项目成立仅约三个月，多端行为一致性和大数据性能仍需长期验证。", "本期最新提交偏文档一致性修复，不应表述为核心能力突破。"],
+      "confidence": "high",
+      "recommended_action": "亲自体验浏览器版本，并持续观察多端功能与性能反馈。"
+    },
+    {
+      "repo_id": "1069760430",
+      "full_name": "maziyarpanahi/openmed",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "domain": "医疗健康与生命科学",
+      "tags": ["clinical-nlp", "de-identification", "privacy", "multilingual"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其提供本地优先的临床实体识别和医疗隐私信息去标识能力。",
+      "why_now": "2026-08-21 发布 v2.2.0，2026-08-25 默认分支仍有合并提交；本期首次纳入雷达。",
+      "what_it_signals": "推断：医疗文本处理正在把多语言模型、隐私去标识和本地运行组合成更完整的工具链。",
+      "metrics": {
+        "stars": 5162,
+        "forks": 650,
+        "contributors": null,
+        "latest_commit_at": "2026-08-25T15:40:37Z",
+        "latest_release_at": "2026-08-21T14:44:00Z",
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["五天内发布 v2.2.0", "发布后默认分支继续合并改动", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/maziyarpanahi/openmed", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "release", "url": "https://github.com/maziyarpanahi/openmed/releases/tag/v2.2.0", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/maziyarpanahi/openmed/commit/c5fd81fef4c144624ba691f7cb81f95bf77db85a", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["模型数量、支持语言和隐私能力属于项目方声明，尚未独立验证。", "医疗去标识是高风险用途，不能仅凭 README 或本地运行主张判断准确率、合规性和可投入生产程度。"],
+      "confidence": "medium",
+      "recommended_action": "阅读基准与错误分析，等待独立医疗数据评测；不要直接用于真实患者数据。"
+    },
+    {
+      "repo_id": "152878952",
+      "full_name": "CliMA/Oceananigans.jl",
+      "url": "https://github.com/CliMA/Oceananigans.jl",
+      "domain": "气候、能源与地球",
+      "tags": ["ocean-modeling", "fluid-dynamics", "julia", "gpu"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为可在 CPU 和 GPU 上运行的 Julia 海洋流体动力学模拟软件。",
+      "why_now": "2026-08-21 发布 v0.110.19，2026-08-25 又修复 Zarr 分块参数重复问题；本期首次纳入雷达。",
+      "what_it_signals": "推断：高性能科学模拟正在同时追求加速计算、可组合数据格式和更可复现的研究工作流。",
+      "metrics": {
+        "stars": 1412,
+        "forks": 290,
+        "contributors": null,
+        "latest_commit_at": "2026-08-25T16:54:24Z",
+        "latest_release_at": "2026-08-21T15:44:30Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["五天内发布 v0.110.19", "Release 后继续修复数据分块问题", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/CliMA/Oceananigans.jl", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "release", "url": "https://github.com/CliMA/Oceananigans.jl/releases/tag/v0.110.19", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/CliMA/Oceananigans.jl/commit/bd4d3a603bf6c8daf447961fb6bf62df6d70cbdb", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["项目仍处于 0.x 版本，接口稳定性需要核验。", "科学模拟正确性不能由提交频率替代基准、验证实验和论文证据。"],
+      "confidence": "high",
+      "recommended_action": "阅读验证案例和基准文档，关注后续稳定性与科研复现证据。"
+    },
+    {
+      "repo_id": "1127502482",
+      "full_name": "rustledger/rustledger",
+      "url": "https://github.com/rustledger/rustledger",
+      "domain": "商业、经济与金融",
+      "tags": ["plain-text-accounting", "beancount", "rust", "double-entry"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方将其描述为兼容 Beancount 的现代纯文本记账工具。",
+      "why_now": "2026-08-21 发布 v0.22.0，2026-08-26 截止前仍在修复文档构建；本期首次纳入雷达。",
+      "what_it_signals": "推断：可审计、可版本控制的个人和小型组织财务工作流正在进入更现代的系统语言生态。",
+      "metrics": {
+        "stars": 376,
+        "forks": 34,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T02:44:06Z",
+        "latest_release_at": "2026-08-21T11:25:22Z",
+        "license": "GPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["五天内发布 v0.22.0", "观察当日仍有维护提交", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/rustledger/rustledger", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "release", "url": "https://github.com/rustledger/rustledger/releases/tag/v0.22.0", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/rustledger/rustledger/commit/9b699219c45010b241f82ac97458de247bb69de6", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["v0.x 阶段意味着接口和账务语义仍可能变化。", "Beancount 兼容范围需要兼容性测试核验。", "仓库活跃度不能证明财务正确性或合规性。"],
+      "confidence": "medium",
+      "recommended_action": "阅读兼容性测试和账务语义说明，只用脱敏样例账本试验。"
+    },
+    {
+      "repo_id": "388113",
+      "full_name": "openaustralia/planningalerts",
+      "url": "https://github.com/openaustralia/planningalerts",
+      "domain": "社会、公共事务与公益",
+      "tags": ["civic-tech", "planning", "local-government", "public-data"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其帮助居民获知所在地区正在建设或拆除什么，并参与地方规划。",
+      "why_now": "2026-08-26 截止前约 22 分钟合并了地方政府 authority mapping 修复；本期首次纳入雷达。",
+      "what_it_signals": "推断：公民科技的价值更多来自持续校准现实行政数据，而不是追逐大型产品发布或开发者热度。",
+      "metrics": {
+        "stars": 115,
+        "forks": 54,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T02:38:01Z",
+        "latest_release_at": null,
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察当日修复地方政府数据映射", "长期运行的公共利益项目仍在维护", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/openaustralia/planningalerts", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/openaustralia/planningalerts/commit/4d6e415d8ef603b226935983ce0b6c36a4cb0f42", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["GitHub 未识别标准 SPDX License。", "没有正式 Release，部署稳定性需要从主干和真实运营实例另行判断。", "115 Star 不代表实际居民覆盖规模。"],
+      "confidence": "high",
+      "recommended_action": "阅读真实服务覆盖与数据纠错机制，持续追踪行政边界和数据源变化。"
+    },
+    {
+      "repo_id": "1141041920",
+      "full_name": "engmung/Patternflow",
+      "url": "https://github.com/engmung/Patternflow",
+      "domain": "硬件、机器人与 Maker",
+      "tags": ["open-hardware", "led", "music-interface", "performance"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其为可用手指演奏光效图案的开源 LED 合成器。",
+      "why_now": "2026-08-25 发布 v3.6.3，随后默认分支继续更新；本期首次纳入雷达。",
+      "what_it_signals": "推断：开放硬件正在把灯光控制从工程配置转化为接近乐器的实时表演界面。",
+      "metrics": {
+        "stars": 267,
+        "forks": 16,
+        "contributors": null,
+        "latest_commit_at": "2026-08-25T14:30:23Z",
+        "latest_release_at": "2026-08-25T02:15:55Z",
+        "license": "CC-BY-SA-4.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["约 33 小时内发布 v3.6.3", "发布后默认分支继续更新", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/engmung/Patternflow", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "release", "url": "https://github.com/engmung/Patternflow/releases/tag/v3.6.3", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/engmung/Patternflow/commit/d1c1bf08e1f9dea2b0b42300f68cdfbed90eafc7", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["实际硬件复现案例和供应链可得性尚未独立核验。", "CC-BY-SA-4.0 对软件、设计文件和成品硬件的具体授权边界需要逐文件确认。", "电源、焊接和硬件使用安全未验证。"],
+      "confidence": "medium",
+      "recommended_action": "把它作为今日意外发现阅读演示与硬件清单，不在未经安全评估时直接复现。"
+    },
+    {
+      "repo_id": "1164274200",
+      "full_name": "zach7036/BirdNET-Pi-Enhanced-Version",
+      "url": "https://github.com/zach7036/BirdNET-Pi-Enhanced-Version",
+      "domain": "跨学科与实验项目",
+      "tags": ["citizen-science", "bioacoustics", "raspberry-pi", "bird-monitoring"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其为运行在 Raspberry Pi 上的鸟类声音监测平台，整合实时识别、天气、eBird 和分析功能。",
+      "why_now": "2026-08-22 发布 v2.5.2；虽然只有 27 Star，但它把低成本硬件、边缘识别和自然观察连接在一起，本期首次纳入雷达。",
+      "what_it_signals": "推断：公民科学工具正在把原本专业的生物声学监测下沉到家庭和社区级长期观察。",
+      "metrics": {
+        "stars": 27,
+        "forks": 6,
+        "contributors": null,
+        "latest_commit_at": "2026-08-22T17:10:48Z",
+        "latest_release_at": "2026-08-22T17:23:13Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["四天内发布 v2.5.2", "连接边缘 AI、低成本硬件和自然观察", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/zach7036/BirdNET-Pi-Enhanced-Version", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "release", "url": "https://github.com/zach7036/BirdNET-Pi-Enhanced-Version/releases/tag/v2.5.2", "observed_at": "2026-08-26T11:05:00+08:00"},
+        {"type": "commit", "url": "https://github.com/zach7036/BirdNET-Pi-Enhanced-Version/commit/32e6a8b4dd73508e84574971fd8e942554ac8c3a", "observed_at": "2026-08-26T11:05:00+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["GitHub 未识别标准 SPDX License。", "社区规模很小，长期维护韧性证据较弱。", "物种识别准确率、录音隐私和 eBird 集成声明尚未独立验证。"],
+      "confidence": "medium",
+      "recommended_action": "作为纯粹有趣的探索阅读部署说明，并持续观察独立识别评测和社区记录。"
+    }
+  ]
+}
