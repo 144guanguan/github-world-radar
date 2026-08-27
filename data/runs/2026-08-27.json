@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "run_id": "github-radar-2026-08-27-110055",
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T13:38:00+08:00",
+  "window": {
+    "start": "2026-07-28",
+    "end": "2026-08-27"
+  },
+  "summary": "本期通过 GitHub Trending、Search、REST/GraphQL API、Release、Commit、Issue 与 PR 建立约 90 个跨领域候选，最终选择 9 个项目、覆盖 9 个领域。过去 24 小时最值得关注的并非单一 AI 事件，而是政府福利申请、开放数据门户、支付编排、科学可视化、节奏游戏和机器人平台同时出现可核验更新。deepseek-harness 的关注度仍高速增加但代码继续停在 2026-08-21，进一步说明传播热度与开发事件必须分开判断。当前只有三次连续快照，仍不足以计算完整 7 日和 30 日增量，因此相关字段继续为 null。",
+  "trends": [
+    "公共数字基础设施进入集中发布窗口：CiviForm v3.35.0 与 CKAN 2.12.0 都在 2026-08-26 发布。",
+    "deepseek-harness 在相邻快照间增加 2876 Star 和 455 Fork，但默认分支仍无新提交，传播热度继续领先于代码进展。",
+    "科研工具开始把新图形硬件接口与可验证数值修复并行推进：GenomeSpy 合入开发阶段 WebGPU 渲染器，Oceananigans 修复显式时间离散路径并补充回归测试。",
+    "非 AI 创作和实体系统出现明确发布信号：Etterna 发布十周年版本，BlueOS 继续更新机器人平台，patchies 持续拆分可编程视听渲染模块。",
+    "支付、福利、身份、机器人和医疗相关项目都具有现实风险；入选只表示近期公开信号值得观察，不构成采用或安全背书。"
+  ],
+  "projects": [
+    {
+      "repo_id": "1333065091",
+      "full_name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "domain": "AI、软件与网络安全",
+      "tags": ["ai-agents", "plugins", "developer-tools"],
+      "category": "established_momentum",
+      "change_type": "rising",
+      "summary": "项目方将其描述为“一切皆插件”的 AI Harness。",
+      "why_now": "从 2026-08-26 到 2026-08-27 的相邻快照中，Star 从 195657 增至 198533、Fork 从 22148 增至 22603；默认分支最新提交仍是 2026-08-21。",
+      "what_it_signals": "推断：插件化 Agent 运行层仍在吸引大量关注，但传播增长已连续两期与代码更新脱钩。",
+      "metrics": {
+        "stars": 198533,
+        "forks": 22603,
+        "contributors": null,
+        "latest_commit_at": "2026-08-21T12:03:37Z",
+        "latest_release_at": null,
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["相邻快照净增 2876 Star 和 455 Fork", "2026-08-21 后仍无新的默认分支提交", "连续两期缺少正式 Release"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/deepseek-ai/deepseek-harness", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/deepseek-ai/deepseek-harness/commit/b150a551b8d465e31e418e1b2eaf5e79bbb7d28e", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": ["极端热度没有完整的外部传播归因，不能等同于长期价值。", "相邻快照间隔不是完整 7 日或 30 日窗口。", "尚无正式 Release，且代码活动与关注度增长不匹配。"],
+      "confidence": "medium",
+      "recommended_action": "持续跟踪默认分支、Release 和完整 7 日快照，暂不把传播热度解释为产品成熟度。"
+    },
+    {
+      "repo_id": "327165048",
+      "full_name": "civiform/civiform",
+      "url": "https://github.com/civiform/civiform",
+      "domain": "社会、公共事务与公益",
+      "tags": ["digital-public-goods", "government-benefits", "civic-tech", "forms"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其通过复用申请人数据，简化多个政府福利项目的申请流程。",
+      "why_now": "2026-08-26 发布 v3.35.0，发布后默认分支继续维护构建链；本期首次纳入雷达。",
+      "what_it_signals": "推断：政府数字服务正在把重复填表问题转化为可复用、可持续发布的公共软件基础设施。",
+      "metrics": {
+        "stars": 133,
+        "forks": 107,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T21:22:22Z",
+        "latest_release_at": "2026-08-26T17:41:38Z",
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内发布 v3.35.0", "Release 后仍有默认分支维护", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/civiform/civiform", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "release", "url": "https://github.com/civiform/civiform/releases/tag/v3.35.0", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/civiform/civiform/commit/d8bedc54d8bdf228433df71e767c337a19c4c516", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["福利申请涉及申请人敏感信息、资格判断和政府合规。", "真实落地效果取决于地方政策、流程设计和系统集成，不能由仓库活跃度推断。", "Star 数不代表政府采用规模。"],
+      "confidence": "high",
+      "recommended_action": "阅读真实城市部署和隐私治理背景，观察版本升级如何影响申请人体验。"
+    },
+    {
+      "repo_id": "2750721",
+      "full_name": "ckan/ckan",
+      "url": "https://github.com/ckan/ckan",
+      "domain": "数据、地图与档案",
+      "tags": ["open-data", "data-portal", "government-data", "data-management"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称 CKAN 是用于建设开放数据中心和数据门户的数据管理系统。",
+      "why_now": "2026-08-26 发布 CKAN 2.12.0，同时维护多个旧版本线；本期首次纳入雷达。",
+      "what_it_signals": "推断：开放数据的关键竞争点正在从一次性发布文件转向长期可升级的数据门户基础设施。",
+      "metrics": {
+        "stars": 5106,
+        "forks": 2110,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T13:52:40Z",
+        "latest_release_at": "2026-08-26T14:13:48Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内发布 2.12.0 大版本", "2.10、2.11 与 2.12 多版本线并行维护", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/ckan/ckan", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "release", "url": "https://github.com/ckan/ckan/releases/tag/ckan-2.12.0", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/ckan/ckan/commit/308ed49062c072ceaba2c6f9f2139f28c2854ab2", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "reviving_mature",
+      "risks": ["大版本升级可能影响扩展、主题、搜索索引和数据库迁移。", "GitHub 未识别标准 SPDX，采用前需直接核验 LICENSE.txt 及插件许可证。", "平台代码许可证不自动覆盖门户中的全部上游数据。"],
+      "confidence": "high",
+      "recommended_action": "阅读 2.12.0 迁移说明和公共数据门户案例，关注插件生态兼容性。"
+    },
+    {
+      "repo_id": "552877440",
+      "full_name": "juspay/hyperswitch",
+      "url": "https://github.com/juspay/hyperswitch",
+      "domain": "商业、经济与金融",
+      "tags": ["payments", "payment-routing", "fintech", "self-hosted"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为可组合、可自托管的支付编排平台，连接支付、风控、金库和对账服务。",
+      "why_now": "2026-08-24 发布 v1.126.0，2026-08-27 截止前默认分支仍有版本提交；本期首次纳入雷达。",
+      "what_it_signals": "推断：支付基础设施正在从单一通道接入转向可观测、可路由和可替换的编排层。",
+      "metrics": {
+        "stars": 43539,
+        "forks": 5104,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T01:50:23Z",
+        "latest_release_at": "2026-08-24T06:20:00Z",
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["三天内发布 v1.126.0", "观察当日仍有版本维护提交", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/juspay/hyperswitch", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "release", "url": "https://github.com/juspay/hyperswitch/releases/tag/v1.126.0", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/juspay/hyperswitch/commit/6811ee6b7fb8fe3f6b126a2d086200acc5b444b8", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["支付系统涉及 PCI、密钥、交易数据和真实资金链路，开源部署不等于自动合规。", "升级前必须回归支付路由、对账和第三方连接器兼容性。", "仓库热度不证明支付正确性、可用性或风控效果。"],
+      "confidence": "medium",
+      "recommended_action": "阅读支付路由与合规背景，只在隔离测试环境评估架构，不接入真实交易。"
+    },
+    {
+      "repo_id": "153765756",
+      "full_name": "genome-spy/genome-spy",
+      "url": "https://github.com/genome-spy/genome-spy",
+      "domain": "医疗健康与生命科学",
+      "tags": ["genomics", "visualization", "webgpu", "gpu"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其为基因组数据的可视化语法和 GPU 加速工具包。",
+      "why_now": "2026-08-26 合入开发阶段 WebGPU 渲染器，2026-08-19 发布 v0.85.0；本期首次纳入雷达。",
+      "what_it_signals": "推断：专业基因组可视化正在为浏览器新一代 GPU 接口重构渲染管线，而不只是增加图表类型。",
+      "metrics": {
+        "stars": 203,
+        "forks": 13,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T20:23:43Z",
+        "latest_release_at": "2026-08-19T11:18:18Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["合入开发阶段 WebGPU 渲染器与大量测试", "八天内发布 v0.85.0", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/genome-spy/genome-spy", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "release", "url": "https://github.com/genome-spy/genome-spy/releases/tag/v0.85.0", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/genome-spy/genome-spy/commit/6538841d9be276db7d3536dadf84644ae0ec9707", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/genome-spy/genome-spy/pull/479", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["WebGPU 渲染器明确属于开发阶段，不应视为稳定可用功能。", "可视化结果不能替代生物统计、数据质量控制或临床验证。", "不同浏览器和 GPU 的兼容性尚需实测。"],
+      "confidence": "high",
+      "recommended_action": "阅读 WebGPU 迁移设计和基因组可视化背景，等待稳定版纳入该渲染器。"
+    },
+    {
+      "repo_id": "152878952",
+      "full_name": "CliMA/Oceananigans.jl",
+      "url": "https://github.com/CliMA/Oceananigans.jl",
+      "domain": "气候、能源与地球",
+      "tags": ["ocean-modeling", "fluid-dynamics", "julia", "gpu"],
+      "category": "established_momentum",
+      "change_type": "major_progress",
+      "summary": "项目方称其为可在 CPU 和 GPU 上运行的 Julia 海洋流体动力学模拟软件。",
+      "why_now": "继昨日入选后，2026-08-26 又修复显式时间离散路径中的三个潜在错误并补充回归测试；Star 和 Fork 保持不变。",
+      "what_it_signals": "推断：科研基础设施的真实进展常表现为边界条件、数值路径和回归测试的精细修复，而不是热度增长。",
+      "metrics": {
+        "stars": 1412,
+        "forks": 290,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T12:54:38Z",
+        "latest_release_at": "2026-08-21T15:44:30Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["相邻快照 Star 和 Fork 均未变化", "新增带回归测试的数值路径修复", "六天内发布 v0.110.19"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/CliMA/Oceananigans.jl", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "release", "url": "https://github.com/CliMA/Oceananigans.jl/releases/tag/v0.110.19", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/CliMA/Oceananigans.jl/commit/9685775fadbc2219b6f77cadc1b4af7498a8d08e", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/CliMA/Oceananigans.jl/pull/5896", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["项目仍处于 0.x 版本，接口稳定性需要核验。", "数值模拟需结合网格、边界条件、实验数据和独立复现验证。", "不同硬件和精度设置可能影响可重复性。"],
+      "confidence": "high",
+      "recommended_action": "阅读本次修复和回归测试，持续跟踪科学验证而非 Star 变化。"
+    },
+    {
+      "repo_id": "92901136",
+      "full_name": "etternagame/etterna",
+      "url": "https://github.com/etternagame/etterna",
+      "domain": "游戏与互动体验",
+      "tags": ["rhythm-game", "keyboard", "cross-platform", "community"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其为专注键盘操作的高级跨平台节奏游戏。",
+      "why_now": "2026-08-27 发布十周年版本 v0.75.0，默认分支同日有提交；本期首次纳入雷达。",
+      "what_it_signals": "推断：成熟社区游戏仍可通过长期协作和周年版本保持生命力，不依赖平台级商业发行。",
+      "metrics": {
+        "stars": 632,
+        "forks": 160,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T01:17:01Z",
+        "latest_release_at": "2026-08-27T01:53:24Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察当日发布十周年版本 v0.75.0", "默认分支同日仍有提交", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/etternagame/etterna", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "release", "url": "https://github.com/etternagame/etterna/releases/tag/v0.75.0", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/etternagame/etterna/commit/989bb7987042ffe659c7894cbd1e8628b770e2ec", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "reviving_mature",
+      "risks": ["最新提交标题缺乏语义，具体变更不能仅从标题判断。", "节奏游戏的曲包、谱面和外部内容可能具有独立版权。", "仓库活跃度不代表所有平台的运行稳定性。"],
+      "confidence": "high",
+      "recommended_action": "亲自体验十周年版本，观察社区内容、兼容性和长期维护方式。"
+    },
+    {
+      "repo_id": "277877505",
+      "full_name": "bluerobotics/BlueOS",
+      "url": "https://github.com/bluerobotics/BlueOS",
+      "domain": "硬件、机器人与 Maker",
+      "tags": ["robotics", "rov", "usv", "marine"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其为面向 ROV、USV 等机器人系统运行、开发和扩展的开源平台。",
+      "why_now": "2026-08-25 发布稳定版 1.4.5，2026-08-27 默认分支继续修复 Kraken 代理缓冲；本期首次纳入雷达。",
+      "what_it_signals": "推断：机器人生态正在把设备控制、扩展和运维能力收束为面向真实任务的平台层。",
+      "metrics": {
+        "stars": 450,
+        "forks": 149,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T01:58:06Z",
+        "latest_release_at": "2026-08-25T10:49:38Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["两天内发布稳定版 1.4.5", "观察当日继续修复代理链路", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/bluerobotics/BlueOS", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "release", "url": "https://github.com/bluerobotics/BlueOS/releases/tag/1.4.5", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/bluerobotics/BlueOS/commit/ff79605172f8011c228aedec76768ef300e2420b", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": ["GitHub 未识别明确 SPDX，需核验多组件许可证。", "用于水下或无人系统时存在设备损坏、通信和任务安全风险。", "软件活跃度不能替代实机、失联保护和环境测试。"],
+      "confidence": "medium",
+      "recommended_action": "阅读真实 ROV/USV 部署与安全机制，持续跟踪稳定版和 beta 分支差异。"
+    },
+    {
+      "repo_id": "1022513204",
+      "full_name": "heypoom/patchies",
+      "url": "https://github.com/heypoom/patchies",
+      "domain": "跨学科与实验项目",
+      "tags": ["creative-coding", "visual-programming", "audio", "web"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称用户可以在 Web 上编写小程序并将其拼接，用于交互视觉、声音和计算实验。",
+      "why_now": "2026-08-26 修复 worker 设置回调并继续拆分渲染模块；规模不大但近期开发活动明确，本期首次纳入雷达。",
+      "what_it_signals": "推断：创意编程工具正在把代码、节点图、声音和视觉统一为可即时组合的浏览器实验环境。",
+      "metrics": {
+        "stars": 196,
+        "forks": 9,
+        "contributors": null,
+        "latest_commit_at": "2026-08-26T15:58:13Z",
+        "latest_release_at": null,
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内持续拆分渲染模块", "视觉、声音与可编程节点组合较少见", "首次纳入雷达，暂无历史快照"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/heypoom/patchies", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "commit", "url": "https://github.com/heypoom/patchies/commit/3e0e9b2e1b2c535ffdaa4cef7965a614b052f4f1", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/heypoom/patchies/pull/287", "observed_at": "2026-08-27T13:37:00+08:00"},
+        {"type": "issue", "url": "https://github.com/heypoom/patchies/issues/37", "observed_at": "2026-08-27T13:37:00+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": ["尚无正式 Release。", "AGPL-3.0 对网络部署和衍生服务有源码义务。", "项目存在首屏包体较大的公开问题，实际性能需验证。"],
+      "confidence": "medium",
+      "recommended_action": "把它作为纯粹有趣的探索，阅读示例和节点模型，等待正式 Release。"
+    }
+  ]
+}
