@@ -1,0 +1,426 @@
+{
+  "schema_version": 1,
+  "run_id": "github-radar-2026-08-28-110105",
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T11:22:58+08:00",
+  "window": {
+    "start": "2026-07-29",
+    "end": "2026-08-28"
+  },
+  "summary": "本期通过 GitHub Trending、Search、REST API、Release、Commit、Issue 与 PR 审阅超过 60 个跨领域候选，最终选择 10 个项目、覆盖 9 个领域。最显著的判断修正是 deepseek-harness 结束了连续数日‘传播升温但代码不动’的状态，出现新提交与首个预发布版本；与此同时，大气模型、电子病历、教学协作、个人财富管理、开放语音、无人机硬件和实时视听创作都有可核验更新。两个意外发现分别把昆虫科普和租户住房证据带进可交互、可验证的数字工具。当前只有四次连续快照，仍不足以计算完整 7 日和 30 日 Star 增量，相关字段继续为 null。",
+  "trends": [
+    "deepseek-harness 在相邻快照间增加 2027 Star 和 339 Fork，并于 2026-08-27 合并新版本、发布首个预发布版本；此前‘热度与代码进展脱钩’的判断需要修正。",
+    "科学软件开始把配置正确性作为一等产物：ClimaAtmos 为海温覆盖条件增加显式警告和 CI 测试，而不是只增加模型能力。",
+    "公共与教育工具正在强化可审计协作：Classroom50 自动发布新版，habitable 则让多个家庭能联合提交证据而不合并各自保管链。",
+    "开放数据与个人财务工具都在处理现实边界：Common Voice 扩展语言覆盖，Ghostfolio 修正非 UTC 时区下的汇率和历史行情日期问题。",
+    "实体硬件和实时创作仍是普通热门榜容易忽略的活动带：OpenESC-20x20 更新可制造设计，Infinite 在年轻版本中修复参数面板冻结问题。",
+    "本期只使用相邻快照差值和公开活动作为代理信号，不把累计 Star 或不足 7 日的变化冒充中期增长率。"
+  ],
+  "projects": [
+    {
+      "repo_id": "1333065091",
+      "full_name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "domain": "AI、软件与网络安全",
+      "tags": ["ai-agents", "plugins", "developer-tools"],
+      "category": "established_momentum",
+      "change_type": "previous_judgement_revised",
+      "summary": "项目方将其描述为“一切皆插件”的 AI Harness。",
+      "why_now": "从 2026-08-27 到 2026-08-28 的相邻快照中，Star 从 198533 增至 200560、Fork 从 22603 增至 22942；默认分支在 2026-08-27 合并 dsh 0.1.2-alpha.1，并首次出现正式 GitHub Release。",
+      "what_it_signals": "推断：传播热度仍然极高，但本期终于出现与热度同步的代码和版本事件，因此此前连续两期‘只有传播增长’的判断需要修正。",
+      "metrics": {
+        "stars": 200560,
+        "forks": 22942,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T16:57:43Z",
+        "latest_release_at": "2026-08-27T17:06:37Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "相邻快照净增 2027 Star 和 339 Fork",
+          "2026-08-27 恢复默认分支提交",
+          "2026-08-27 发布 dsh-v0.1.2-alpha.1"
+        ]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/deepseek-ai/deepseek-harness", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/deepseek-ai/deepseek-harness/commit/cd5ef8148158c3a752a658978873241fdf8e2bbc", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.2-alpha.1", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": [
+        "极端热度的外部传播归因仍未独立核验，不能等同于长期价值或产品成熟度。",
+        "0.1.2-alpha.1 是预发布版本，不宜作为稳定生产版本采用。",
+        "只有四次连续快照，不足以计算完整 7 日或 30 日增量。"
+      ],
+      "confidence": "high",
+      "recommended_action": "持续跟踪预发布后的真实使用反馈、稳定版节奏和完整 7 日快照。"
+    },
+    {
+      "repo_id": "377910358",
+      "full_name": "CliMA/ClimaAtmos.jl",
+      "url": "https://github.com/CliMA/ClimaAtmos.jl",
+      "domain": "气候、能源与地球",
+      "tags": ["climate-model", "atmosphere", "gpu", "scientific-computing"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其为 CliMA 地球系统模型中的 GPU 全球大气模型，支持数据同化和机器学习校准。",
+      "why_now": "2026-08-21 发布 v0.42.7；2026-08-27 最新提交为 SlabOceanSST 覆盖表面温度条件时增加明确警告并将测试接入 CI，属于影响科学配置正确性的实质修正。",
+      "what_it_signals": "推断：成熟科学计算项目正在把隐式配置覆盖变成可观察、可回归验证的行为，模型可信度越来越依赖工程护栏。",
+      "metrics": {
+        "stars": 125,
+        "forks": 37,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T22:36:36Z",
+        "latest_release_at": "2026-08-21T00:51:56Z",
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["7 日内发布 v0.42.7", "新增配置覆盖警告", "新增并接入 CI 的回归测试"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/CliMA/ClimaAtmos.jl", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/CliMA/ClimaAtmos.jl/blob/main/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/CliMA/ClimaAtmos.jl/commit/b0d865eab6beae66144c3cc6080b4c0cf9901e1f", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/CliMA/ClimaAtmos.jl/releases/tag/v0.42.7", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/CliMA/ClimaAtmos.jl/blob/main/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": [
+        "数值结果依赖参数、网格、初始条件、数据同化和硬件环境，仓库活跃不能替代科学验证。",
+        "最新修复包含 AI 辅助贡献记录，仍需按项目测试和科学审查流程判断可靠性。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读该修复的测试与模型配置背景，理解一个小警告如何防止科学结果被错误边界条件污染。"
+    },
+    {
+      "repo_id": "679584",
+      "full_name": "openemr/openemr",
+      "url": "https://github.com/openemr/openemr",
+      "domain": "医疗健康与生命科学",
+      "tags": ["electronic-health-record", "fhir", "medical-practice", "healthcare"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为开源电子病历与诊所管理系统，覆盖排班、账单、国际化、API 和 FHIR。",
+      "why_now": "OpenEMR 8.3.0 于 2026-08-18 发布；2026-08-28 的最新提交继续重构模板依赖，并把参数错误页面从隐式 HTTP 200 修正为 400。",
+      "what_it_signals": "推断：长期医疗软件仍在通过细小但关键的协议语义和依赖治理修复来降低集成歧义，而不只是追逐新功能。",
+      "metrics": {
+        "stars": 5399,
+        "forks": 3017,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T00:42:36Z",
+        "latest_release_at": "2026-08-18T07:21:44Z",
+        "license": "GPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["10 日前发布 8.3.0", "发布后持续架构改造", "修正错误响应的 HTTP 状态语义"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/openemr/openemr", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/openemr/openemr/blob/master/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/openemr/openemr/commit/94fbfe374e2a44de1c816bb2d681f5578c81f446", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/openemr/openemr/releases/tag/v8_3_0", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/openemr/openemr/blob/master/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "reviving_mature",
+      "risks": [
+        "医疗软件涉及患者隐私、权限、审计、法规和临床安全，未经机构级评估不可直接用于真实医疗环境。",
+        "仓库活动和通用功能不能证明某一地区的法规符合性或部署安全性。",
+        "入选只表示近期工程信号值得观察，不是医疗采用背书。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读 8.3.0 的升级与安全文档，并把它作为医疗软件长期治理的案例而非即装即用方案。"
+    },
+    {
+      "repo_id": "1225908776",
+      "full_name": "foundation50/classroom50",
+      "url": "https://github.com/foundation50/classroom50",
+      "domain": "教育与知识传播",
+      "tags": ["education", "assignments", "autograding", "github-actions"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方将其描述为 GitHub Classroom 的开源替代，用于创建、管理和自动批改编程作业。",
+      "why_now": "2026-08-28 默认分支合并发布提交，并在数秒后发布 web-v1.35.0；约四个月的年轻项目已形成持续自动发布节奏。",
+      "what_it_signals": "推断：编程教育基础设施正在从单一托管服务转向可检查、可组合的 Web、CLI、模板与 Actions 工作流。",
+      "metrics": {
+        "stars": 174,
+        "forks": 26,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T02:40:11Z",
+        "latest_release_at": "2026-08-28T02:40:23Z",
+        "license": "GPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内发布 web-v1.35.0", "提交与 Release 自动衔接", "创建约四个月仍持续迭代"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/foundation50/classroom50", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/foundation50/classroom50/blob/main/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/foundation50/classroom50/commit/975c3fba021884cf7f7ba811436f77bd439d7ac9", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/foundation50/classroom50/releases/tag/web-v1.35.0", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/foundation50/classroom50/blob/main/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": [
+        "深度绑定 GitHub 组织权限和 Actions，教学使用前需检查学生仓库隐私、令牌权限与自动批改隔离。",
+        "大规模课堂使用可能产生 Actions 成本、速率限制和供应链风险。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读权限与批改流程设计，比较它与托管课堂服务在可控性和运维成本上的差异。"
+    },
+    {
+      "repo_id": "1325173762",
+      "full_name": "xr843/insect-world",
+      "url": "https://github.com/xr843/insect-world",
+      "domain": "教育与知识传播",
+      "tags": ["insects", "3d", "science-education", "threejs"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其为浏览器实时生成的 3D 昆虫图鉴，包含 63 个物种、14 个目及部分完整生活史。",
+      "why_now": "项目创建于 2026-08-06，当前已有 657 Star；2026-08-27 新增按身体部位横向浏览，年轻科普体验仍在快速打磨。",
+      "what_it_signals": "推断：无需下载模型文件的程序化 3D 正在把自然史图鉴变成可探索的交互体验，但内容可信度仍是独立问题。",
+      "metrics": {
+        "stars": 657,
+        "forks": 55,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T17:56:03Z",
+        "latest_release_at": "2026-08-18T23:13:30Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["创建约 22 天达到 657 Star", "2026-08-18 发布 v0.2.0", "2026-08-27 增加身体部位浏览"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/xr843/insect-world", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/xr843/insect-world/blob/master/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/xr843/insect-world/commit/3ba008c1f777e92cd2e888b4fdb052f61d97bfe8", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/xr843/insect-world/releases/tag/v0.2.0", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/xr843/insect-world/blob/master/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": [
+        "README 明确说明物种讲解由 AI 撰写，尚未经昆虫学家或专业文献逐条核校。",
+        "项目方列出的物种数量和生活史覆盖未在本次运行中独立验证。",
+        "不能把该体验作为可引用的科学资料。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "亲自体验程序化 3D 浏览，同时随机抽查几个物种描述与权威资料是否一致。"
+    },
+    {
+      "repo_id": "1271894011",
+      "full_name": "ChelseaKR/habitable",
+      "url": "https://github.com/ChelseaKR/habitable",
+      "domain": "社会、公共事务与公益",
+      "tags": ["tenant-rights", "evidence", "encryption", "offline-first"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其为租户组织离线、加密记录住房适居性证据的工具，包含时间戳、保管链和点对点同步。",
+      "why_now": "2026-08-28 新增多个家庭各自签名证据包的联合提交索引，并明确不合并各自保管链；只有 3 Star，却触及真实公共利益场景。",
+      "what_it_signals": "推断：一些公民科技项目开始把密码学和证据保管边界用在普通人的住房争议中，而不是停留在数据展示。",
+      "metrics": {
+        "stars": 3,
+        "forks": 2,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T01:39:19Z",
+        "latest_release_at": "2026-08-16T18:13:15Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["2026-08-28 增加联合提交索引", "保留独立签名和保管链", "2026-08-16 发布 v0.4.0"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/ChelseaKR/habitable", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/ChelseaKR/habitable/blob/main/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/ChelseaKR/habitable/commit/1c4d0a009823e27717910f3cba8fb53393d6939d", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/ChelseaKR/habitable/releases/tag/v0.4.0", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "design_record", "url": "https://github.com/ChelseaKR/habitable/blob/main/docs/adr/0015-joint-multi-tenant-submission-index.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/ChelseaKR/habitable/blob/main/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": [
+        "项目仍是 alpha，项目方明确表示尚无独立安全或法律审查，也没有真实租户试点。",
+        "密码学和时间戳功能不能自行保证材料在具体司法程序中可采。",
+        "不应依赖该项目处理现实法律案件或唯一保存关键证据。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "把它作为‘技术如何尊重证据边界’的设计案例阅读，不用于现实法律流程。"
+    },
+    {
+      "repo_id": "357671824",
+      "full_name": "ghostfolio/ghostfolio",
+      "url": "https://github.com/ghostfolio/ghostfolio",
+      "domain": "商业、经济与金融",
+      "tags": ["portfolio", "wealth-management", "privacy", "self-hosted"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为强调隐私、数据所有权与自托管的开源财富管理软件。",
+      "why_now": "2026-08-27 发布 3.62.0，新增共享投资组合访问的到期日和最后使用时间，并修复多个非 UTC 时区下的汇率、图表和历史行情日期问题。",
+      "what_it_signals": "推断：个人财富工具的竞争点正在从‘能聚合资产’转向共享边界、时区正确性和用户对敏感数据的控制。",
+      "metrics": {
+        "stars": 9202,
+        "forks": 1281,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T20:12:04Z",
+        "latest_release_at": "2026-08-27T19:04:00Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内发布 3.62.0", "增加共享访问期限信息", "修复多个非 UTC 时区日期问题"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/ghostfolio/ghostfolio", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/ghostfolio/ghostfolio/blob/main/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/ghostfolio/ghostfolio/commit/cc3bbeeb89bc738f13df8369c60a490f39d9ae30", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.62.0", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "pull_request", "url": "https://github.com/ghostfolio/ghostfolio/pull/7736", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/ghostfolio/ghostfolio/blob/main/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": [
+        "市场数据、汇率和组合分析可能延迟或出错，不构成投资建议。",
+        "共享链接、自托管备份和同步都可能泄露高敏资产信息。",
+        "网络部署和修改需要评估 AGPL-3.0 的源码提供义务。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读 3.62.0 的时区修复，把它作为金融软件日期正确性和隐私边界的案例。"
+    },
+    {
+      "repo_id": "90392762",
+      "full_name": "common-voice/common-voice",
+      "url": "https://github.com/common-voice/common-voice",
+      "domain": "数据、地图与档案",
+      "tags": ["speech-data", "language", "open-data", "localization"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其通过公众捐赠语音建立开放语音数据集，帮助语音技术覆盖更多真实说话方式。",
+      "why_now": "2026-08-27 默认分支继续更新法语本地化；本周还加入黎凡特阿拉伯语变体，显示社区语言覆盖仍在扩展。",
+      "what_it_signals": "推断：开放语音基础设施的长期价值更多来自语言和社区覆盖，而不是单次模型发布或累计 Star。",
+      "metrics": {
+        "stars": 3486,
+        "forks": 867,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T17:40:21Z",
+        "latest_release_at": "2026-06-01T15:49:06Z",
+        "license": "MPL-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["本周加入黎凡特阿拉伯语变体", "2026-08-27 更新法语本地化", "平台代码持续维护但最新 Release 较早"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/common-voice/common-voice", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/common-voice/common-voice/blob/main/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/common-voice/common-voice/commit/4d973c529dd1a0df8c25c035c59c3be53a988124", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "pull_request", "url": "https://github.com/common-voice/common-voice/pull/5473", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/common-voice/common-voice/releases/tag/release-v1.159.0", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license", "url": "https://github.com/common-voice/common-voice/blob/main/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": [
+        "语音数据涉及身份、口音和人口结构偏差，开放不等于没有隐私与公平风险。",
+        "仓库代码许可证不能代表每个句子来源和数据集版本的完整授权范围。",
+        "本周信号主要是语言覆盖，不应包装成核心架构突破。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读数据版本、贡献同意与语言治理说明，持续观察低资源语言是否获得可用规模。"
+    },
+    {
+      "repo_id": "1177207902",
+      "full_name": "OpenDrone-hw/OpenESC-20x20",
+      "url": "https://github.com/OpenDrone-hw/OpenESC-20x20",
+      "domain": "硬件、机器人与 Maker",
+      "tags": ["open-hardware", "drone", "esc", "kicad"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其为 20×20 毫米、四通道、6S 的开源无人机电子调速器，提供 KiCad 设计和 AM32/DShot 支持。",
+      "why_now": "2026-08-25 发布 rev3.3，包含降本、锚定过孔和导出规范修订；2026-08-27 仍在补充 KiCad 库引用，显示设计正向可制造交付收敛。",
+      "what_it_signals": "推断：开放硬件项目正在用版本化设计文件、制造规则和认证信息建立类似软件 Release 的可复核交付链。",
+      "metrics": {
+        "stars": 229,
+        "forks": 62,
+        "contributors": null,
+        "latest_commit_at": "2026-08-27T09:38:07Z",
+        "latest_release_at": "2026-08-25T16:26:33Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["2026-08-25 发布 rev3.3", "发布后继续修正元件库引用", "项目方提供可制造设计与 OSHWA 认证链接"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/OpenDrone-hw/OpenESC-20x20", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/OpenDrone-hw/OpenESC-20x20/blob/main/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/OpenDrone-hw/OpenESC-20x20/commit/67566cae93e759feee9c88021e81e2f38440956f", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/OpenDrone-hw/OpenESC-20x20/releases/tag/rev3.3", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "license_file", "url": "https://github.com/OpenDrone-hw/OpenESC-20x20/blob/main/LICENSE", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "hardware_certification", "url": "https://certification.oshwa.org/be000028.html", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": [
+        "GitHub API 未识别 SPDX，虽然 README 声明 CERN-OHL-S-2.0，复用前仍需核对许可证文件和硬件许可范围。",
+        "项目标记为 alpha；高电流、电气、热和飞行安全参数必须通过实物测试验证。",
+        "仓库设计和认证信息不能替代制造质量控制或适航判断。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读 rev3.3 的 BOM、制造输出和 OSHWA 记录，了解开放硬件怎样形成可追溯版本。"
+    },
+    {
+      "repo_id": "1325479147",
+      "full_name": "n1m21n/Infinite",
+      "url": "https://github.com/n1m21n/Infinite",
+      "domain": "艺术、设计与媒体",
+      "tags": ["audiovisual", "node-editor", "synthesizer", "3d"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其为节点式实时音视频工作站，把 GPU 合成、程序化 3D、模块合成、DSP 与插件托管放进统一调制图。",
+      "why_now": "项目创建于 2026-08-06，2026-08-27 发布 v0.2.3，修复折叠参数面板导致调制与表达式冻结的问题；2026-08-28 仍有文档更新。",
+      "what_it_signals": "推断：创作工具正在把视频合成、3D 和音乐调制统一到一个实时节点图中，小团队也在探索跨媒介工作流。",
+      "metrics": {
+        "stars": 53,
+        "forks": 6,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T00:42:33Z",
+        "latest_release_at": "2026-08-27T18:18:56Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内发布 v0.2.3", "创建约三周仍连续更新", "修复实时参数冻结问题"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/n1m21n/Infinite", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "readme", "url": "https://github.com/n1m21n/Infinite/blob/main/README.md", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "commit", "url": "https://github.com/n1m21n/Infinite/commit/dbffa3a6af8b8428e4b0e4240182a9cf5cb6d31e", "observed_at": "2026-08-28T11:22:58+08:00"},
+        {"type": "release", "url": "https://github.com/n1m21n/Infinite/releases/tag/v0.2.3", "observed_at": "2026-08-28T11:22:58+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": [
+        "GitHub API 未识别许可证，复用、分发或商业使用前必须先核实授权。",
+        "项目极新且采用度低，项目方声明的节点数量和实时性能尚未独立验收。",
+        "最新提交主要是文档更新，近期实质功能信号来自 v0.2.3。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "纯粹出于好奇观看或体验节点式音视频工作流，并持续观察许可证与稳定性。"
+    }
+  ]
+}
