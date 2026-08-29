@@ -14,5 +14,7 @@ description: "容易被普通热门榜忽略、但能扩大认知边界的项目
 | [etternagame/etterna](../projects/etternagame--etterna.md) | 游戏与互动体验 | 新进入视野 | [2026-08-27](../daily/2026-08-27.md) |
 | [heypoom/patchies](../projects/heypoom--patchies.md) | 跨学科与实验项目 | 新进入视野 | [2026-08-27](../daily/2026-08-27.md) |
 | [hyqzz/Solar-Wanderer](../projects/hyqzz--Solar-Wanderer.md) | 天文科普与教育 | 明显升温 | [2026-08-25](../daily/2026-08-25.md) |
+| [OpenPhantom/OpenPhantom](../projects/OpenPhantom--OpenPhantom.md) | 游戏与互动体验 | 新进入视野 | [2026-08-29](../daily/2026-08-29.md) |
+| [s010s/prehistoric-animal-museum](../projects/s010s--prehistoric-animal-museum.md) | 教育与知识传播 | 新进入视野 | [2026-08-29](../daily/2026-08-29.md) |
 | [xr843/insect-world](../projects/xr843--insect-world.md) | 教育与知识传播 | 新进入视野 | [2026-08-28](../daily/2026-08-28.md) |
 | [zach7036/BirdNET-Pi-Enhanced-Version](../projects/zach7036--BirdNET-Pi-Enhanced-Version.md) | 跨学科与实验项目 | 新进入视野 | [2026-08-26](../daily/2026-08-26.md) |

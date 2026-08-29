@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "run_id": "github-radar-2026-08-29-110103",
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T11:58:31+08:00",
+  "window": {
+    "start": "2026-07-30",
+    "end": "2026-08-29"
+  },
+  "summary": "本期通过 GitHub Trending、Search、REST API、Release、Commit、Issue 与 PR 审阅超过 100 个去重候选，最终选择 10 个项目、覆盖 10 个领域。过去 24 小时的显性事件包括 QGIS 4.2.2、Ghostfolio 3.63.0、OpenScience 2.0.53、Fastpotify 0.2.0 和 OpenPhantom Installer 1.1；更长期的信号则来自社区健康、能源开放数据、机器人操作研究与公民报修基础设施。除 Ghostfolio 因连续发布取得重大进展外，昨日项目没有足够强的新变化，本期不重复介绍；这不等同于降温。当前只有五次连续快照，仍不足以计算完整 7 日和 30 日 Star 增量，相关字段保持 null。",
+  "trends": [
+    "专业基础设施集中进入版本节点：QGIS 发布 4.2.2，Ghostfolio 在昨日 3.62.0 后紧接着发布 3.63.0。",
+    "科研与公共服务正在同时强化可复核流程：OpenScience 修复桌面安装更新，PUDL 持续校正能源数据加工，FixMyStreet 继续推进地方化落地。",
+    "软件正在更直接地连接现实行动：Community Health Toolkit 面向社区健康工作者，SuperDex 面向机器人接触操作研究，但两者都不能跳过医疗或物理世界验证。",
+    "数字保存与儿童科普构成两个意外发现：OpenPhantom 先交付合法零售版补丁而未夸大引擎完成度，史前动物馆继续修正双语移动体验。",
+    "年轻消费工具仍能形成清晰发布信号：Fastpotify 创建不足两天即发布 0.2.0，但账户、平台条款和早期稳定性仍是边界。",
+    "五次连续快照尚未覆盖完整 7 日；本期只记录可复核的一日差值和公开活动，不估算中期增长率。"
+  ],
+  "projects": [
+    {
+      "repo_id": "1288402762",
+      "full_name": "synthetic-sciences/openscience",
+      "url": "https://github.com/synthetic-sciences/openscience",
+      "domain": "科学研究",
+      "tags": ["open-science", "research-workbench", "reproducibility", "ai"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为面向科学研究的开源 AI 工作台，可覆盖文献检索、假设、代码、实验与写作。",
+      "why_now": "2026-08-28 发布 v2.0.53，并在一小时内继续修复 macOS 桌面安装和更新；项目创建约八周已达到 3352 Star。",
+      "what_it_signals": "推断：科研 Agent 正从提示词演示走向桌面工作台和持续交付，但安装便利并不等于研究结果可信。",
+      "metrics": {
+        "stars": 3352,
+        "forks": 453,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T22:29:23Z",
+        "latest_release_at": "2026-08-28T21:36:15Z",
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["2026-08-28 发布 v2.0.53", "发布后立即修复 macOS 安装更新", "年轻项目累计 3352 Star"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/synthetic-sciences/openscience", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/synthetic-sciences/openscience/blob/cdd6495cd792b46634a6765f0d8e3f4cf3dc5b92/README.md", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/synthetic-sciences/openscience/commit/cdd6495cd792b46634a6765f0d8e3f4cf3dc5b92", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/synthetic-sciences/openscience/releases/tag/v2.0.53", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "issue", "url": "https://github.com/synthetic-sciences/openscience/issues/424", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/synthetic-sciences/openscience/blob/main/LICENSE", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": [
+        "项目能力来自项目方声明，本次未运行工作台或复现实验结果。",
+        "Release 明确提示原生 CLI 和桌面安装包未签名，macOS 应用未 notarize。",
+        "生成的科研结论、代码和实验结果必须人工复核并独立复现，不能当作论文级证据。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "阅读其研究记录和复现机制，持续跟踪签名发布与独立科研案例。"
+    },
+    {
+      "repo_id": "2698821",
+      "full_name": "medic/cht-core",
+      "url": "https://github.com/medic/cht-core",
+      "domain": "医疗健康与生命科学",
+      "tags": ["community-health", "offline-first", "mobile", "digital-health"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称 Community Health Toolkit 核心框架用于构建离线优先、移动优先的社区健康应用。",
+      "why_now": "2026-08-28 将 minor version 从 5.2 提升到 5.3，并继续修复并行 XForm transform 等运行问题，显示新版本周期已经启动。",
+      "what_it_signals": "推断：面向社区健康工作者的软件仍把离线能力、表单执行与版本兼容作为核心基础设施问题。",
+      "metrics": {
+        "stars": 552,
+        "forks": 412,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T23:56:00Z",
+        "latest_release_at": "2026-06-26T13:41:12Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["主线进入 5.3 版本周期", "活跃修复表单转换问题", "成熟社区健康项目持续维护"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/medic/cht-core", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/medic/cht-core/blob/34500dbad0c3bebe2716a6b6c624da023f2d8689/README.md", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/medic/cht-core/commit/34500dbad0c3bebe2716a6b6c624da023f2d8689", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/medic/cht-core/releases/tag/5.2.0", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "pull_request", "url": "https://github.com/medic/cht-core/pull/11339", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/medic/cht-core/blob/master/LICENSE", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "reviving_mature",
+      "risks": [
+        "医疗部署必须验证临床流程、患者隐私、安全、数据驻留和当地法规。",
+        "软件不能替代诊断或专业医疗建议，仓库活跃也不证明现实医疗效果。",
+        "升级到新版本周期前需核验部署兼容性、表单行为和数据迁移。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读真实部署和离线同步架构，把它作为社区健康数字基础设施案例持续跟踪。"
+    },
+    {
+      "repo_id": "80646423",
+      "full_name": "catalyst-cooperative/pudl",
+      "url": "https://github.com/catalyst-cooperative/pudl",
+      "domain": "气候、能源与地球",
+      "tags": ["energy-data", "open-data", "etl", "public-utilities"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称 PUDL 把美国政府公用事业和能源数据加工成可分析、可版本化的数据资源。",
+      "why_now": "2026-08-28 更新测试重组后的文档，并持续处理发电燃料多年度分配错误和 NREL ATB 新分区格式，直接影响能源数据复现。",
+      "what_it_signals": "推断：气候与能源研究的关键进展常来自数据口径、版本和 ETL 修正，而不是新的可视化界面。",
+      "metrics": {
+        "stars": 602,
+        "forks": 144,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T18:59:20Z",
+        "latest_release_at": "2026-08-07T14:05:24Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["持续修复多年度燃料分配", "适配 NREL ATB 新分区格式", "2026-08-28 补齐测试文档"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/catalyst-cooperative/pudl", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/catalyst-cooperative/pudl/blob/30b2e6749c507b1173b828f6f243e1a78d959af3/README.rst", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/catalyst-cooperative/pudl/commit/30b2e6749c507b1173b828f6f243e1a78d959af3", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/catalyst-cooperative/pudl/releases/tag/v2026.8.0", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "pull_request", "url": "https://github.com/catalyst-cooperative/pudl/pull/5511", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/catalyst-cooperative/pudl/blob/main/LICENSE.txt", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": [
+        "政府源数据可能滞后、修订或改变字段定义，ETL 错误会传播到下游分析。",
+        "不能把该数据直接当作实时电网运行、交易、监管或政策结论。",
+        "复现时必须保留具体数据版本、处理代码和 DOI。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读数据修复 PR，理解能源研究中版本化 ETL 为什么比单次下载更重要。"
+    },
+    {
+      "repo_id": "1690480",
+      "full_name": "qgis/QGIS",
+      "url": "https://github.com/qgis/QGIS",
+      "domain": "数据、地图与档案",
+      "tags": ["gis", "mapping", "spatial-analysis", "desktop"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称 QGIS 是免费、开源、跨平台的完整 GIS，支持空间数据管理、制图和分析。",
+      "why_now": "2026-08-28 发布 4.2.2，主线同日继续提交；3D 面积测量工具也在推进，形成明确的稳定版与后续演进信号。",
+      "what_it_signals": "推断：成熟地理信息基础设施仍在通过高频修订版和 3D 工作流扩展保持生命力。",
+      "metrics": {
+        "stars": 14300,
+        "forks": 3502,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T13:33:40Z",
+        "latest_release_at": "2026-08-28T12:11:35Z",
+        "license": "GPL-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内发布 4.2.2", "Release 后主线继续提交", "3D 面积测量 PR 活跃"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/qgis/QGIS", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/qgis/QGIS/blob/master/README.md", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/qgis/QGIS/commit/17a4bfae8eaea25b8f9ede1f3d720a69bc776604", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/qgis/QGIS/releases/tag/final-4_2_2", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "pull_request", "url": "https://github.com/qgis/QGIS/pull/64544", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/qgis/QGIS/blob/master/COPYING", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "reviving_mature",
+      "risks": [
+        "坐标参考系、源数据质量和分析参数会直接影响空间结论。",
+        "生产升级前需核验插件兼容性、项目文件和数据备份。",
+        "累计 Star 和成熟度不能替代具体工作流的结果验证。"
+      ],
+      "confidence": "high",
+      "recommended_action": "持续跟踪 4.2.2 的稳定性反馈，并阅读 3D 测量功能如何处理坐标和精度。"
+    },
+    {
+      "repo_id": "357671824",
+      "full_name": "ghostfolio/ghostfolio",
+      "url": "https://github.com/ghostfolio/ghostfolio",
+      "domain": "商业、经济与金融",
+      "tags": ["portfolio", "wealth-management", "privacy", "self-hosted"],
+      "category": "established_momentum",
+      "change_type": "major_progress",
+      "summary": "项目方称其为强调隐私、数据所有权与自托管的开源财富管理软件。",
+      "why_now": "继 2026-08-27 的 3.62.0 后，2026-08-28 又发布 3.63.0，新增受限共享权限和实验性 MCP 投资组合活动工具，并修复不同数据源同名持仓计算。",
+      "what_it_signals": "推断：财富管理工具正同时扩展共享权限、Agent 接口和数据正确性，但连续快速发布也提高了升级审查需求。",
+      "metrics": {
+        "stars": 9205,
+        "forks": 1282,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T17:36:32Z",
+        "latest_release_at": "2026-08-28T17:37:35Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["相邻快照净增 3 Star 和 1 Fork", "连续两日发布 3.62.0 与 3.63.0", "修复同名持仓跨数据源计算"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/ghostfolio/ghostfolio", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/ghostfolio/ghostfolio/blob/main/README.md", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/ghostfolio/ghostfolio/commit/954e02a439e2096cd1a124ce6761421574f85095", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.63.0", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/ghostfolio/ghostfolio/blob/main/LICENSE", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "stable_development",
+      "risks": [
+        "市场数据、汇率和组合计算可能延迟或出错，不构成投资或税务建议。",
+        "共享链接、MCP 接口、自托管备份和同步可能暴露高敏资产数据。",
+        "实验性权限与 MCP 功能不应未经评估直接用于生产；网络部署还需遵守 AGPL-3.0。"
+      ],
+      "confidence": "high",
+      "recommended_action": "对比 3.62.0 与 3.63.0 发布说明，持续跟踪实验性权限和 MCP 接口的安全边界。"
+    },
+    {
+      "repo_id": "1340189836",
+      "full_name": "facebookresearch/project_superdex",
+      "url": "https://github.com/facebookresearch/project_superdex",
+      "domain": "硬件、机器人与 Maker",
+      "tags": ["robotics", "dexterous-manipulation", "physics-simulation", "reinforcement-learning"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称 SuperDex 是统一灵巧操作研究平台，包含接触物理引擎、机器人 SDK、场景编辑器和 RL/MPC 接口。",
+      "why_now": "仓库创建于 2026-08-20，2026-08-24 发布 v1.0.0，2026-08-29 仍有提交；九天内达到 397 Star。",
+      "what_it_signals": "推断：机器人研究工具正在把接触物理、实验创作和强化学习训练收束为同一平台，但模拟到现实的鸿沟仍然存在。",
+      "metrics": {
+        "stars": 397,
+        "forks": 34,
+        "contributors": null,
+        "latest_commit_at": "2026-08-29T00:23:25Z",
+        "latest_release_at": "2026-08-24T18:05:15Z",
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["创建九天达到 397 Star", "五天内发布 v1.0.0", "2026-08-29 默认分支继续提交"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/facebookresearch/project_superdex", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/facebookresearch/project_superdex#readme", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/facebookresearch/project_superdex/commit/d28d9ccc21e646ed7d0c414796cce259fa7cdeff", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/facebookresearch/project_superdex/releases/tag/v1.0.0", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "issue", "url": "https://github.com/facebookresearch/project_superdex/issues/1", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/facebookresearch/project_superdex/blob/main/LICENSE", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": [
+        "性能、接触精度和实时演示是项目方声明，本次未运行任何模拟。",
+        "模拟表现不能直接外推真实机器人有效性或物理安全性。",
+        "项目方明确将 Lab 标为 early preview，VR Teleop 仍是计划能力而非当前交付。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读接触物理设计和公开限制，持续观察是否出现独立机器人复现实验。"
+    },
+    {
+      "repo_id": "1323425152",
+      "full_name": "OpenPhantom/OpenPhantom",
+      "url": "https://github.com/OpenPhantom/OpenPhantom",
+      "domain": "游戏与互动体验",
+      "tags": ["game-preservation", "modding", "reverse-engineering", "windows"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其当前提供 1999 年《Star Wars Episode I: The Phantom Menace》PC 版的现代 Windows 补丁与安装器，并计划长期重建引擎和编辑工具。",
+      "why_now": "2026-08-28 发布 Installer 1.1，随后继续提交并更正测试状态；当前可用交付与未来引擎目标被明确分开。",
+      "what_it_signals": "推断：老游戏数字保存正在从零散补丁走向可版本化安装器和逆向文档，但版权边界与原始资产所有权仍是核心约束。",
+      "metrics": {
+        "stars": 6,
+        "forks": 0,
+        "contributors": null,
+        "latest_commit_at": "2026-08-29T00:38:15Z",
+        "latest_release_at": "2026-08-28T23:33:46Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["观察窗口内发布 Installer 1.1", "发布后继续更正测试状态", "低热度但数字保存价值明确"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/OpenPhantom/OpenPhantom", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/OpenPhantom/OpenPhantom#readme", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/OpenPhantom/OpenPhantom/commit/97af10eec6956db832ece4c668c46413087a751c", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/OpenPhantom/OpenPhantom/releases/tag/i1.1", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "issue", "url": "https://github.com/OpenPhantom/OpenPhantom/issues/20", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/OpenPhantom/OpenPhantom/blob/main/LICENSE", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": [
+        "使用者必须拥有合法零售副本，原始游戏资产、商标和版权仍属于相应权利人。",
+        "README 明确表示引擎和编辑器尚未开始，不能把长期目标写成已完成事实。",
+        "逆向、补丁和分发边界可能因地区法律和原始许可而异。"
+      ],
+      "confidence": "high",
+      "recommended_action": "把它作为纯粹有趣的数字保存案例阅读，重点观察补丁交付与引擎重建目标如何分层。"
+    },
+    {
+      "repo_id": "1348483831",
+      "full_name": "crmne/fastpotify",
+      "url": "https://github.com/crmne/fastpotify",
+      "domain": "艺术、设计与媒体",
+      "tags": ["music", "spotify", "desktop", "rust"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其为原生轻量 Spotify 客户端，支持本机播放、Spotify Connect、局域网发现和跨平台桌面。",
+      "why_now": "仓库创建于 2026-08-27，次日发布 v0.2.0 并继续提交共享播放列表贡献者显示；不足两天达到 399 Star。",
+      "what_it_signals": "推断：桌面音乐体验仍有从 Web 壳回到原生、轻量和设备协同的需求，但它高度依赖平台服务。",
+      "metrics": {
+        "stars": 399,
+        "forks": 21,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T16:21:10Z",
+        "latest_release_at": "2026-08-28T12:07:09Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["创建不足两天达到 399 Star", "2026-08-28 发布 v0.2.0", "发布后继续改进共享播放列表"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/crmne/fastpotify", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/crmne/fastpotify#readme", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/crmne/fastpotify/commit/7d9d29ddf8343c561bbf5f3586826ba6183dfe08", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/crmne/fastpotify/releases/tag/v0.2.0", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "pull_request", "url": "https://github.com/crmne/fastpotify/pull/57", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/crmne/fastpotify/blob/main/LICENSE", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "rapid_growth",
+      "risks": [
+        "早期项目的接口、播放稳定性和 UI 仍在快速变化。",
+        "依赖 Spotify 账户、API 和 Connect 服务，使用边界受 Spotify 条款和服务变化约束。",
+        "项目方能力声明未在本次运行中独立体验验证。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "亲自查看资源占用和播放体验，并持续观察平台兼容与账户风险反馈。"
+    },
+    {
+      "repo_id": "1323076116",
+      "full_name": "s010s/prehistoric-animal-museum",
+      "url": "https://github.com/s010s/prehistoric-animal-museum",
+      "domain": "教育与知识传播",
+      "tags": ["prehistoric-animals", "children", "3d", "bilingual"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其为面向儿童和家长的中英双语 3D 史前动物博物馆，包含 18 个互动展项。",
+      "why_now": "项目创建于 2026-08-04，当前达到 740 Star；2026-08-29 合并窄屏语言选择器修复，移动端和双语体验仍在快速打磨。",
+      "what_it_signals": "推断：浏览器 3D、双语内容和家庭引导正在组合成小型数字博物馆，但艺术重建与科学事实必须明确分层。",
+      "metrics": {
+        "stars": 740,
+        "forks": 101,
+        "contributors": null,
+        "latest_commit_at": "2026-08-29T01:15:20Z",
+        "latest_release_at": null,
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["创建不足四周达到 740 Star", "2026-08-29 修复窄屏语言选择器", "面向家庭的双语 3D 展陈较少见"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/s010s/prehistoric-animal-museum", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/s010s/prehistoric-animal-museum/blob/a6ddd82aa16dd6e75674063b240d1f9eb1fb5dd2/README.md", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/s010s/prehistoric-animal-museum/commit/a6ddd82aa16dd6e75674063b240d1f9eb1fb5dd2", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "issue", "url": "https://github.com/s010s/prehistoric-animal-museum/issues/7", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license", "url": "https://github.com/s010s/prehistoric-animal-museum/blob/main/LICENSE", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "early_exploration",
+      "risks": [
+        "科普内容、化石事实和物种描述需按项目引用的原始来源逐项核对。",
+        "颜色、软组织和动作包含艺术重建，不能视为精确科学复原。",
+        "面向儿童的屏幕使用、外链和家长陪同设计仍需独立审查；尚无正式 Release。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "亲自体验双语展陈，并随机核对几个展项的来源与艺术重建说明。"
+    },
+    {
+      "repo_id": "487492",
+      "full_name": "mysociety/fixmystreet",
+      "url": "https://github.com/mysociety/fixmystreet",
+      "domain": "社会、公共事务与公益",
+      "tags": ["civic-tech", "public-reporting", "maps", "local-government"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为地图式公共问题报告平台，帮助居民上报坑洞、路灯等街道问题并路由至相应机构。",
+      "why_now": "2026-08-28 继续更新测试基础设施，并推进 Dudley 地方前端，显示 16 年历史的公民科技平台仍在做具体地区落地。",
+      "what_it_signals": "推断：数字公共基础设施的价值不只体现在新版本，也体现在长期维护地方工作流、公开状态和机构接口。",
+      "metrics": {
+        "stars": 613,
+        "forks": 281,
+        "contributors": null,
+        "latest_commit_at": "2026-08-28T09:32:43Z",
+        "latest_release_at": "2024-11-15T12:10:22Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": ["成熟项目过去 24 小时仍有提交", "Dudley 地方前端 PR 活跃", "现实公共报修场景持续维护"]
+      },
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/mysociety/fixmystreet", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "readme", "url": "https://github.com/mysociety/fixmystreet/blob/401534c863fc287ccd1db1df9220b407c5fc1aa5/README.md", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "commit", "url": "https://github.com/mysociety/fixmystreet/commit/401534c863fc287ccd1db1df9220b407c5fc1aa5", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "pull_request", "url": "https://github.com/mysociety/fixmystreet/pull/6043", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "release", "url": "https://github.com/mysociety/fixmystreet/releases/tag/v6.0", "observed_at": "2026-08-29T11:08:13+08:00"},
+        {"type": "license_file", "url": "https://github.com/mysociety/fixmystreet/blob/master/LICENSE.txt", "observed_at": "2026-08-29T11:08:13+08:00"}
+      ],
+      "stage": "reviving_mature",
+      "risks": [
+        "公开报告可能暴露位置、图片和个人信息，需要隐私、诽谤、内容审核和无障碍治理。",
+        "最近正式 Release 较旧，主分支活跃不能等同于稳定发布。",
+        "GitHub API 未识别 SPDX，虽然存在 LICENSE.txt，复用前仍需核实许可证版本和地方部署义务。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读地方前端 PR 与真实部署案例，理解公民科技为何需要长期本地化维护。"
+    }
+  ]
+}
