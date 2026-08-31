@@ -1,0 +1,853 @@
+{
+  "schema_version": 1,
+  "run_id": "github-radar-2026-08-31-100015",
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31T10:11:28+08:00",
+  "window": {
+    "start": "2026-08-01",
+    "end": "2026-08-31"
+  },
+  "summary": "本次由标记为 2026-08-30 11:16 的延迟触发启动，但实际检索发生于 2026-08-31（Asia/Shanghai），不回填 8 月 30 日快照。运行日期、观测时间及历史快照比较使用 Asia/Shanghai；下文 Commit、PR、Release 的事件日期沿用 GitHub 原始 UTC，metrics 保留带 Z 的时间戳，跨午夜事件不可直接当作上海同日。使用 prompts/daily.md（仓库基线 632f3db）与配置 v1，通过 agent-reach 的 gh 路由核验 GitHub Search、REST API、README、Release、Commit 和 Issue/PR，并参考 Trending 日/周/月榜。专题搜索覆盖科学、生命健康、气候、公共事务、教育、金融、开放数据、地图、文化、音乐游戏、硬件机器人、生活和隐私等范围，以 pushed、stars、fork:false、archived:false 组合建立 114 个去重候选；候选只是发现池，不代表全部通过入选级审查。本期精选 10 个项目、9 个领域，明确势头/跨域遗珠/意外发现为 5/3/2。重点事件窗口为 8 月 29—31 日，并放入近 30 日背景；核心证据核验于 10:04—10:05。新增 8 个项目，deepseek-harness 发生新预发布进展，史前动物馆修正固定展项口径。未入选的旧项目不自动归为降温或退出。历史最早为 8 月 25 日，且 8 月 30 日无观测，尚无匹配的 7 日或 30 日历史端点，因此增长字段全部 null；仅对同一 repo_id 给出带日期的两次观测差值。本轮不执行候选代码，不安装候选依赖，不复制外部图片；置信度指公开证据的可核验程度，不是产品质量、医疗、金融或安全背书。",
+  "trends": [
+    "科学与文化相连：Stellarium 主线新增 Potawatomi 星空文化及编辑能力，ATON 继续改进大型三维遗产的分层访问；共同信号是让知识可持续解释与维护，不能把代码许可证扩展为文化素材授权。",
+    "旅行与地图服务相连：TREK v4.1.1 修复底图配置导致的行程阻断，TRIP 1.49.0 切换默认瓦片提供商。自托管旅行数据仍可能依赖外部地理服务，其可靠性、配额和条款需要单独管理。",
+    "开放记录与可靠表达相连：OpenCouncil 明确不把尚不可信的决议抽取写入元数据，mapshaper v0.7.56 在符号避碰时保留地域约束；机器可读和视觉易读都不能丢掉事实边界。",
+    "个人与专业工具都有实质维护：ezbookkeeping 主线新增移动现金流组件，homr 合入 AMD 识谱推理，NCO 修复气候时间序列错误处理；合并、正式发布与本轮实测必须分开表述。",
+    "持续性更新：deepseek-harness 发布 alpha.2，两次观测间增加 4276 Star，但仍未经安全审计；史前动物馆移除 README 固定展项数，旧日的 18 项声明仅保留为历史口径，不宣称已新增展项。"
+  ],
+  "projects": [
+    {
+      "repo_id": "18719856",
+      "full_name": "Stellarium/stellarium",
+      "url": "https://github.com/Stellarium/stellarium",
+      "domain": "科学研究",
+      "tags": [
+        "astronomy",
+        "skyculture",
+        "cultural-heritage"
+      ],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为免费开源桌面天文馆，可展示肉眼、双筒望远镜和天文望远镜所见的三维星空。",
+      "why_now": "2026-08-30 合并 Potawatomi 星空文化包和 Sky Culture Maker 载入、编辑已有文化的能力；2026-08-31 仍有本地化提交。两个合并事件把新增文化内容与可持续编辑工具连接起来。",
+      "what_it_signals": "推断：科学可视化工具也能成为活态文化知识的保存与教学设施；同一片天空可以承载不同社群的解释，而非只有一套星座叙事。",
+      "metrics": {
+        "stars": 9908,
+        "forks": 1041,
+        "contributors": null,
+        "latest_commit_at": "2026-08-31T00:12:14Z",
+        "latest_release_at": "2026-06-24T17:37:08Z",
+        "license": "GPL-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-30 合并 Potawatomi 星空文化包 PR #4869",
+          "同日合并已有星空文化加载与编辑 PR #5019",
+          "首次收录，只有本次指标快照"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "新增内容只确认进入主分支，尚不能声称包含在最近正式版 v26.2 中；本轮未运行模拟器。",
+        "代码为 GPL-2.0；该文化包艺术作品为 CC BY-NC-SA 4.0、文化信息为 CC BY-SA 4.0，另有传统知识标签与社区规范。",
+        "项目资料描述社群参与和文化顾问机制，文化叙述的完整性未独立核验；不同传统解释不能被压缩成唯一权威版本。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读背景：查看 Potawatomi 星空文化的社群来源、命名和解释；先了解文化语境，再等待新增内容进入正式版本。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/Stellarium/stellarium",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/Stellarium/stellarium/blob/master/README.md",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/Stellarium/stellarium/commit/e38f1633c7490b56fd80091c82df5e08be1911fd",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/Stellarium/stellarium/pull/4869",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/Stellarium/stellarium/pull/5019",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "release",
+          "url": "https://github.com/Stellarium/stellarium/releases/tag/v26.2",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/Stellarium/stellarium/blob/master/COPYING",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "cultural_source_and_license",
+          "url": "https://github.com/Stellarium/stellarium/blob/master/skycultures/potawatomi/description.md",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "31292536",
+      "full_name": "nco/nco",
+      "url": "https://github.com/nco/nco",
+      "domain": "气候、能源与地球",
+      "tags": [
+        "climate",
+        "netcdf",
+        "scientific-data"
+      ],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其提供 netCDF/HDF/DAP 科学数据命令行算子，用于统计、重映射、气候平均与元数据处理。",
+      "why_now": "2026-08-30 的两个提交修复 ncremap/ncclimo 错误处理对常用命令的影响，最新提交针对时间序列命令误入错误处理器，涉及变量初始化和 shell 算术处理。",
+      "what_it_signals": "推断：气候研究可重复性的基础条件，常藏在文件维度、时间切片和错误处理这些维护细节里；本次有实质修复证据，但没有爆红或数值精度提升的证据。",
+      "metrics": {
+        "stars": 197,
+        "forks": 55,
+        "contributors": null,
+        "latest_commit_at": "2026-08-30T23:36:02Z",
+        "latest_release_at": "2026-04-11T04:33:29Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-30 连续修复重映射与气候时间序列错误处理",
+          "最新正式 Release 仍为 5.3.8，主线修复尚未据此证实已正式交付",
+          "首次收录，无历史增长快照"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "GitHub 自动许可证标识为 NOASSERTION，标准字段保留 null；LICENSE/COPYING 明确项目自创源码为 BSD-3-Clause，而 README 仍链接 GPL-3.0，存在口径不一致，并非没有许可证。",
+        "依赖库另有授权要求；使用前需按具体版本与文件核对。",
+        "未执行数据处理或复现修复，结果仍依赖坐标、单位和时间维度；PR #315 尚未合并，不将相关撤销链当稳定功能。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读背景：了解 ncclimo 与 ncremap 如何处理时间及空间维度，跟踪下一正式版是否纳入 8 月 30 日的修复。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/nco/nco",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/nco/nco/blob/master/README.md",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/nco/nco/commit/ad6b928356347e4accf22bfae0f6e8eebe67a659",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/nco/nco/commit/6edb83d2f45ff5421a1fe4e51564b3df5bd808a8",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/nco/nco/pull/315",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "release",
+          "url": "https://github.com/nco/nco/releases/tag/5.3.8",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "license_status",
+          "url": "https://api.github.com/repos/nco/nco/license",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "license_file",
+          "url": "https://github.com/nco/nco/blob/master/LICENSE",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "license_terms",
+          "url": "https://github.com/nco/nco/blob/master/COPYING",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "854053512",
+      "full_name": "schemalabz/opencouncil",
+      "url": "https://github.com/schemalabz/opencouncil",
+      "domain": "社会、公共事务与公益",
+      "tags": [
+        "civic-tech",
+        "public-records",
+        "transcription"
+      ],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其将市政会议转为可搜索的转录和摘要，帮助公民理解地方治理，由 Schema Labs 非营利组织开发。",
+      "why_now": "2026-08-30 合并服务端议题内容、机器可读元数据及授权内部模块边界修复；2026-08-29 已增加有转录但无摘要的明确状态。PR #699 特别说明决议与投票数据不写入元数据，因为抽取链尚未充分可信。",
+      "what_it_signals": "推断：公共记录工具正在同时改善可访问性与可信边界；能被机器读取，还应说明处理状态、来源和哪些推断不能成为官方事实。",
+      "metrics": {
+        "stars": 57,
+        "forks": 25,
+        "contributors": null,
+        "latest_commit_at": "2026-08-30T16:52:52Z",
+        "latest_release_at": "2026-08-26T18:22:48Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-30 合并 PR #699 的服务端内容与状态元数据",
+          "2026-08-30 合并 PR #696 的 server-only 授权边界",
+          "2026-08-29 合并有转录无摘要的显式状态"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "转录、说话人识别、摘要和决议抽取可能出错，应以原始会议及官方决议交叉核验。",
+        "PR 测试与构建成功是项目方报告，本轮只确认合并，不声称线上全部修复或安全已审计。",
+        "公共发言、通知与身份数据仍有隐私和授权边界；AGPL 网络服务的源码提供义务需审查。"
+      ],
+      "confidence": "high",
+      "recommended_action": "持续跟踪：对照一场会议的原始记录、转录与摘要状态，检查官方决议链接，不以生成摘要作为唯一事实源。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/schemalabz/opencouncil",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/schemalabz/opencouncil/blob/main/README.md",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/schemalabz/opencouncil/commit/3e752972f0a8594c805b25dd6bd5bbcee3d4fe83",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/schemalabz/opencouncil/pull/699",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/schemalabz/opencouncil/pull/696",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/schemalabz/opencouncil/pull/695",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "release",
+          "url": "https://github.com/schemalabz/opencouncil/releases/tag/2026.8.21",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/schemalabz/opencouncil/blob/main/LICENSE",
+          "observed_at": "2026-08-31T10:04:37+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "1186219527",
+      "full_name": "liketrek/TREK",
+      "url": "https://github.com/liketrek/TREK",
+      "domain": "个人生活与生产力",
+      "tags": [
+        "travel",
+        "self-hosted",
+        "maps",
+        "collaboration"
+      ],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为可自托管、实时协作的旅行规划器，结合地图、预算、清单和旅行日记。",
+      "why_now": "2026-08-29 发布 v4.1.1，修复 v4.1.0 默认矢量底图缺少 zoom 上限导致行程页与地图设置打不开的阻断故障，并处理地点重复判断和住宿日历问题。",
+      "what_it_signals": "推断：旅行记录可自托管，底图与地理编码仍依赖外部服务；TREK 修复与 TRIP 1.49.0 切换默认瓦片提供商的同期事件，提示应将这些依赖视为产品可靠性的一部分。",
+      "metrics": {
+        "stars": 13001,
+        "forks": 1127,
+        "contributors": null,
+        "latest_commit_at": "2026-08-29T14:42:16Z",
+        "latest_release_at": "2026-08-29T14:45:39Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-29 发布 v4.1.1 阻断故障补丁",
+          "用户报告 Issue #2135 同日关闭",
+          "v4.1.2 PR #2161 尚未合并，不计为已发布能力"
+        ]
+      },
+      "stage": "rapid_growth",
+      "risks": [
+        "本轮未运行软件，发布说明与 Issue 关闭不足以证明所有环境已恢复稳定。",
+        "行程、住址、同行者及预算敏感；自托管不等于隐私已审计，可选插件和 AI/MCP 也扩大数据流向。",
+        "地图与地理编码服务有配额、隐私和授权条件，代码 AGPL 不替代地图数据许可。",
+        "TRIP 维护者关于 CARTO 服务变化的原因尚未向供应商独立核实，仅引用其发布中的切换事实。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读 v4.1.1 的故障解释，以不含真实地址的示例行程理解外部服务依赖；持续跟踪下一补丁后再考虑导入私人数据。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/liketrek/TREK",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/liketrek/TREK/blob/main/README.md",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/liketrek/TREK/commit/33a33e7b1d113f0742ac609305cc549a4806d31b",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "release",
+          "url": "https://github.com/liketrek/TREK/releases/tag/v4.1.1",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/liketrek/TREK/issues/2135",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/liketrek/TREK/pull/2161",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "cross_project_release",
+          "url": "https://github.com/itskovacs/trip/releases/tag/1.49.0",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/liketrek/TREK/blob/main/LICENSE",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "304836585",
+      "full_name": "mayswind/ezbookkeeping",
+      "url": "https://github.com/mayswind/ezbookkeeping",
+      "domain": "商业、经济与金融",
+      "tags": [
+        "personal-finance",
+        "self-hosted",
+        "mobile",
+        "cash-flow"
+      ],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为轻量自托管个人账本，支持桌面与移动端、多币种、交易导入导出及图表。",
+      "why_now": "2026-08-30 主线新增移动端月支出进度、期间净收入和储蓄率组件。最新正式版仍是 2026-07-20 的 v1.6.1，不能把这些主线功能当作已正式发布。",
+      "what_it_signals": "推断：记账工具正从收集交易扩展到手机端可理解的现金流反馈；社区对确定性本地分类的请求，也显示自动化与把私人账单发给模型并非同义词。",
+      "metrics": {
+        "stars": 5499,
+        "forks": 659,
+        "contributors": null,
+        "latest_commit_at": "2026-08-30T17:45:14Z",
+        "latest_release_at": "2026-07-20T14:11:38Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-30 新增两个移动财务概览组件",
+          "Issue #655 提出持久确定性交易分类规则，仍是需求而非已实现功能",
+          "首次收录，无历史增长快照"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "账本、收据和位置数据敏感，接入外部 AI 可能产生额外传输；自托管不等于完整安全审计。",
+        "净收入与储蓄率依赖交易完整性、账户范围、分类及汇率口径，不构成投资或税务建议。",
+        "新组件尚未正式 Release，本轮未测试计算正确性或数据迁移；PR #659 关闭但未合并，不当作已生效安全修复。",
+        "MIT 代码许可不自动授予银行数据或第三方服务使用权。"
+      ],
+      "confidence": "high",
+      "recommended_action": "持续跟踪下一正式版及移动端计算说明；阅读 Issue #655，比较确定性规则与 AI 分类对私人账本可控性的影响。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/mayswind/ezbookkeeping",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/mayswind/ezbookkeeping/blob/main/README.md",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/mayswind/ezbookkeeping/commit/bf8f6d463e8f17e7fabe42c9204883e22ecf2056",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "release",
+          "url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v1.6.1",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/mayswind/ezbookkeeping/issues/655",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/mayswind/ezbookkeeping/issues/588",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/mayswind/ezbookkeeping/pull/659",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/mayswind/ezbookkeeping/blob/main/LICENSE",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "8297971",
+      "full_name": "mbloch/mapshaper",
+      "url": "https://github.com/mbloch/mapshaper",
+      "domain": "数据、地图与档案",
+      "tags": [
+        "cartography",
+        "open-data",
+        "geospatial",
+        "visualization"
+      ],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其为地图数据编辑工具，支持常见空间数据格式、简化、属性编辑、裁剪与筛选。",
+      "why_now": "2026-08-30 发布 v0.7.56，增加圆形地图符号避碰 -repel 及 polygons= 约束，使符号中心可以在避让时保持在原多边形内；相应提交包含测试改动。",
+      "what_it_signals": "推断：数据地图正在把视觉可读性与空间语义一起设计；避免圆点重叠的同时保留地域归属，有助于公共数据与数据新闻更诚实地表达位置。",
+      "metrics": {
+        "stars": 4170,
+        "forks": 580,
+        "contributors": null,
+        "latest_commit_at": "2026-08-30T04:36:27Z",
+        "latest_release_at": "2026-08-30T04:37:15Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-30 正式发布 v0.7.56",
+          "新增圆符号避碰和多边形约束",
+          "功能提交包含 repel 测试文件改动；本轮未执行候选测试"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "GitHub 自动许可证标识为 NOASSERTION，字段保留 null；LICENSE 正文明确 MPL-2.0，并非无许可证，仍需结合依赖复核。",
+        "新功能要求投影图层，投影和尺度会影响结果；避碰移动后的符号不能被误读为精确地理点。",
+        "项目方声明浏览器内处理数据，本轮未独立审计隐私；数据来源与地图内容授权也需单独检查。",
+        "PR #701 关闭但未合并，较早 Issue #700 已关闭，均不作为本次功能已验证的依据。"
+      ],
+      "confidence": "high",
+      "recommended_action": "以公开非敏感样例阅读比例圆地图示例，对照避碰前后与地域约束，先理解显示位移和真实位置的区别。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/mbloch/mapshaper",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/mbloch/mapshaper/blob/master/README.md",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/mbloch/mapshaper/commit/9d96587c6aef8da9603168dd76317f93e297c72b",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/mbloch/mapshaper/commit/74180f4b41b3fc4b3b5b3f2ea3c2cf50b9855f7f",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "release",
+          "url": "https://github.com/mbloch/mapshaper/releases/tag/v0.7.56",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/mbloch/mapshaper/pull/701",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/mbloch/mapshaper/issues/700",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/mbloch/mapshaper/blob/master/LICENSE",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        },
+        {
+          "type": "license_status",
+          "url": "https://api.github.com/repos/mbloch/mapshaper/license",
+          "observed_at": "2026-08-31T10:04:39+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "797178571",
+      "full_name": "liebharc/homr",
+      "url": "https://github.com/liebharc/homr",
+      "domain": "艺术、设计与媒体",
+      "tags": [
+        "music",
+        "optical-music-recognition",
+        "musicxml"
+      ],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称其能把纸质乐谱图像转换为可编辑的 MusicXML，并提供在线示例及关联的移动端项目。",
+      "why_now": "2026-08-31 合并 AMD GPU 推理支持 PR #143，扩展图像分割和乐谱识别后端并重组 Docker 环境；README 已列 CPU、CUDA、ROCm 三种选择。",
+      "what_it_signals": "推断：音乐档案正从扫描图像保存走向可编辑的结构化乐谱；更多硬件选择可能降低处理门槛，但不能据合并记录推断识别质量和普及率。",
+      "metrics": {
+        "stars": 375,
+        "forks": 61,
+        "contributors": null,
+        "latest_commit_at": "2026-08-31T01:57:08Z",
+        "latest_release_at": "2026-06-18T18:52:24Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-31 合并 AMD GPU 推理与部署支持",
+          "公开 Release benchmark 是基准数据包，不是本日软件新版本",
+          "首次收录，无历史增长快照"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "未执行识谱；README 对部分力度、演奏标记等能力存在口径差异，应按真实样本逐项核对。",
+        "Issue #148 报告长 PDF 处理缓慢，PR #144 的 CUDA 静默回退 CPU 修复仍未合并；不能声称已解决。",
+        "新后端有 ROCm/Python 兼容边界；AGPL 代码、模型和输入乐谱版权需分别审查。"
+      ],
+      "confidence": "high",
+      "recommended_action": "亲自体验建议：仅用有权处理的短乐谱阅读在线识别示例，并逐音比对 MusicXML 输出；不要先上传整部受版权保护的作品。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/liebharc/homr",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/liebharc/homr/blob/main/README.md",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/liebharc/homr/commit/3fe86a3e84db43af19eae452e29830c1f46c3b34",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/liebharc/homr/pull/143",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/liebharc/homr/issues/148",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/liebharc/homr/pull/144",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "release_dataset",
+          "url": "https://github.com/liebharc/homr/releases/tag/benchmark",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/liebharc/homr/blob/main/LICENSE",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "119802782",
+      "full_name": "phoenixbf/aton",
+      "url": "https://github.com/phoenixbf/aton",
+      "domain": "数据、地图与档案",
+      "tags": [
+        "cultural-heritage",
+        "webxr",
+        "3d-tiles",
+        "digital-archives"
+      ],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其为面向文化遗产的跨设备 Web3D/WebXR 框架，支持空间标注、协作、3D Tiles 和 Gaussian Splats。",
+      "why_now": "2026-08-29 至 30 日继续调整多分辨率加载与渲染；最新提交涉及祖先瓦片加载、下载和解析队列、导航时调度，以及 3DGS 依赖，并非只有版本号变动。",
+      "what_it_signals": "推断：文化遗产数字保存需要从模型采集延伸到分层访问、空间标注与多人解释；102 Star 的长期项目也可能承载普通热门榜忽略的专业基础设施。",
+      "metrics": {
+        "stars": 102,
+        "forks": 15,
+        "contributors": null,
+        "latest_commit_at": "2026-08-30T20:44:35Z",
+        "latest_release_at": "2026-06-29T15:51:32Z",
+        "license": "GPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-30 提交多分辨率访问实质改动",
+          "2026-08-29 更新色彩空间和多分辨率适配",
+          "3.0.3 为 6 月 29 日正式版，本期新增进展来自主线提交"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "未使用真实遗产数据或 XR 设备测试，不声称加载速度或跨端兼容性已改善多少。",
+        "较早 Issue #30 的鼠标按键与 UI 显隐问题仍开放，不包装为本日新增故障；近期 PR #29 关闭但未合并。",
+        "GPL-3.0 只说明代码层授权，模型、纹理及博物馆资料须遵守各自来源条款。"
+      ],
+      "confidence": "high",
+      "recommended_action": "纯粹有趣：浏览项目方的文化遗产示例，观察同一三维对象如何被多视角解读；不下载或执行仓库代码。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/phoenixbf/aton",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/phoenixbf/aton/blob/master/README.md",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/phoenixbf/aton/commit/f38f0cbdee8ff166671014ed783c415421941185",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/phoenixbf/aton/commit/2788994d4493431f2e74a6ed17153be62b59b272",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "issue",
+          "url": "https://github.com/phoenixbf/aton/issues/30",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/phoenixbf/aton/pull/29",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "release",
+          "url": "https://github.com/phoenixbf/aton/releases/tag/3.0.3",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/phoenixbf/aton/blob/master/LICENSE.txt",
+          "observed_at": "2026-08-31T10:04:17+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "1323076116",
+      "full_name": "s010s/prehistoric-animal-museum",
+      "url": "https://github.com/s010s/prehistoric-animal-museum",
+      "domain": "教育与知识传播",
+      "tags": [
+        "prehistoric-animals",
+        "bilingual",
+        "family",
+        "digital-museum"
+      ],
+      "category": "surprising_and_experimental",
+      "change_type": "previous_judgement_revised",
+      "summary": "项目方称其为供儿童与家长共同探索的中英双语 3D 史前动物馆；本期不再把固定展项数作为持续性描述。",
+      "why_now": "2026-08-30 合并 PR #15，移除英文及中文 README 中固定展项数量，以适应后续扩展。2026-08-29 日报引用的“18 个展项”保留为当时项目方声明，不代表今天的固定规模；本次未独立清点运行时展项。",
+      "what_it_signals": "推断：数字科普内容需要像软件一样维护可变口径与素材授权边界；家庭友好的交互目标和科学、版权准确性应共同评估。",
+      "metrics": {
+        "stars": 774,
+        "forks": 106,
+        "contributors": null,
+        "latest_commit_at": "2026-08-30T16:15:18Z",
+        "latest_release_at": null,
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-29 至 2026-08-31 两次观测净增 34 Star、5 Fork",
+          "PR #15 只更新两份 README，不据此宣称新增了动物或功能",
+          "公开 Release 列表仍为空"
+        ]
+      },
+      "stage": "early_exploration",
+      "risks": [
+        "指标中的 AGPL-3.0 是代码许可证；原创科普文字、旁白和背景为 CC BY-NC-SA 4.0，第三方模型另有条款，不能把代码授权泛化到全部素材。",
+        "颜色、软组织和部分动作属于有证据参考的艺术重建，不是精确科学复原。",
+        "未运行或审计儿童隐私、无广告等项目方声明；实际展项数量未独立验证。"
+      ],
+      "confidence": "high",
+      "recommended_action": "亲自体验：由家长陪同浏览官方双语展陈，选一个动物对照化石来源与艺术重建说明；转载前按素材类型阅读授权。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/s010s/prehistoric-animal-museum",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/s010s/prehistoric-animal-museum/blob/11140b08203ddef7eac525232b298f2085f76d7e/README.md",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/s010s/prehistoric-animal-museum/commit/11140b08203ddef7eac525232b298f2085f76d7e",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "pull_request",
+          "url": "https://github.com/s010s/prehistoric-animal-museum/pull/15",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "release_status",
+          "url": "https://api.github.com/repos/s010s/prehistoric-animal-museum/releases",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/s010s/prehistoric-animal-museum/blob/main/LICENSE",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "asset_licensing",
+          "url": "https://github.com/s010s/prehistoric-animal-museum/blob/main/LICENSING.md",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        }
+      ]
+    },
+    {
+      "repo_id": "1333065091",
+      "full_name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "domain": "AI、软件与网络安全",
+      "tags": [
+        "agents",
+        "plugins",
+        "developer-preview"
+      ],
+      "category": "established_momentum",
+      "change_type": "major_progress",
+      "summary": "项目方称其为采用一切皆插件架构的开源 Agent 运行环境，目前仍处于开发者预览。",
+      "why_now": "2026-08-30 发布 dsh-v0.1.2-alpha.2，增加连接异常提示、自动重试和活动计划查看，并修复启动兼容问题。相较 2026-08-28 最近一次收录，Star 从 200560 增至 204836、Fork 从 22942 增至 23715。",
+      "what_it_signals": "推断：关注度正在伴随可见的发布节奏转化为连接可靠性和会话可观测性的迭代；预发布活跃不能等同于安全或生产成熟。",
+      "metrics": {
+        "stars": 204836,
+        "forks": 23715,
+        "contributors": null,
+        "latest_commit_at": "2026-08-30T13:37:53Z",
+        "latest_release_at": "2026-08-30T13:52:14Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-28 至 2026-08-31 两次观测净增 4276 Star、773 Fork；不是单日或7日增量",
+          "2026-08-30 发布 alpha.2 预发布版本",
+          "默认分支已合入新版本提交"
+        ]
+      },
+      "stage": "rapid_growth",
+      "risks": [
+        "项目安全声明明确：尚未接受安全审计，沙箱、审批和权限控制不能保证隔离。",
+        "插件与模型生成的命令可能访问文件、网络和凭据；本轮未执行其代码，也未验证发布说明中的性能及兼容性改善。",
+        "仍是 alpha 预发布；本次 Pull Request API 返回404、Issues列表为空，不据此断言不存在社区问题。"
+      ],
+      "confidence": "high",
+      "recommended_action": "持续跟踪：阅读安全说明与 alpha.2 变更记录，观察正式稳定版和可复核的安全验证，不向预览环境提供敏感资料。",
+      "evidence": [
+        {
+          "type": "repository",
+          "url": "https://github.com/deepseek-ai/deepseek-harness",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "readme",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "commit",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/commit/0a53fb55bea101816fa226bb964ae2bed71c343b",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "release_prerelease",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.2-alpha.2",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "license",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        },
+        {
+          "type": "safety_notice",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.zh.md",
+          "observed_at": "2026-08-31T10:05:05+08:00"
+        }
+      ]
+    }
+  ]
+}
