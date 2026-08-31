@@ -11,7 +11,7 @@ description: "项目方称其为可自托管、实时协作的旅行规划器，
 - 领域：个人生活与生产力
 - 阶段：快速成长
 - 置信度：高
-- Stars：13,001
+- Stars：13,004
 - Forks：1,127
 - 最近活动：2026-08-29
 - License：AGPL-3.0
@@ -39,6 +39,7 @@ description: "项目方称其为可自托管、实时协作的旅行规划器，
 - [pull_request](https://github.com/liketrek/TREK/pull/2161)（核验于 `2026-08-31T10:04:39+08:00`）
 - [cross_project_release](https://github.com/itskovacs/trip/releases/tag/1.49.0)（核验于 `2026-08-31T10:04:39+08:00`）
 - [license](https://github.com/liketrek/TREK/blob/main/LICENSE)（核验于 `2026-08-31T10:04:39+08:00`）
+- [repository_api](https://api.github.com/repos/liketrek/TREK)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 

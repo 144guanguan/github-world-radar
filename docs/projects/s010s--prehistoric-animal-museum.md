@@ -11,7 +11,7 @@ description: "项目方称其为供儿童与家长共同探索的中英双语 3D
 - 领域：教育与知识传播
 - 阶段：早期探索
 - 置信度：高
-- Stars：774
+- Stars：778
 - Forks：106
 - 最近活动：2026-08-30
 - License：AGPL-3.0
@@ -38,6 +38,7 @@ description: "项目方称其为供儿童与家长共同探索的中英双语 3D
 - [release_status](https://api.github.com/repos/s010s/prehistoric-animal-museum/releases)（核验于 `2026-08-31T10:05:05+08:00`）
 - [license](https://github.com/s010s/prehistoric-animal-museum/blob/main/LICENSE)（核验于 `2026-08-31T10:05:05+08:00`）
 - [asset_licensing](https://github.com/s010s/prehistoric-animal-museum/blob/main/LICENSING.md)（核验于 `2026-08-31T10:05:05+08:00`）
+- [repository_api](https://api.github.com/repos/s010s/prehistoric-animal-museum)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 
@@ -50,7 +51,7 @@ description: "项目方称其为供儿童与家长共同探索的中英双语 3D
 
 ## 代理信号
 
-- 2026-08-29 至 2026-08-31 两次观测净增 34 Star、5 Fork
+- 2026-08-29 至 2026-08-31 两次观测净增 38 Star、5 Fork
 - PR #15 只更新两份 README，不据此宣称新增了动物或功能
 - 公开 Release 列表仍为空
 

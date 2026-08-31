@@ -11,7 +11,7 @@ description: "项目方称其能把纸质乐谱图像转换为可编辑的 Music
 - 领域：艺术、设计与媒体
 - 阶段：稳定发展
 - 置信度：高
-- Stars：375
+- Stars：376
 - Forks：61
 - 最近活动：2026-08-31
 - License：AGPL-3.0
@@ -39,6 +39,7 @@ description: "项目方称其能把纸质乐谱图像转换为可编辑的 Music
 - [pull_request](https://github.com/liebharc/homr/pull/144)（核验于 `2026-08-31T10:04:17+08:00`）
 - [release_dataset](https://github.com/liebharc/homr/releases/tag/benchmark)（核验于 `2026-08-31T10:04:17+08:00`）
 - [license](https://github.com/liebharc/homr/blob/main/LICENSE)（核验于 `2026-08-31T10:04:17+08:00`）
+- [repository_api](https://api.github.com/repos/liebharc/homr)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 

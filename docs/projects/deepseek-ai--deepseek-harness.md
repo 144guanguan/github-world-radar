@@ -11,8 +11,8 @@ description: "项目方称其为采用一切皆插件架构的开源 Agent 运�
 - 领域：AI、软件与网络安全
 - 阶段：快速成长
 - 置信度：高
-- Stars：204,836
-- Forks：23,715
+- Stars：204,962
+- Forks：23,739
 - 最近活动：2026-08-30
 - License：MIT
 - 稳定标识：`1333065091`
@@ -25,7 +25,7 @@ description: "项目方称其为采用一切皆插件架构的开源 Agent 运�
 
 ## 为什么值得关注
 
-2026-08-30 发布 dsh-v0.1.2-alpha.2，增加连接异常提示、自动重试和活动计划查看，并修复启动兼容问题。相较 2026-08-28 最近一次收录，Star 从 200560 增至 204836、Fork 从 22942 增至 23715。
+2026-08-30 发布 dsh-v0.1.2-alpha.2，增加连接异常提示、自动重试和活动计划查看，并修复启动兼容问题。相较 2026-08-28 最近一次收录，Star 从 200560 增至 204962、Fork 从 22942 增至 23739。
 
 公开信号：推断：关注度正在伴随可见的发布节奏转化为连接可靠性和会话可观测性的迭代；预发布活跃不能等同于安全或生产成熟。
 
@@ -37,6 +37,7 @@ description: "项目方称其为采用一切皆插件架构的开源 Agent 运�
 - [release_prerelease](https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.2-alpha.2)（核验于 `2026-08-31T10:05:05+08:00`）
 - [license](https://github.com/deepseek-ai/deepseek-harness/blob/master/LICENSE)（核验于 `2026-08-31T10:05:05+08:00`）
 - [safety_notice](https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.zh.md)（核验于 `2026-08-31T10:05:05+08:00`）
+- [repository_api](https://api.github.com/repos/deepseek-ai/deepseek-harness)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 
@@ -52,7 +53,7 @@ description: "项目方称其为采用一切皆插件架构的开源 Agent 运�
 
 ## 代理信号
 
-- 2026-08-28 至 2026-08-31 两次观测净增 4276 Star、773 Fork；不是单日或7日增量
+- 2026-08-28 至 2026-08-31 两次观测净增 4402 Star、797 Fork；不是单日或7日增量
 - 2026-08-30 发布 alpha.2 预发布版本
 - 默认分支已合入新版本提交
 
@@ -60,4 +61,4 @@ description: "项目方称其为采用一切皆插件架构的开源 Agent 运�
 
 - 项目安全声明明确：尚未接受安全审计，沙箱、审批和权限控制不能保证隔离。
 - 插件与模型生成的命令可能访问文件、网络和凭据；本轮未执行其代码，也未验证发布说明中的性能及兼容性改善。
-- 仍是 alpha 预发布；本次 Pull Request API 返回404、Issues列表为空，不据此断言不存在社区问题。
+- 仍是 alpha 预发布；本日早间核查中 Pull Request API 返回404、Issues列表为空，不据此断言不存在社区问题。

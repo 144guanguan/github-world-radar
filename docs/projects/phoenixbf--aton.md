@@ -39,6 +39,7 @@ description: "项目方称其为面向文化遗产的跨设备 Web3D/WebXR 框�
 - [pull_request](https://github.com/phoenixbf/aton/pull/29)（核验于 `2026-08-31T10:04:17+08:00`）
 - [release](https://github.com/phoenixbf/aton/releases/tag/3.0.3)（核验于 `2026-08-31T10:04:17+08:00`）
 - [license](https://github.com/phoenixbf/aton/blob/master/LICENSE.txt)（核验于 `2026-08-31T10:04:17+08:00`）
+- [repository_api](https://api.github.com/repos/phoenixbf/aton)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 

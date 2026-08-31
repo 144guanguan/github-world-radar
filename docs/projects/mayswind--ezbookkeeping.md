@@ -39,6 +39,7 @@ description: "项目方称其为轻量自托管个人账本，支持桌面与移
 - [issue](https://github.com/mayswind/ezbookkeeping/issues/588)（核验于 `2026-08-31T10:04:39+08:00`）
 - [pull_request](https://github.com/mayswind/ezbookkeeping/pull/659)（核验于 `2026-08-31T10:04:39+08:00`）
 - [license](https://github.com/mayswind/ezbookkeeping/blob/main/LICENSE)（核验于 `2026-08-31T10:04:39+08:00`）
+- [repository_api](https://api.github.com/repos/mayswind/ezbookkeeping)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 

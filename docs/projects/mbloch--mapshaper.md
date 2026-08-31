@@ -40,6 +40,7 @@ description: "项目方称其为地图数据编辑工具，支持常见空间数
 - [issue](https://github.com/mbloch/mapshaper/issues/700)（核验于 `2026-08-31T10:04:39+08:00`）
 - [license](https://github.com/mbloch/mapshaper/blob/master/LICENSE)（核验于 `2026-08-31T10:04:39+08:00`）
 - [license_status](https://api.github.com/repos/mbloch/mapshaper/license)（核验于 `2026-08-31T10:04:39+08:00`）
+- [repository_api](https://api.github.com/repos/mbloch/mapshaper)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 

@@ -39,6 +39,7 @@ description: "项目方称其将市政会议转为可搜索的转录和摘要，
 - [pull_request](https://github.com/schemalabz/opencouncil/pull/695)（核验于 `2026-08-31T10:04:37+08:00`）
 - [release](https://github.com/schemalabz/opencouncil/releases/tag/2026.8.21)（核验于 `2026-08-31T10:04:37+08:00`）
 - [license](https://github.com/schemalabz/opencouncil/blob/main/LICENSE)（核验于 `2026-08-31T10:04:37+08:00`）
+- [repository_api](https://api.github.com/repos/schemalabz/opencouncil)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 

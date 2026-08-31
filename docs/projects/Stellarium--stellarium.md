@@ -39,6 +39,7 @@ description: "项目方称其为免费开源桌面天文馆，可展示肉眼、
 - [release](https://github.com/Stellarium/stellarium/releases/tag/v26.2)（核验于 `2026-08-31T10:04:37+08:00`）
 - [license](https://github.com/Stellarium/stellarium/blob/master/COPYING)（核验于 `2026-08-31T10:04:37+08:00`）
 - [cultural_source_and_license](https://github.com/Stellarium/stellarium/blob/master/skycultures/potawatomi/description.md)（核验于 `2026-08-31T10:04:37+08:00`）
+- [repository_api](https://api.github.com/repos/Stellarium/stellarium)（核验于 `2026-08-31T11:03:15+08:00`）
 
 ## 观察历史
 
