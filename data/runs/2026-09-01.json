@@ -1,0 +1,483 @@
+{
+  "schema_version": 1,
+  "run_id": "github-radar-2026-09-01-110048",
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T11:10:00+08:00",
+  "window": {
+    "start": "2026-08-02",
+    "end": "2026-09-01"
+  },
+  "summary": "本期使用 agent-reach 的 GitHub/gh 路由，以 GitHub Search、仓库 API、默认分支 Commit、完整分页 Release 列表、Issue/PR 和 README 建立跨领域候选池。主流程的专题 Search 已返回超过 60 个候选，三个分域只读检索又分别形成 16、17、15 个有效候选；这些集合存在交集，不相加冒充去重总量。GitHub Search 的分钟额度在检索中一度耗尽，但 Core API 保持可用，最终 10 个项目均由 Core API 和直接资料复核。运行日期、观察时间和历史比较使用 Asia/Shanghai；Commit、PR、Release 事件时间沿用 GitHub UTC。最终选择 10 个项目、9 个领域，发现配比为 established_momentum 5、overlooked_cross_domain 3、surprising_and_experimental 2，同一领域最多 2 个；没有 AI 项目入选。相对 2026-08-31，8 个项目首次进入历史，PUDL 和 Patternflow 因新事件重新进入并标为重大进展；上一期 10 个项目本期没有同等强的新事件，退出当日精选但历史不删除，也不据此判断项目转差。历史最早为 2026-08-25，但当前入选项目没有精确匹配的 7 日或 30 日端点，因此增长字段保持 null；Patternflow 的 6 日差值和 PUDL 的 3 日差值只作为注明日期的代理信号。README 自述均标为项目方声明；本轮未执行候选仓库代码或安装其依赖。",
+  "trends": [
+    "公共数据工具正在把来源、缺失和修订历史变成产品能力：PySUS 明确拆分公共卫生数据源，PUDL 处理不完整监管申报并清除陈旧加工文件。",
+    "成熟基础设施的新价值常来自边界条件：Organic Maps 修复反日界线视口搜索，Payu 为高成本气候模拟补上 restart 防覆盖和最小溯源。",
+    "隐私工具正从安全主张继续走向日常可用性：Ente 增加多相册幻灯片；Actual 的 26.9.0 已进入主分支，但正式 Release 尚未出现。",
+    "开放创作工具同时面对体验和发布可信度：Graphite 改善画笔视口缩放，Patternflow 修正固件自报版本并保留软件、硬件的不同许可证。",
+    "低热度仓库也在扩展公共知识边界：Badger Politics 把地方议会投票纳入可溯源记录，CDS 课程把 FAIR 天文数据发布连接到研究者教育。"
+  ],
+  "projects": [
+    {
+      "repo_id": "63720586",
+      "full_name": "AlertaDengue/PySUS",
+      "url": "https://github.com/AlertaDengue/PySUS",
+      "domain": "医疗健康与生命科学",
+      "tags": ["public-health", "open-data", "brazil", "provenance"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称其用于下载、清理和分析巴西统一卫生系统的开放数据，并统一访问 DATASUS、dados.gov.br、OpenDataSUS 等来源。",
+      "why_now": "2026-09-01 发布 2.11.0；相邻提交把不同公共卫生数据源拆成显式模块，使调用者可以辨认数据来自哪个系统，而不是把所有数据隐藏在一个入口后。",
+      "what_it_signals": "推断：公共卫生数据工具的竞争点正在从能否下载，转向来源是否可见、数据质量是否可解释以及查询过程能否复核。",
+      "metrics": {
+        "stars": 246,
+        "forks": 95,
+        "contributors": null,
+        "latest_commit_at": "2026-09-01T03:02:46Z",
+        "latest_release_at": "2026-09-01T03:02:55Z",
+        "license": "GPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-09-01 发布正式版 2.11.0",
+          "发布前提交显式拆分公共卫生数据来源",
+          "首次收录，没有可复核的 7 日或 30 日增长端点"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "数据完整性、延迟和修订仍取决于巴西公共数据源；工具输出不能直接替代医疗或公共卫生专业判断。",
+        "本轮未抽样核对下载结果与官方原始记录，也未验证所有地区和年份的覆盖。",
+        "GPL-3.0 对再分发和集成有义务，数据本身的使用条款还需按来源分别检查。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读 2.11.0 变更和来源命名空间设计；若用于研究，先用一项公开指标对照官方原始表并记录查询日期。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/AlertaDengue/PySUS", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/AlertaDengue/PySUS", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/AlertaDengue/PySUS/blob/main/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/AlertaDengue/PySUS/commit/b423222cfe25727d723cbdbc9a31bacd49159e6f", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "source_modules_commit", "url": "https://github.com/AlertaDengue/PySUS/commit/38f4152f0f4c8cd1e77c7c8b8a194c8e11f2c215", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release", "url": "https://github.com/AlertaDengue/PySUS/releases/tag/2.11.0", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license", "url": "https://api.github.com/repos/AlertaDengue/PySUS/license", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "486815039",
+      "full_name": "actualbudget/actual",
+      "url": "https://github.com/actualbudget/actual",
+      "domain": "商业、经济与金融",
+      "tags": ["personal-finance", "local-first", "self-hosted", "budgeting"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称 Actual 是 local-first 的开源个人财务与预算工具，支持设备同步和自托管。",
+      "why_now": "2026-09-01 默认分支合并 26.9.0 版本与发布说明。观察时完整 GitHub Release 列表的最新正式版仍是 2026-08-07 的 v26.8.1，因此这里只确认发布准备进入主分支，不声称 26.9.0 已正式发布。",
+      "what_it_signals": "推断：个人财务工具继续把本地数据控制、跨设备体验和可自托管部署结合起来；清楚区分主分支版本提交与正式发布也是可靠跟踪的一部分。",
+      "metrics": {
+        "stars": 28498,
+        "forks": 2924,
+        "contributors": null,
+        "latest_commit_at": "2026-09-01T02:30:38Z",
+        "latest_release_at": "2026-08-07T21:17:24Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "26.9.0 版本提交与发布说明已合并到默认分支",
+          "观察时正式 Release 列表仍停留在 v26.8.1",
+          "首次收录，没有历史增长端点"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "预算、账户、交易和同步数据高度敏感；local-first 不等于银行连接、备份、同步服务和部署环境天然安全。",
+        "预算分析和模拟功能不构成投资、税务或信贷建议。",
+        "本轮未运行迁移或同步流程，不能据合并记录断言 26.9.0 已对所有用户可用。"
+      ],
+      "confidence": "high",
+      "recommended_action": "持续跟踪 26.9.0 正式 Release；若试用，只导入脱敏样例账本，先理解备份、加密和同步边界。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/actualbudget/actual", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/actualbudget/actual", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/actualbudget/actual/blob/master/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/actualbudget/actual/commit/d05aa0f11a75a30f6a31774c2673c5d920634ce7", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/actualbudget/actual/pull/8789", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "current_formal_release", "url": "https://github.com/actualbudget/actual/releases/tag/v26.8.1", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release_list", "url": "https://api.github.com/repos/actualbudget/actual/releases?per_page=100", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license", "url": "https://github.com/actualbudget/actual/blob/master/LICENSE.txt", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "324829379",
+      "full_name": "organicmaps/organicmaps",
+      "url": "https://github.com/organicmaps/organicmaps",
+      "domain": "数据、地图与档案",
+      "tags": ["offline-maps", "openstreetmap", "privacy", "antimeridian"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称 Organic Maps 是基于 OpenStreetMap 的 Android 与 iOS 离线地图应用，并主张无广告、无追踪和不收集数据。",
+      "why_now": "2026-08-31 合并的搜索修复覆盖视口搜索与反日界线组合场景，并修改经纬度投影与测试；这类跨越正负 180 度经线的边界问题会直接影响跨太平洋区域的搜索正确性。",
+      "what_it_signals": "推断：成熟地图产品的可靠性不仅来自更多地点数据，也来自对地球坐标边界、离线状态和移动端交互的长期处理。",
+      "metrics": {
+        "stars": 15270,
+        "forks": 1563,
+        "contributors": null,
+        "latest_commit_at": "2026-08-31T23:44:23Z",
+        "latest_release_at": "2026-08-27T14:05:31Z",
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-31 合并反日界线与视口搜索修复",
+          "2026-08-27 发布 Android 正式版本",
+          "首次收录，没有历史增长端点"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "无追踪和用户规模属于项目方声明，本轮未做网络流量、构建可复现性或隐私审计。",
+        "离线地图和导航结果不能替代专业或安全关键导航，OpenStreetMap 数据也可能遗漏或过时。",
+        "GitHub API 为 NOASSERTION；代码、地图数据、名称和第三方素材适用复合许可，指标字段保持 null。"
+      ],
+      "confidence": "high",
+      "recommended_action": "亲自体验：用公开地点比较反日界线两侧的搜索行为，并阅读复合许可证；不要在测试中保存私人位置历史。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/organicmaps/organicmaps", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/organicmaps/organicmaps", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/organicmaps/organicmaps/blob/master/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/organicmaps/organicmaps/commit/f49d5fb68d322fb19fc980d45e74cf1a37d48dd9", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/organicmaps/organicmaps/pull/13388", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release", "url": "https://github.com/organicmaps/organicmaps/releases/tag/2026.08.27-18-android", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license", "url": "https://github.com/organicmaps/organicmaps/blob/master/LICENSE", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "560284721",
+      "full_name": "ente/ente",
+      "url": "https://github.com/ente/ente",
+      "domain": "个人生活与生产力",
+      "tags": ["encrypted-photos", "privacy", "mobile", "self-hosted"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称 Ente 是端到端加密的开源服务集合，包含照片、敏感文档存储和身份验证产品。",
+      "why_now": "2026-08-31 移动端照片应用新增对多个已选相册播放幻灯片，直接改善加密照片库的日常浏览体验；同日服务端还合入不透明会话标识。",
+      "what_it_signals": "推断：隐私产品正在从安全主张继续走向普通用户可感知的相册体验；安全与可用性不必被当成二选一。",
+      "metrics": {
+        "stars": 28601,
+        "forks": 1784,
+        "contributors": null,
+        "latest_commit_at": "2026-08-31T13:19:51Z",
+        "latest_release_at": "2026-08-11T10:05:41Z",
+        "license": "AGPL-3.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-31 合并多相册幻灯片",
+          "同日服务端采用不透明会话标识",
+          "多产品仓库按发布时间最新正式 Release 属于 Locker，不误写为 Photos 新版"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "端到端加密属于项目方声明，本轮未做密码学、客户端构建或服务端元数据审计。",
+        "自托管仍需安全管理密钥、备份、升级和访问控制；照片内容及人脸信息高度敏感。",
+        "仓库包含多个产品线，latest_release_at 不能等同于 Ente Photos 的最新版本。"
+      ],
+      "confidence": "high",
+      "recommended_action": "用无敏感内容的样例相册阅读幻灯片体验和密钥恢复说明；持续跟踪 Photos 独立正式版。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/ente/ente", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/ente/ente", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/ente/ente/blob/main/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/ente/ente/commit/451ec6c0cfa8c140e1b745f6d24086c7bda68d50", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/ente/ente/pull/12506", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "session_identifier_commit", "url": "https://github.com/ente/ente/commit/8e2a3cc7ba669f236eaa9e8c80d3363e2f9bb266", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release_by_publication_time", "url": "https://github.com/ente/ente/releases/tag/locker-v1.0.8", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license", "url": "https://github.com/ente/ente/blob/main/LICENSE", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "258967860",
+      "full_name": "GraphiteEditor/Graphite",
+      "url": "https://github.com/GraphiteEditor/Graphite",
+      "domain": "艺术、设计与媒体",
+      "tags": ["graphic-design", "digital-art", "procedural-graphics", "brush"],
+      "category": "established_momentum",
+      "change_type": "new",
+      "summary": "项目方称 Graphite 是社区构建的二维内容创作应用，把图层式设计与节点式程序化图形结合起来。",
+      "why_now": "2026-08-31 画笔工具新增 Scale with Viewport 选项，使笔刷尺寸可以选择是否随视口缩放；这是直接影响创作手感的用户可见改动。",
+      "what_it_signals": "推断：开源创作工具正在把传统绘画交互和程序化图形系统放进同一个工作流，而近期进展已经落到细致的画笔行为。",
+      "metrics": {
+        "stars": 27031,
+        "forks": 1240,
+        "contributors": null,
+        "latest_commit_at": "2026-08-31T13:44:20Z",
+        "latest_release_at": null,
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-31 合并画笔视口缩放选项",
+          "累计规模较大但正式 Release 列表为空",
+          "首次收录，没有历史增长端点"
+        ]
+      },
+      "stage": "early_exploration",
+      "risks": [
+        "README 仍明确标为 alpha；照片编辑、动效和 VFX 等部分能力属于路线图，不是已交付事实。",
+        "没有正式 Release，默认分支功能不代表稳定发行版。",
+        "部分目录可能采用 MIT/Apache 双许可，复用前应按文件确认。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读浏览器演示中的画笔选项，用非重要草图比较视口缩放前后；不要把 alpha 当作成熟生产工具。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/GraphiteEditor/Graphite", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/GraphiteEditor/Graphite", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/GraphiteEditor/Graphite/blob/master/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/GraphiteEditor/Graphite/commit/be0f6a88f4e8564c4003f1e57bc837d968d59bc0", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/GraphiteEditor/Graphite/pull/4485", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release_status", "url": "https://api.github.com/repos/GraphiteEditor/Graphite/releases", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license", "url": "https://github.com/GraphiteEditor/Graphite/blob/master/LICENSE.txt", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "2633574",
+      "full_name": "payu-org/payu",
+      "url": "https://github.com/payu-org/payu",
+      "domain": "气候、能源与地球",
+      "tags": ["climate-modeling", "hpc", "workflow", "provenance"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称 Payu 是在澳大利亚 NCI 超级计算环境运行数值气候模型的工作流工具。",
+      "why_now": "2026-08-31 至 09-01 新增 restart 最小溯源、run 到 collate/postscript/sync 的依赖链，并在 repeat 模式检查已有 restart，避免长任务恢复时覆盖既有状态。",
+      "what_it_signals": "推断：高成本气候模拟的可靠性不只取决于模型方程，也取决于任务能否恢复、产物能否追溯以及后处理依赖是否明确。",
+      "metrics": {
+        "stars": 23,
+        "forks": 30,
+        "contributors": null,
+        "latest_commit_at": "2026-09-01T02:14:44Z",
+        "latest_release_at": "2026-08-25T02:10:04Z",
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "窗口内连续改进 restart 防覆盖与溯源",
+          "补充高性能计算作业依赖链",
+          "低 Star 但面向专业气候模拟工作流"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "README 明确当前配置面向澳大利亚 NCI，不能外推为通用 HPC 工作流。",
+        "本轮未在超级计算环境执行恢复流程，不能声称所有中断、并发和存储故障已解决。",
+        "最新正式 Release 是 2026-08-25 的 1.3.5，本期属于主线提交进展。"
+      ],
+      "confidence": "high",
+      "recommended_action": "阅读背景：沿 restart 产物、溯源字段和作业依赖链理解气候模拟可重复性，不执行仓库代码。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/payu-org/payu", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/payu-org/payu", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/payu-org/payu/blob/master/README.rst", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/payu-org/payu/commit/b6962f8d005a75a4f1158e9a2cf53d1003e465d0", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "restart_provenance_commit", "url": "https://github.com/payu-org/payu/commit/30ec256efa37885a0ec8d31c637bd7783b7d1290", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release", "url": "https://github.com/payu-org/payu/releases/tag/1.3.5", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license_status", "url": "https://api.github.com/repos/payu-org/payu/license", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "80646423",
+      "full_name": "catalyst-cooperative/pudl",
+      "url": "https://github.com/catalyst-cooperative/pudl",
+      "domain": "气候、能源与地球",
+      "tags": ["energy-data", "ferc", "data-quality", "regulatory-data"],
+      "category": "overlooked_cross_domain",
+      "change_type": "major_progress",
+      "summary": "项目方称 PUDL 将美国公共事业和能源系统数据整理为可分析数据，服务气候倡议者、研究者、政策制定者和记者。",
+      "why_now": "2026-08-31 合并 FERC EQR 数据正确性修复：允许不完整或不可解析的申报、保留 ENUM 类型、清除归档刷新后遗留的陈旧 Parquet，并补充季度提取统计和测试。",
+      "what_it_signals": "推断：能源开放数据的关键进展常是诚实处理缺失、损坏和旧缓存，而不是简单增加数据量；错误状态可见才能支撑可复核分析。",
+      "metrics": {
+        "stars": 602,
+        "forks": 144,
+        "contributors": null,
+        "latest_commit_at": "2026-08-31T21:35:57Z",
+        "latest_release_at": "2026-08-07T14:05:24Z",
+        "license": "MIT"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-31 合并 FERC EQR 不完整申报与陈旧文件修复",
+          "2026-08-29 至 09-01 两次观测均为 602 Star、144 Fork；只是 3 日差值",
+          "当前仍有跨季度诊断和多年份状态修复 PR，尚未合并"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "上游 FERC 申报可能缺失、损坏或后续修订；PUDL 是加工数据，不是原始监管记录。",
+        "关键研究应固定数据版本、来源季度、异常统计和清洗规则，不能把成功运行等同于数据无误。",
+        "本轮只核验变更和公开测试内容，未执行数据管线或复算结果。"
+      ],
+      "confidence": "high",
+      "recommended_action": "持续跟踪：阅读 PR #5442 的异常处理和测试，对照一个 FERC EQR 季度理解缺失申报如何被记录。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/catalyst-cooperative/pudl", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/catalyst-cooperative/pudl", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/catalyst-cooperative/pudl/blob/main/README.rst", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/catalyst-cooperative/pudl/commit/c33227708024fd718d30cb52a9b85e774d5fd1a0", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/catalyst-cooperative/pudl/pull/5442", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release", "url": "https://github.com/catalyst-cooperative/pudl/releases/tag/v2026.8.0", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license", "url": "https://github.com/catalyst-cooperative/pudl/blob/main/LICENSE.txt", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "611263817",
+      "full_name": "cds-astro/a-FAIR-journey-for-astronomical-data",
+      "url": "https://github.com/cds-astro/a-FAIR-journey-for-astronomical-data",
+      "domain": "教育与知识传播",
+      "tags": ["astronomy", "fair-data", "open-science", "training"],
+      "category": "overlooked_cross_domain",
+      "change_type": "new",
+      "summary": "项目方称这是面向天文学研究者的开放科学课程，介绍如何通过 CDS VizieR 发布 FAIR 数据并接入欧洲开放科学云。",
+      "why_now": "2026-09-01 课程工作环境 Docker 更新至 v0.2.8；事件本身是教学运行环境维护，但它让科学数据发布、长期保存和研究者教育出现在同一个可复现工作台中。",
+      "what_it_signals": "推断：开放科学不只需要仓库和数据集，还需要教研究者如何描述、发布、发现和复用数据的持续课程基础设施。",
+      "metrics": {
+        "stars": 8,
+        "forks": 1,
+        "contributors": null,
+        "latest_commit_at": "2026-09-01T02:38:26Z",
+        "latest_release_at": null,
+        "license": null
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-09-01 更新可复现课程工作环境",
+          "连接天文数据、FAIR 原则、VizieR 与 EOSC",
+          "只有 8 Star，认知价值明显高于热门榜可见度"
+        ]
+      },
+      "stage": "stable_development",
+      "risks": [
+        "本次变化是教学环境更新，不代表课程内容或 FAIR 合规性发生重大突破。",
+        "GitHub API 为 NOASSERTION；README 声明课程材料为 CC BY 4.0，但代码、图片和容器依赖需分别确认。",
+        "本轮未启动课程环境，也未验证外部服务和示例数据仍可完整访问。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "阅读课程目录和一项 VizieR 发布练习，理解 FAIR 数据的元数据与长期保存要求；不启动候选容器。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/cds-astro/a-FAIR-journey-for-astronomical-data", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/cds-astro/a-FAIR-journey-for-astronomical-data", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/cds-astro/a-FAIR-journey-for-astronomical-data/blob/main/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/cds-astro/a-FAIR-journey-for-astronomical-data/commit/3ea751e077e0719ace1a4b69fdceabc1e7942833", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/cds-astro/a-FAIR-journey-for-astronomical-data/pull/110", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release_status", "url": "https://api.github.com/repos/cds-astro/a-FAIR-journey-for-astronomical-data/releases", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license_status", "url": "https://api.github.com/repos/cds-astro/a-FAIR-journey-for-astronomical-data/license", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "1340068745",
+      "full_name": "uprightsleepy/badger-politics",
+      "url": "https://github.com/uprightsleepy/badger-politics",
+      "domain": "社会、公共事务与公益",
+      "tags": ["civic-tech", "local-government", "voting-records", "provenance"],
+      "category": "surprising_and_experimental",
+      "change_type": "new",
+      "summary": "项目方称其从官方记录重建威斯康星州法案、投票、听证、竞选资金、游说及地方议会数据，并保留来源链接。",
+      "why_now": "2026-09-01 新增 Milwaukee 与 West Allis 市议会投票数据，随后修复议会页面的移动端溢出并加入测量脚本；项目把州级政治记录向地方议会延伸。",
+      "what_it_signals": "推断：公共问责工具正在把细粒度地方投票与州级记录放进同一可查询历史，同时尝试以静态站点和设备侧个性化降低集中式跟踪。",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "contributors": null,
+        "latest_commit_at": "2026-09-01T03:03:41Z",
+        "latest_release_at": null,
+        "license": "Apache-2.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-09-01 新增两座城市的议会投票数据",
+          "同日继续修复移动端议会页面",
+          "新仓库、0 Star、无正式 Release，意外发现而非成熟推荐"
+        ]
+      },
+      "stage": "early_exploration",
+      "risks": [
+        "政治数据的准确性、中立性、人员匹配和官方记录覆盖必须独立核验，不能只依赖聚合页面。",
+        "README 说明定时 Cloud Run 尚未启用、流水线当前从工作站运行，自动更新稳定性未建立。",
+        "项目创建于 2026-08-19，0 Star、无 Release，外部采用和长期维护均未知。"
+      ],
+      "confidence": "medium",
+      "recommended_action": "纯粹有趣：任选一次市议会表决，对照页面来源链接和官方原始记录；不要根据单一聚合页面评价个人。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/uprightsleepy/badger-politics", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/uprightsleepy/badger-politics", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/uprightsleepy/badger-politics/blob/main/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/uprightsleepy/badger-politics/commit/7d00a50fa974320a7a2d5efe5bc8acd4e9d0c0c3", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "council_data_commit", "url": "https://github.com/uprightsleepy/badger-politics/commit/2b0de29e7ab97db466a7ba76e721fcd0201cf89c", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release_status", "url": "https://api.github.com/repos/uprightsleepy/badger-politics/releases", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "license", "url": "https://github.com/uprightsleepy/badger-politics/blob/main/LICENSE", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    },
+    {
+      "repo_id": "1141041920",
+      "full_name": "engmung/Patternflow",
+      "url": "https://github.com/engmung/Patternflow",
+      "domain": "硬件、机器人与 Maker",
+      "tags": ["led-synthesizer", "open-hardware", "live-performance", "firmware"],
+      "category": "surprising_and_experimental",
+      "change_type": "major_progress",
+      "summary": "项目方称 Patternflow 是开放的 LED 合成器，以旋钮实时生成灯光图案，并公开原理图、固件、3D 模型和制作指南。",
+      "why_now": "2026-08-31 发布 v3.8.0，随后发现音频版固件仍自报旧版本；2026-09-01 修正版本定义，并在发布脚本中检查构建产物是否包含准确版本字符串。",
+      "what_it_signals": "推断：开放硬件的发布可信度既包括电路和外壳能否复现，也包括货架版本、固件自报版本和二进制产物能否一致。",
+      "metrics": {
+        "stars": 301,
+        "forks": 18,
+        "contributors": null,
+        "latest_commit_at": "2026-09-01T02:36:24Z",
+        "latest_release_at": "2026-08-31T02:40:29Z",
+        "license": "CC-BY-SA-4.0"
+      },
+      "momentum": {
+        "stars_7d": null,
+        "stars_30d": null,
+        "proxy_signals": [
+          "2026-08-26 至 09-01 两次观测从 267 增至 301 Star、16 增至 18 Fork；这是 6 日差值",
+          "2026-08-31 发布 v3.8.0",
+          "2026-09-01 增加固件版本一致性校验"
+        ]
+      },
+      "stage": "rapid_growth",
+      "risks": [
+        "README 有明确光敏性癫痫警告，灯光演示不适合所有人。",
+        "Crowd Supply Q4 2026 上线属于项目方未来计划，不是已交付事实。",
+        "GitHub API 显示 CC-BY-SA-4.0，但代码另用 MIT；硬件、软件和内容必须分别判断许可。"
+      ],
+      "confidence": "high",
+      "recommended_action": "纯粹有趣：只观看低亮度演示并阅读发布一致性修复；若有光敏风险则跳过视频，不构建硬件。",
+      "evidence": [
+        {"type": "repository", "url": "https://github.com/engmung/Patternflow", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "repository_api", "url": "https://api.github.com/repos/engmung/Patternflow", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "readme", "url": "https://github.com/engmung/Patternflow/blob/main/README.md", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "commit", "url": "https://github.com/engmung/Patternflow/commit/6017291382d3e079386b2ab7d1c48d9e1a121395", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "pull_request", "url": "https://github.com/engmung/Patternflow/pull/382", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "release", "url": "https://github.com/engmung/Patternflow/releases/tag/v3.8.0", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "hardware_license", "url": "https://github.com/engmung/Patternflow/blob/main/LICENSE-CC-BY-SA", "observed_at": "2026-09-01T11:09:00+08:00"},
+        {"type": "software_license", "url": "https://github.com/engmung/Patternflow/blob/main/LICENSE-MIT", "observed_at": "2026-09-01T11:09:00+08:00"}
+      ]
+    }
+  ]
+}
