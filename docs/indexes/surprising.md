@@ -9,6 +9,7 @@ description: "容易被普通热门榜忽略、但能扩大认知边界的项目
 | 项目 | 领域 | 变化 | 最近收录 |
 | --- | --- | --- | --- |
 | [ChelseaKR/habitable](../projects/ChelseaKR--habitable.md) | 社会、公共事务与公益 | 新进入视野 | [2026-08-28](../daily/2026-08-28.md) |
+| [civic-dashboard/civic-dashboard-web](../projects/civic-dashboard--civic-dashboard-web.md) | 社会、公共事务与公益 | 新进入视野 | [2026-09-02](../daily/2026-09-02.md) |
 | [dososo/chinese-traditional-patterns](../projects/dososo--chinese-traditional-patterns.md) | 文化遗产与开放图录 | 新进入视野 | [2026-08-25](../daily/2026-08-25.md) |
 | [engmung/Patternflow](../projects/engmung--Patternflow.md) | 硬件、机器人与 Maker | 重大进展 | [2026-09-01](../daily/2026-09-01.md) |
 | [etternagame/etterna](../projects/etternagame--etterna.md) | 游戏与互动体验 | 新进入视野 | [2026-08-27](../daily/2026-08-27.md) |
@@ -20,3 +21,4 @@ description: "容易被普通热门榜忽略、但能扩大认知边界的项目
 | [uprightsleepy/badger-politics](../projects/uprightsleepy--badger-politics.md) | 社会、公共事务与公益 | 新进入视野 | [2026-09-01](../daily/2026-09-01.md) |
 | [xr843/insect-world](../projects/xr843--insect-world.md) | 教育与知识传播 | 新进入视野 | [2026-08-28](../daily/2026-08-28.md) |
 | [zach7036/BirdNET-Pi-Enhanced-Version](../projects/zach7036--BirdNET-Pi-Enhanced-Version.md) | 跨学科与实验项目 | 新进入视野 | [2026-08-26](../daily/2026-08-26.md) |
+| [zz-plant/stims](../projects/zz-plant--stims.md) | 艺术、设计与媒体 | 新进入视野 | [2026-09-02](../daily/2026-09-02.md) |

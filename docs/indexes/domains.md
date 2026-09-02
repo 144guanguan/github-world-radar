@@ -14,6 +14,7 @@ description: "按问题领域浏览当前收录项目"
 
 - [ente/ente](../projects/ente--ente.md) — 项目方称 Ente 是端到端加密的开源服务集合，包含照片、敏感文档存储和身份验证产品。（[2026-09-01](../daily/2026-09-01.md)）
 - [liketrek/TREK](../projects/liketrek--TREK.md) — 项目方称其为可自托管、实时协作的旅行规划器，结合地图、预算、清单和旅行日记。（[2026-08-31](../daily/2026-08-31.md)）
+- [mithun-srinivas/DoxDock](../projects/mithun-srinivas--DoxDock.md) — 项目方称其为100%浏览器内运行、无上传的离线优先PDF和图像工具。（[2026-09-02](../daily/2026-09-02.md)）
 
 ## 公共治理与参与式民主
 
@@ -37,6 +38,7 @@ description: "按问题领域浏览当前收录项目"
 - [ghostfolio/ghostfolio](../projects/ghostfolio--ghostfolio.md) — 项目方称其为强调隐私、数据所有权与自托管的开源财富管理软件。（[2026-08-29](../daily/2026-08-29.md)）
 - [juspay/hyperswitch](../projects/juspay--hyperswitch.md) — 项目方称其为可组合、可自托管的支付编排平台，连接支付、风控、金库和对账服务。（[2026-08-27](../daily/2026-08-27.md)）
 - [mayswind/ezbookkeeping](../projects/mayswind--ezbookkeeping.md) — 项目方称其为轻量自托管个人账本，支持桌面与移动端、多币种、交易导入导出及图表。（[2026-08-31](../daily/2026-08-31.md)）
+- [mike840609/assets_tracker](../projects/mike840609--assets_tracker.md) — 项目方称其为开源自托管的净资产与投资组合跟踪器。（[2026-09-02](../daily/2026-09-02.md)）
 - [rustledger/rustledger](../projects/rustledger--rustledger.md) — 项目方将其描述为兼容 Beancount 的现代纯文本记账工具。（[2026-08-26](../daily/2026-08-26.md)）
 
 ## 天文科普与教育
@@ -56,10 +58,11 @@ description: "按问题领域浏览当前收录项目"
 
 ## 数据、地图与档案
 
+- [Aurtechmx/openlidarviewer](../projects/Aurtechmx--openlidarviewer.md) — 项目方称其为完全在浏览器本地运行的LiDAR与点云查看器。（[2026-09-02](../daily/2026-09-02.md)）
 - [ckan/ckan](../projects/ckan--ckan.md) — 项目方称 CKAN 是用于建设开放数据中心和数据门户的数据管理系统。（[2026-08-27](../daily/2026-08-27.md)）
 - [common-voice/common-voice](../projects/common-voice--common-voice.md) — 项目方称其通过公众捐赠语音建立开放语音数据集，帮助语音技术覆盖更多真实说话方式。（[2026-08-28](../daily/2026-08-28.md)）
 - [mbloch/mapshaper](../projects/mbloch--mapshaper.md) — 项目方称其为地图数据编辑工具，支持常见空间数据格式、简化、属性编辑、裁剪与筛选。（[2026-08-31](../daily/2026-08-31.md)）
-- [opengeos/GeoLibre](../projects/opengeos--GeoLibre.md) — 项目方将其描述为可运行于浏览器、桌面、移动端和 Jupyter 的轻量云原生 GIS 平台。（[2026-08-26](../daily/2026-08-26.md)）
+- [opengeos/GeoLibre](../projects/opengeos--GeoLibre.md) — 项目方称其为可在浏览器、桌面、移动端和Jupyter运行的轻量云原生GIS平台。（[2026-09-02](../daily/2026-09-02.md)）
 - [organicmaps/organicmaps](../projects/organicmaps--organicmaps.md) — 项目方称 Organic Maps 是基于 OpenStreetMap 的 Android 与 iOS 离线地图应用，并主张无广告、无追踪和不收集数据。（[2026-09-01](../daily/2026-09-01.md)）
 - [phoenixbf/aton](../projects/phoenixbf--aton.md) — 项目方称其为面向文化遗产的跨设备 Web3D/WebXR 框架，支持空间标注、协作、3D Tiles 和 Gaussian Splats。（[2026-08-31](../daily/2026-08-31.md)）
 - [qgis/QGIS](../projects/qgis--QGIS.md) — 项目方称 QGIS 是免费、开源、跨平台的完整 GIS，支持空间数据管理、制图和分析。（[2026-08-29](../daily/2026-08-29.md)）
@@ -74,6 +77,7 @@ description: "按问题领域浏览当前收录项目"
 - [CliMA/ClimaAtmos.jl](../projects/CliMA--ClimaAtmos.jl.md) — 项目方称其为 CliMA 地球系统模型中的 GPU 全球大气模型，支持数据同化和机器学习校准。（[2026-08-28](../daily/2026-08-28.md)）
 - [CliMA/Oceananigans.jl](../projects/CliMA--Oceananigans.jl.md) — 项目方称其为可在 CPU 和 GPU 上运行的 Julia 海洋流体动力学模拟软件。（[2026-08-27](../daily/2026-08-27.md)）
 - [nco/nco](../projects/nco--nco.md) — 项目方称其提供 netCDF/HDF/DAP 科学数据命令行算子，用于统计、重映射、气候平均与元数据处理。（[2026-08-31](../daily/2026-08-31.md)）
+- [OceanBioME/OceanBioME.jl](../projects/OceanBioME--OceanBioME.jl.md) — 项目方称其用于耦合海洋生物地球化学、碳酸盐化学与物理过程的建模。（[2026-09-02](../daily/2026-09-02.md)）
 - [payu-org/payu](../projects/payu-org--payu.md) — 项目方称 Payu 是在澳大利亚 NCI 超级计算环境运行数值气候模型的工作流工具。（[2026-09-01](../daily/2026-09-01.md)）
 
 ## 法律与公共数据
@@ -95,10 +99,12 @@ description: "按问题领域浏览当前收录项目"
 - [engmung/Patternflow](../projects/engmung--Patternflow.md) — 项目方称 Patternflow 是开放的 LED 合成器，以旋钮实时生成灯光图案，并公开原理图、固件、3D 模型和制作指南。（[2026-09-01](../daily/2026-09-01.md)）
 - [facebookresearch/project_superdex](../projects/facebookresearch--project_superdex.md) — 项目方称 SuperDex 是统一灵巧操作研究平台，包含接触物理引擎、机器人 SDK、场景编辑器和 RL/MPC 接口。（[2026-08-29](../daily/2026-08-29.md)）
 - [OpenDrone-hw/OpenESC-20x20](../projects/OpenDrone-hw--OpenESC-20x20.md) — 项目方称其为 20×20 毫米、四通道、6S 的开源无人机电子调速器，提供 KiCad 设计和 AM32/DShot 支持。（[2026-08-28](../daily/2026-08-28.md)）
+- [PetoiCamp/OpenCat-Quadruped-Robot](../projects/PetoiCamp--OpenCat-Quadruped-Robot.md) — 项目方称其为面向STEM、DIY和研究的开源四足机器人框架。（[2026-09-02](../daily/2026-09-02.md)）
 
 ## 社会、公共事务与公益
 
 - [ChelseaKR/habitable](../projects/ChelseaKR--habitable.md) — 项目方称其为租户组织离线、加密记录住房适居性证据的工具，包含时间戳、保管链和点对点同步。（[2026-08-28](../daily/2026-08-28.md)）
+- [civic-dashboard/civic-dashboard-web](../projects/civic-dashboard--civic-dashboard-web.md) — 项目方称其旨在让多伦多民主信息更容易获取。（[2026-09-02](../daily/2026-09-02.md)）
 - [civiform/civiform](../projects/civiform--civiform.md) — 项目方称其通过复用申请人数据，简化多个政府福利项目的申请流程。（[2026-08-27](../daily/2026-08-27.md)）
 - [mysociety/fixmystreet](../projects/mysociety--fixmystreet.md) — 项目方称其为地图式公共问题报告平台，帮助居民上报坑洞、路灯等街道问题并路由至相应机构。（[2026-08-29](../daily/2026-08-29.md)）
 - [openaustralia/planningalerts](../projects/openaustralia--planningalerts.md) — 项目方称其帮助居民获知所在地区正在建设或拆除什么，并参与地方规划。（[2026-08-26](../daily/2026-08-26.md)）
@@ -111,15 +117,18 @@ description: "按问题领域浏览当前收录项目"
 
 ## 科学研究
 
+- [ml-rust/numr](../projects/ml-rust--numr.md) — 项目方称其为受NumPy启发、支持GPU加速的Rust数值计算库。（[2026-09-02](../daily/2026-09-02.md)）
 - [Stellarium/stellarium](../projects/Stellarium--stellarium.md) — 项目方称其为免费开源桌面天文馆，可展示肉眼、双筒望远镜和天文望远镜所见的三维星空。（[2026-08-31](../daily/2026-08-31.md)）
 - [synthetic-sciences/openscience](../projects/synthetic-sciences--openscience.md) — 项目方称其为面向科学研究的开源 AI 工作台，可覆盖文献检索、假设、代码、实验与写作。（[2026-08-29](../daily/2026-08-29.md)）
 
 ## 艺术、设计与媒体
 
+- [ahnafnafee/songmirror](../projects/ahnafnafee--songmirror.md) — 项目方称其可在多种音乐服务与Jellyfin间自托管同步播放列表。（[2026-09-02](../daily/2026-09-02.md)）
 - [crmne/fastpotify](../projects/crmne--fastpotify.md) — 项目方称其为原生轻量 Spotify 客户端，支持本机播放、Spotify Connect、局域网发现和跨平台桌面。（[2026-08-29](../daily/2026-08-29.md)）
 - [GraphiteEditor/Graphite](../projects/GraphiteEditor--Graphite.md) — 项目方称 Graphite 是社区构建的二维内容创作应用，把图层式设计与节点式程序化图形结合起来。（[2026-09-01](../daily/2026-09-01.md)）
 - [liebharc/homr](../projects/liebharc--homr.md) — 项目方称其能把纸质乐谱图像转换为可编辑的 MusicXML，并提供在线示例及关联的移动端项目。（[2026-08-31](../daily/2026-08-31.md)）
 - [n1m21n/Infinite](../projects/n1m21n--Infinite.md) — 项目方称其为节点式实时音视频工作站，把 GPU 合成、程序化 3D、模块合成、DSP 与插件托管放进统一调制图。（[2026-08-28](../daily/2026-08-28.md)）
+- [zz-plant/stims](../projects/zz-plant--stims.md) — 项目方称其是浏览器原生、受MilkDrop启发的WebGL音乐可视化器。（[2026-09-02](../daily/2026-09-02.md)）
 
 ## 跨学科与实验项目
 
