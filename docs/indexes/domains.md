@@ -14,6 +14,7 @@ description: "按问题领域浏览当前收录项目"
 
 - [ente/ente](../projects/ente--ente.md) — 项目方称 Ente 是端到端加密的开源服务集合，包含照片、敏感文档存储和身份验证产品。（[2026-09-01](../daily/2026-09-01.md)）
 - [liketrek/TREK](../projects/liketrek--TREK.md) — 项目方称其为可自托管、实时协作的旅行规划器，结合地图、预算、清单和旅行日记。（[2026-08-31](../daily/2026-08-31.md)）
+- [make-all/tuya-local](../projects/make-all--tuya-local.md) — 项目方声明：该项目为Home Assistant提供Tuya设备的本地支持。（[2026-09-08](../daily/2026-09-08.md)）
 - [mithun-srinivas/DoxDock](../projects/mithun-srinivas--DoxDock.md) — 项目方称其为100%浏览器内运行、无上传的离线优先PDF和图像工具。（[2026-09-02](../daily/2026-09-02.md)）
 
 ## 公共治理与参与式民主
@@ -30,13 +31,15 @@ description: "按问题领域浏览当前收录项目"
 - [genome-spy/genome-spy](../projects/genome-spy--genome-spy.md) — 项目方称其为基因组数据的可视化语法和 GPU 加速工具包。（[2026-08-27](../daily/2026-08-27.md)）
 - [maziyarpanahi/openmed](../projects/maziyarpanahi--openmed.md) — 项目方称其提供本地优先的临床实体识别和医疗隐私信息去标识能力。（[2026-08-26](../daily/2026-08-26.md)）
 - [medic/cht-core](../projects/medic--cht-core.md) — 项目方称 Community Health Toolkit 核心框架用于构建离线优先、移动优先的社区健康应用。（[2026-08-29](../daily/2026-08-29.md)）
+- [medplum/medplum](../projects/medplum--medplum.md) — 项目方声明：这是帮助开发合规医疗应用的医疗平台。（[2026-09-08](../daily/2026-09-08.md)）
 - [openemr/openemr](../projects/openemr--openemr.md) — 项目方称其为开源电子病历与诊所管理系统，覆盖排班、账单、国际化、API 和 FHIR。（[2026-08-28](../daily/2026-08-28.md)）
+- [the-momentum/open-wearables](../projects/the-momentum--open-wearables.md) — 项目方声明：这是把可穿戴健康数据汇聚到统一、可自托管API的平台。（[2026-09-08](../daily/2026-09-08.md)）
 
 ## 商业、经济与金融
 
 - [actualbudget/actual](../projects/actualbudget--actual.md) — 项目方称 Actual 是 local-first 的开源个人财务与预算工具，支持设备同步和自托管。（[2026-09-01](../daily/2026-09-01.md)）
 - [ghostfolio/ghostfolio](../projects/ghostfolio--ghostfolio.md) — 项目方称其为强调隐私、数据所有权与自托管的开源财富管理软件。（[2026-08-29](../daily/2026-08-29.md)）
-- [juspay/hyperswitch](../projects/juspay--hyperswitch.md) — 项目方称其为可组合、可自托管的支付编排平台，连接支付、风控、金库和对账服务。（[2026-08-27](../daily/2026-08-27.md)）
+- [juspay/hyperswitch](../projects/juspay--hyperswitch.md) — 项目方声明：这是可组合的开源支付平台，覆盖支付、付款、风控和对账等连接。（[2026-09-08](../daily/2026-09-08.md)）
 - [mayswind/ezbookkeeping](../projects/mayswind--ezbookkeeping.md) — 项目方称其为轻量自托管个人账本，支持桌面与移动端、多币种、交易导入导出及图表。（[2026-08-31](../daily/2026-08-31.md)）
 - [mike840609/assets_tracker](../projects/mike840609--assets_tracker.md) — 项目方称其为开源自托管的净资产与投资组合跟踪器。（[2026-09-02](../daily/2026-09-02.md)）
 - [rustledger/rustledger](../projects/rustledger--rustledger.md) — 项目方将其描述为兼容 Beancount 的现代纯文本记账工具。（[2026-08-26](../daily/2026-08-26.md)）
@@ -59,8 +62,9 @@ description: "按问题领域浏览当前收录项目"
 ## 数据、地图与档案
 
 - [Aurtechmx/openlidarviewer](../projects/Aurtechmx--openlidarviewer.md) — 项目方称其为完全在浏览器本地运行的LiDAR与点云查看器。（[2026-09-02](../daily/2026-09-02.md)）
-- [ckan/ckan](../projects/ckan--ckan.md) — 项目方称 CKAN 是用于建设开放数据中心和数据门户的数据管理系统。（[2026-08-27](../daily/2026-08-27.md)）
+- [ckan/ckan](../projects/ckan--ckan.md) — 项目方声明：CKAN 是用于数据中心与数据门户的开源数据管理系统。（[2026-09-08](../daily/2026-09-08.md)）
 - [common-voice/common-voice](../projects/common-voice--common-voice.md) — 项目方称其通过公众捐赠语音建立开放语音数据集，帮助语音技术覆盖更多真实说话方式。（[2026-08-28](../daily/2026-08-28.md)）
+- [datopian/portaljs](../projects/datopian--portaljs.md) — 项目方声明：这是构建数据门户的框架，可连接CKAN、GitHub和Frictionless等后端。（[2026-09-08](../daily/2026-09-08.md)）
 - [mbloch/mapshaper](../projects/mbloch--mapshaper.md) — 项目方称其为地图数据编辑工具，支持常见空间数据格式、简化、属性编辑、裁剪与筛选。（[2026-08-31](../daily/2026-08-31.md)）
 - [opengeos/GeoLibre](../projects/opengeos--GeoLibre.md) — 项目方称其为可在浏览器、桌面、移动端和Jupyter运行的轻量云原生GIS平台。（[2026-09-02](../daily/2026-09-02.md)）
 - [organicmaps/organicmaps](../projects/organicmaps--organicmaps.md) — 项目方称 Organic Maps 是基于 OpenStreetMap 的 Android 与 iOS 离线地图应用，并主张无广告、无追踪和不收集数据。（[2026-09-01](../daily/2026-09-01.md)）
@@ -79,6 +83,7 @@ description: "按问题领域浏览当前收录项目"
 - [nco/nco](../projects/nco--nco.md) — 项目方称其提供 netCDF/HDF/DAP 科学数据命令行算子，用于统计、重映射、气候平均与元数据处理。（[2026-08-31](../daily/2026-08-31.md)）
 - [OceanBioME/OceanBioME.jl](../projects/OceanBioME--OceanBioME.jl.md) — 项目方称其用于耦合海洋生物地球化学、碳酸盐化学与物理过程的建模。（[2026-09-02](../daily/2026-09-02.md)）
 - [payu-org/payu](../projects/payu-org--payu.md) — 项目方称 Payu 是在澳大利亚 NCI 超级计算环境运行数值气候模型的工作流工具。（[2026-09-01](../daily/2026-09-01.md)）
+- [protontypes/open-sustainable-technology](../projects/protontypes--open-sustainable-technology.md) — 项目方声明：这是关于气候、可持续能源、生物多样性和自然资源开源生态的目录与分析。（[2026-09-08](../daily/2026-09-08.md)）
 
 ## 法律与公共数据
 
@@ -86,6 +91,7 @@ description: "按问题领域浏览当前收录项目"
 
 ## 游戏与互动体验
 
+- [ellisonleao/magictools](../projects/ellisonleao--magictools.md) — 项目方声明：这是面向游戏开发的资源清单。（[2026-09-08](../daily/2026-09-08.md)）
 - [etternagame/etterna](../projects/etternagame--etterna.md) — 项目方称其为专注键盘操作的高级跨平台节奏游戏。（[2026-08-27](../daily/2026-08-27.md)）
 - [OpenPhantom/OpenPhantom](../projects/OpenPhantom--OpenPhantom.md) — 项目方称其当前提供 1999 年《Star Wars Episode I: The Phantom Menace》PC 版的现代 Windows 补丁与安装器，并计划长期重建引擎和编辑工具。（[2026-08-29](../daily/2026-08-29.md)）
 
@@ -96,6 +102,7 @@ description: "按问题领域浏览当前收录项目"
 ## 硬件、机器人与 Maker
 
 - [bluerobotics/BlueOS](../projects/bluerobotics--BlueOS.md) — 项目方称其为面向 ROV、USV 等机器人系统运行、开发和扩展的开源平台。（[2026-08-27](../daily/2026-08-27.md)）
+- [commaai/openpilot](../projects/commaai--openpilot.md) — 项目方声明：openpilot 是面向机器人系统、可升级部分车辆驾驶辅助的操作系统。（[2026-09-08](../daily/2026-09-08.md)）
 - [engmung/Patternflow](../projects/engmung--Patternflow.md) — 项目方称 Patternflow 是开放的 LED 合成器，以旋钮实时生成灯光图案，并公开原理图、固件、3D 模型和制作指南。（[2026-09-01](../daily/2026-09-01.md)）
 - [facebookresearch/project_superdex](../projects/facebookresearch--project_superdex.md) — 项目方称 SuperDex 是统一灵巧操作研究平台，包含接触物理引擎、机器人 SDK、场景编辑器和 RL/MPC 接口。（[2026-08-29](../daily/2026-08-29.md)）
 - [OpenDrone-hw/OpenESC-20x20](../projects/OpenDrone-hw--OpenESC-20x20.md) — 项目方称其为 20×20 毫米、四通道、6S 的开源无人机电子调速器，提供 KiCad 设计和 AM32/DShot 支持。（[2026-08-28](../daily/2026-08-28.md)）
@@ -128,6 +135,7 @@ description: "按问题领域浏览当前收录项目"
 - [GraphiteEditor/Graphite](../projects/GraphiteEditor--Graphite.md) — 项目方称 Graphite 是社区构建的二维内容创作应用，把图层式设计与节点式程序化图形结合起来。（[2026-09-01](../daily/2026-09-01.md)）
 - [liebharc/homr](../projects/liebharc--homr.md) — 项目方称其能把纸质乐谱图像转换为可编辑的 MusicXML，并提供在线示例及关联的移动端项目。（[2026-08-31](../daily/2026-08-31.md)）
 - [n1m21n/Infinite](../projects/n1m21n--Infinite.md) — 项目方称其为节点式实时音视频工作站，把 GPU 合成、程序化 3D、模块合成、DSP 与插件托管放进统一调制图。（[2026-08-28](../daily/2026-08-28.md)）
+- [navidrome/navidrome](../projects/navidrome--navidrome.md) — 项目方声明：这是个人音乐流媒体服务。（[2026-09-08](../daily/2026-09-08.md)）
 - [zz-plant/stims](../projects/zz-plant--stims.md) — 项目方称其是浏览器原生、受MilkDrop启发的WebGL音乐可视化器。（[2026-09-02](../daily/2026-09-02.md)）
 
 ## 跨学科与实验项目

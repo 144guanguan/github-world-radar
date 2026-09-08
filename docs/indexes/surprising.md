@@ -10,7 +10,9 @@ description: "容易被普通热门榜忽略、但能扩大认知边界的项目
 | --- | --- | --- | --- |
 | [ChelseaKR/habitable](../projects/ChelseaKR--habitable.md) | 社会、公共事务与公益 | 新进入视野 | [2026-08-28](../daily/2026-08-28.md) |
 | [civic-dashboard/civic-dashboard-web](../projects/civic-dashboard--civic-dashboard-web.md) | 社会、公共事务与公益 | 新进入视野 | [2026-09-02](../daily/2026-09-02.md) |
+| [datopian/portaljs](../projects/datopian--portaljs.md) | 数据、地图与档案 | 新进入视野 | [2026-09-08](../daily/2026-09-08.md) |
 | [dososo/chinese-traditional-patterns](../projects/dososo--chinese-traditional-patterns.md) | 文化遗产与开放图录 | 新进入视野 | [2026-08-25](../daily/2026-08-25.md) |
+| [ellisonleao/magictools](../projects/ellisonleao--magictools.md) | 游戏与互动体验 | 新进入视野 | [2026-09-08](../daily/2026-09-08.md) |
 | [engmung/Patternflow](../projects/engmung--Patternflow.md) | 硬件、机器人与 Maker | 重大进展 | [2026-09-01](../daily/2026-09-01.md) |
 | [etternagame/etterna](../projects/etternagame--etterna.md) | 游戏与互动体验 | 新进入视野 | [2026-08-27](../daily/2026-08-27.md) |
 | [heypoom/patchies](../projects/heypoom--patchies.md) | 跨学科与实验项目 | 新进入视野 | [2026-08-27](../daily/2026-08-27.md) |
