@@ -38,6 +38,7 @@ description: "按问题领域浏览当前收录项目"
 ## 商业、经济与金融
 
 - [actualbudget/actual](../projects/actualbudget--actual.md) — 项目方称 Actual 是 local-first 的开源个人财务与预算工具，支持设备同步和自托管。（[2026-09-01](../daily/2026-09-01.md)）
+- [firefly-iii/firefly-iii](../projects/firefly-iii--firefly-iii.md) — 项目方声明：Firefly III 是个人财务管理工具。（[2026-09-09](../daily/2026-09-09.md)）
 - [ghostfolio/ghostfolio](../projects/ghostfolio--ghostfolio.md) — 项目方称其为强调隐私、数据所有权与自托管的开源财富管理软件。（[2026-08-29](../daily/2026-08-29.md)）
 - [juspay/hyperswitch](../projects/juspay--hyperswitch.md) — 项目方声明：这是可组合的开源支付平台，覆盖支付、付款、风控和对账等连接。（[2026-09-08](../daily/2026-09-08.md)）
 - [mayswind/ezbookkeeping](../projects/mayswind--ezbookkeeping.md) — 项目方称其为轻量自托管个人账本，支持桌面与移动端、多币种、交易导入导出及图表。（[2026-08-31](../daily/2026-08-31.md)）
@@ -56,6 +57,7 @@ description: "按问题领域浏览当前收录项目"
 
 - [cds-astro/a-FAIR-journey-for-astronomical-data](../projects/cds-astro--a-FAIR-journey-for-astronomical-data.md) — 项目方称这是面向天文学研究者的开放科学课程，介绍如何通过 CDS VizieR 发布 FAIR 数据并接入欧洲开放科学云。（[2026-09-01](../daily/2026-09-01.md)）
 - [foundation50/classroom50](../projects/foundation50--classroom50.md) — 项目方将其描述为 GitHub Classroom 的开源替代，用于创建、管理和自动批改编程作业。（[2026-08-28](../daily/2026-08-28.md)）
+- [freeCodeCamp/freeCodeCamp](../projects/freeCodeCamp--freeCodeCamp.md) — 项目方声明：这是免费学习数学、编程和计算机科学的开源课程与代码库。（[2026-09-09](../daily/2026-09-09.md)）
 - [s010s/prehistoric-animal-museum](../projects/s010s--prehistoric-animal-museum.md) — 项目方称其为供儿童与家长共同探索的中英双语 3D 史前动物馆；本期不再把固定展项数作为持续性描述。（[2026-08-31](../daily/2026-08-31.md)）
 - [xr843/insect-world](../projects/xr843--insect-world.md) — 项目方称其为浏览器实时生成的 3D 昆虫图鉴，包含 63 个物种、14 个目及部分完整生活史。（[2026-08-28](../daily/2026-08-28.md)）
 
@@ -80,10 +82,12 @@ description: "按问题领域浏览当前收录项目"
 - [catalyst-cooperative/pudl](../projects/catalyst-cooperative--pudl.md) — 项目方称 PUDL 将美国公共事业和能源系统数据整理为可分析数据，服务气候倡议者、研究者、政策制定者和记者。（[2026-09-01](../daily/2026-09-01.md)）
 - [CliMA/ClimaAtmos.jl](../projects/CliMA--ClimaAtmos.jl.md) — 项目方称其为 CliMA 地球系统模型中的 GPU 全球大气模型，支持数据同化和机器学习校准。（[2026-08-28](../daily/2026-08-28.md)）
 - [CliMA/Oceananigans.jl](../projects/CliMA--Oceananigans.jl.md) — 项目方称其为可在 CPU 和 GPU 上运行的 Julia 海洋流体动力学模拟软件。（[2026-08-27](../daily/2026-08-27.md)）
+- [electricitymaps/electricitymaps-contrib](../projects/electricitymaps--electricitymaps-contrib.md) — 项目方声明：这是为 Electricity Maps 平台提供电力数据解析器的开源仓库。（[2026-09-09](../daily/2026-09-09.md)）
 - [nco/nco](../projects/nco--nco.md) — 项目方称其提供 netCDF/HDF/DAP 科学数据命令行算子，用于统计、重映射、气候平均与元数据处理。（[2026-08-31](../daily/2026-08-31.md)）
 - [OceanBioME/OceanBioME.jl](../projects/OceanBioME--OceanBioME.jl.md) — 项目方称其用于耦合海洋生物地球化学、碳酸盐化学与物理过程的建模。（[2026-09-02](../daily/2026-09-02.md)）
 - [payu-org/payu](../projects/payu-org--payu.md) — 项目方称 Payu 是在澳大利亚 NCI 超级计算环境运行数值气候模型的工作流工具。（[2026-09-01](../daily/2026-09-01.md)）
 - [protontypes/open-sustainable-technology](../projects/protontypes--open-sustainable-technology.md) — 项目方声明：这是关于气候、可持续能源、生物多样性和自然资源开源生态的目录与分析。（[2026-09-08](../daily/2026-09-08.md)）
+- [PyPSA/PyPSA](../projects/PyPSA--PyPSA.md) — 项目方声明：PyPSA 是用于电力系统分析的 Python 工具。（[2026-09-09](../daily/2026-09-09.md)）
 
 ## 法律与公共数据
 
@@ -93,6 +97,7 @@ description: "按问题领域浏览当前收录项目"
 
 - [ellisonleao/magictools](../projects/ellisonleao--magictools.md) — 项目方声明：这是面向游戏开发的资源清单。（[2026-09-08](../daily/2026-09-08.md)）
 - [etternagame/etterna](../projects/etternagame--etterna.md) — 项目方称其为专注键盘操作的高级跨平台节奏游戏。（[2026-08-27](../daily/2026-08-27.md)）
+- [JosefNemec/Playnite](../projects/JosefNemec--Playnite.md) — 项目方声明：Playnite 把第三方游戏库与模拟器整合到统一界面。（[2026-09-09](../daily/2026-09-09.md)）
 - [OpenPhantom/OpenPhantom](../projects/OpenPhantom--OpenPhantom.md) — 项目方称其当前提供 1999 年《Star Wars Episode I: The Phantom Menace》PC 版的现代 Windows 补丁与安装器，并计划长期重建引擎和编辑工具。（[2026-08-29](../daily/2026-08-29.md)）
 
 ## 生命科学与调控基因组学
@@ -113,6 +118,7 @@ description: "按问题领域浏览当前收录项目"
 - [ChelseaKR/habitable](../projects/ChelseaKR--habitable.md) — 项目方称其为租户组织离线、加密记录住房适居性证据的工具，包含时间戳、保管链和点对点同步。（[2026-08-28](../daily/2026-08-28.md)）
 - [civic-dashboard/civic-dashboard-web](../projects/civic-dashboard--civic-dashboard-web.md) — 项目方称其旨在让多伦多民主信息更容易获取。（[2026-09-02](../daily/2026-09-02.md)）
 - [civiform/civiform](../projects/civiform--civiform.md) — 项目方称其通过复用申请人数据，简化多个政府福利项目的申请流程。（[2026-08-27](../daily/2026-08-27.md)）
+- [consuldemocracy/consuldemocracy](../projects/consuldemocracy--consuldemocracy.md) — 项目方声明：Consul Democracy 是开源的电子参与和开放政府软件。（[2026-09-09](../daily/2026-09-09.md)）
 - [mysociety/fixmystreet](../projects/mysociety--fixmystreet.md) — 项目方称其为地图式公共问题报告平台，帮助居民上报坑洞、路灯等街道问题并路由至相应机构。（[2026-08-29](../daily/2026-08-29.md)）
 - [openaustralia/planningalerts](../projects/openaustralia--planningalerts.md) — 项目方称其帮助居民获知所在地区正在建设或拆除什么，并参与地方规划。（[2026-08-26](../daily/2026-08-26.md)）
 - [schemalabz/opencouncil](../projects/schemalabz--opencouncil.md) — 项目方称其将市政会议转为可搜索的转录和摘要，帮助公民理解地方治理，由 Schema Labs 非营利组织开发。（[2026-08-31](../daily/2026-08-31.md)）
