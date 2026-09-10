@@ -20,7 +20,9 @@ description: "容易被普通热门榜忽略、但能扩大认知边界的项目
 | [JosefNemec/Playnite](../projects/JosefNemec--Playnite.md) | 游戏与互动体验 | 新进入视野 | [2026-09-09](../daily/2026-09-09.md) |
 | [OpenPhantom/OpenPhantom](../projects/OpenPhantom--OpenPhantom.md) | 游戏与互动体验 | 新进入视野 | [2026-08-29](../daily/2026-08-29.md) |
 | [phoenixbf/aton](../projects/phoenixbf--aton.md) | 数据、地图与档案 | 新进入视野 | [2026-08-31](../daily/2026-08-31.md) |
+| [plausible/analytics](../projects/plausible--analytics.md) | 个人生活与生产力 | 新进入视野 | [2026-09-10](../daily/2026-09-10.md) |
 | [s010s/prehistoric-animal-museum](../projects/s010s--prehistoric-animal-museum.md) | 教育与知识传播 | 判断修正 | [2026-08-31](../daily/2026-08-31.md) |
+| [tillitis/tillitis-key1](../projects/tillitis--tillitis-key1.md) | 硬件、机器人与 Maker | 新进入视野 | [2026-09-10](../daily/2026-09-10.md) |
 | [uprightsleepy/badger-politics](../projects/uprightsleepy--badger-politics.md) | 社会、公共事务与公益 | 新进入视野 | [2026-09-01](../daily/2026-09-01.md) |
 | [xr843/insect-world](../projects/xr843--insect-world.md) | 教育与知识传播 | 新进入视野 | [2026-08-28](../daily/2026-08-28.md) |
 | [zach7036/BirdNET-Pi-Enhanced-Version](../projects/zach7036--BirdNET-Pi-Enhanced-Version.md) | 跨学科与实验项目 | 新进入视野 | [2026-08-26](../daily/2026-08-26.md) |

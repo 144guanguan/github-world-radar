@@ -16,10 +16,7 @@ description: "按问题领域浏览当前收录项目"
 - [liketrek/TREK](../projects/liketrek--TREK.md) — 项目方称其为可自托管、实时协作的旅行规划器，结合地图、预算、清单和旅行日记。（[2026-08-31](../daily/2026-08-31.md)）
 - [make-all/tuya-local](../projects/make-all--tuya-local.md) — 项目方声明：该项目为Home Assistant提供Tuya设备的本地支持。（[2026-09-08](../daily/2026-09-08.md)）
 - [mithun-srinivas/DoxDock](../projects/mithun-srinivas--DoxDock.md) — 项目方称其为100%浏览器内运行、无上传的离线优先PDF和图像工具。（[2026-09-02](../daily/2026-09-02.md)）
-
-## 公共治理与参与式民主
-
-- [decidim/decidim](../projects/decidim--decidim.md) — 一个持续维护的参与式民主和公共协作框架。（[2026-08-25](../daily/2026-08-25.md)）
+- [plausible/analytics](../projects/plausible--analytics.md) — 项目方声明：Plausible 是可自托管、无Cookie的隐私优先网页分析工具。（[2026-09-10](../daily/2026-09-10.md)）
 
 ## 创意文化与音乐体验
 
@@ -39,6 +36,7 @@ description: "按问题领域浏览当前收录项目"
 
 - [actualbudget/actual](../projects/actualbudget--actual.md) — 项目方称 Actual 是 local-first 的开源个人财务与预算工具，支持设备同步和自托管。（[2026-09-01](../daily/2026-09-01.md)）
 - [firefly-iii/firefly-iii](../projects/firefly-iii--firefly-iii.md) — 项目方声明：Firefly III 是个人财务管理工具。（[2026-09-09](../daily/2026-09-09.md)）
+- [frappe/erpnext](../projects/frappe--erpnext.md) — 项目方声明：ERPNext 是开源企业资源计划软件。（[2026-09-10](../daily/2026-09-10.md)）
 - [ghostfolio/ghostfolio](../projects/ghostfolio--ghostfolio.md) — 项目方称其为强调隐私、数据所有权与自托管的开源财富管理软件。（[2026-08-29](../daily/2026-08-29.md)）
 - [juspay/hyperswitch](../projects/juspay--hyperswitch.md) — 项目方声明：这是可组合的开源支付平台，覆盖支付、付款、风控和对账等连接。（[2026-09-08](../daily/2026-09-08.md)）
 - [mayswind/ezbookkeeping](../projects/mayswind--ezbookkeeping.md) — 项目方称其为轻量自托管个人账本，支持桌面与移动端、多币种、交易导入导出及图表。（[2026-08-31](../daily/2026-08-31.md)）
@@ -58,6 +56,7 @@ description: "按问题领域浏览当前收录项目"
 - [cds-astro/a-FAIR-journey-for-astronomical-data](../projects/cds-astro--a-FAIR-journey-for-astronomical-data.md) — 项目方称这是面向天文学研究者的开放科学课程，介绍如何通过 CDS VizieR 发布 FAIR 数据并接入欧洲开放科学云。（[2026-09-01](../daily/2026-09-01.md)）
 - [foundation50/classroom50](../projects/foundation50--classroom50.md) — 项目方将其描述为 GitHub Classroom 的开源替代，用于创建、管理和自动批改编程作业。（[2026-08-28](../daily/2026-08-28.md)）
 - [freeCodeCamp/freeCodeCamp](../projects/freeCodeCamp--freeCodeCamp.md) — 项目方声明：这是免费学习数学、编程和计算机科学的开源课程与代码库。（[2026-09-09](../daily/2026-09-09.md)）
+- [iiab/iiab](../projects/iiab--iiab.md) — 项目方声明：Internet-in-a-Box 可在 Raspberry Pi 上构建离线的“亚历山大图书馆”。（[2026-09-10](../daily/2026-09-10.md)）
 - [s010s/prehistoric-animal-museum](../projects/s010s--prehistoric-animal-museum.md) — 项目方称其为供儿童与家长共同探索的中英双语 3D 史前动物馆；本期不再把固定展项数作为持续性描述。（[2026-08-31](../daily/2026-08-31.md)）
 - [xr843/insect-world](../projects/xr843--insect-world.md) — 项目方称其为浏览器实时生成的 3D 昆虫图鉴，包含 63 个物种、14 个目及部分完整生活史。（[2026-08-28](../daily/2026-08-28.md)）
 
@@ -79,7 +78,7 @@ description: "按问题领域浏览当前收录项目"
 
 ## 气候、能源与地球
 
-- [catalyst-cooperative/pudl](../projects/catalyst-cooperative--pudl.md) — 项目方称 PUDL 将美国公共事业和能源系统数据整理为可分析数据，服务气候倡议者、研究者、政策制定者和记者。（[2026-09-01](../daily/2026-09-01.md)）
+- [catalyst-cooperative/pudl](../projects/catalyst-cooperative--pudl.md) — 项目方声明：PUDL 为倡议者、研究者、政策制定者和记者提供可分析的能源系统数据。（[2026-09-10](../daily/2026-09-10.md)）
 - [CliMA/ClimaAtmos.jl](../projects/CliMA--ClimaAtmos.jl.md) — 项目方称其为 CliMA 地球系统模型中的 GPU 全球大气模型，支持数据同化和机器学习校准。（[2026-08-28](../daily/2026-08-28.md)）
 - [CliMA/Oceananigans.jl](../projects/CliMA--Oceananigans.jl.md) — 项目方称其为可在 CPU 和 GPU 上运行的 Julia 海洋流体动力学模拟软件。（[2026-08-27](../daily/2026-08-27.md)）
 - [electricitymaps/electricitymaps-contrib](../projects/electricitymaps--electricitymaps-contrib.md) — 项目方声明：这是为 Electricity Maps 平台提供电力数据解析器的开源仓库。（[2026-09-09](../daily/2026-09-09.md)）
@@ -112,6 +111,7 @@ description: "按问题领域浏览当前收录项目"
 - [facebookresearch/project_superdex](../projects/facebookresearch--project_superdex.md) — 项目方称 SuperDex 是统一灵巧操作研究平台，包含接触物理引擎、机器人 SDK、场景编辑器和 RL/MPC 接口。（[2026-08-29](../daily/2026-08-29.md)）
 - [OpenDrone-hw/OpenESC-20x20](../projects/OpenDrone-hw--OpenESC-20x20.md) — 项目方称其为 20×20 毫米、四通道、6S 的开源无人机电子调速器，提供 KiCad 设计和 AM32/DShot 支持。（[2026-08-28](../daily/2026-08-28.md)）
 - [PetoiCamp/OpenCat-Quadruped-Robot](../projects/PetoiCamp--OpenCat-Quadruped-Robot.md) — 项目方称其为面向STEM、DIY和研究的开源四足机器人框架。（[2026-09-02](../daily/2026-09-02.md)）
+- [tillitis/tillitis-key1](../projects/tillitis--tillitis-key1.md) — 项目方声明：这是 TKey 开放USB安全密钥的 FPGA Verilog 与固件。（[2026-09-10](../daily/2026-09-10.md)）
 
 ## 社会、公共事务与公益
 
@@ -119,17 +119,15 @@ description: "按问题领域浏览当前收录项目"
 - [civic-dashboard/civic-dashboard-web](../projects/civic-dashboard--civic-dashboard-web.md) — 项目方称其旨在让多伦多民主信息更容易获取。（[2026-09-02](../daily/2026-09-02.md)）
 - [civiform/civiform](../projects/civiform--civiform.md) — 项目方称其通过复用申请人数据，简化多个政府福利项目的申请流程。（[2026-08-27](../daily/2026-08-27.md)）
 - [consuldemocracy/consuldemocracy](../projects/consuldemocracy--consuldemocracy.md) — 项目方声明：Consul Democracy 是开源的电子参与和开放政府软件。（[2026-09-09](../daily/2026-09-09.md)）
+- [decidim/decidim](../projects/decidim--decidim.md) — 项目方声明：Decidim 是参与式民主框架。（[2026-09-10](../daily/2026-09-10.md)）
 - [mysociety/fixmystreet](../projects/mysociety--fixmystreet.md) — 项目方称其为地图式公共问题报告平台，帮助居民上报坑洞、路灯等街道问题并路由至相应机构。（[2026-08-29](../daily/2026-08-29.md)）
 - [openaustralia/planningalerts](../projects/openaustralia--planningalerts.md) — 项目方称其帮助居民获知所在地区正在建设或拆除什么，并参与地方规划。（[2026-08-26](../daily/2026-08-26.md)）
 - [schemalabz/opencouncil](../projects/schemalabz--opencouncil.md) — 项目方称其将市政会议转为可搜索的转录和摘要，帮助公民理解地方治理，由 Schema Labs 非营利组织开发。（[2026-08-31](../daily/2026-08-31.md)）
 - [uprightsleepy/badger-politics](../projects/uprightsleepy--badger-politics.md) — 项目方称其从官方记录重建威斯康星州法案、投票、听证、竞选资金、游说及地方议会数据，并保留来源链接。（[2026-09-01](../daily/2026-09-01.md)）
 
-## 离线教育与知识普惠
-
-- [iiab/iiab](../projects/iiab--iiab.md) — 通过 Raspberry Pi 建立离线知识库和社区教育资源的长期项目。（[2026-08-25](../daily/2026-08-25.md)）
-
 ## 科学研究
 
+- [JuliaLang/julia](../projects/JuliaLang--julia.md) — 项目方声明：Julia 是一门面向高性能技术计算的编程语言。（[2026-09-10](../daily/2026-09-10.md)）
 - [ml-rust/numr](../projects/ml-rust--numr.md) — 项目方称其为受NumPy启发、支持GPU加速的Rust数值计算库。（[2026-09-02](../daily/2026-09-02.md)）
 - [Stellarium/stellarium](../projects/Stellarium--stellarium.md) — 项目方称其为免费开源桌面天文馆，可展示肉眼、双筒望远镜和天文望远镜所见的三维星空。（[2026-08-31](../daily/2026-08-31.md)）
 - [synthetic-sciences/openscience](../projects/synthetic-sciences--openscience.md) — 项目方称其为面向科学研究的开源 AI 工作台，可覆盖文献检索、假设、代码、实验与写作。（[2026-08-29](../daily/2026-08-29.md)）
@@ -139,6 +137,7 @@ description: "按问题领域浏览当前收录项目"
 - [ahnafnafee/songmirror](../projects/ahnafnafee--songmirror.md) — 项目方称其可在多种音乐服务与Jellyfin间自托管同步播放列表。（[2026-09-02](../daily/2026-09-02.md)）
 - [crmne/fastpotify](../projects/crmne--fastpotify.md) — 项目方称其为原生轻量 Spotify 客户端，支持本机播放、Spotify Connect、局域网发现和跨平台桌面。（[2026-08-29](../daily/2026-08-29.md)）
 - [GraphiteEditor/Graphite](../projects/GraphiteEditor--Graphite.md) — 项目方称 Graphite 是社区构建的二维内容创作应用，把图层式设计与节点式程序化图形结合起来。（[2026-09-01](../daily/2026-09-01.md)）
+- [koel/koel](../projects/koel--koel.md) — 项目方声明：Koel 是音乐流媒体解决方案。（[2026-09-10](../daily/2026-09-10.md)）
 - [liebharc/homr](../projects/liebharc--homr.md) — 项目方称其能把纸质乐谱图像转换为可编辑的 MusicXML，并提供在线示例及关联的移动端项目。（[2026-08-31](../daily/2026-08-31.md)）
 - [n1m21n/Infinite](../projects/n1m21n--Infinite.md) — 项目方称其为节点式实时音视频工作站，把 GPU 合成、程序化 3D、模块合成、DSP 与插件托管放进统一调制图。（[2026-08-28](../daily/2026-08-28.md)）
 - [navidrome/navidrome](../projects/navidrome--navidrome.md) — 项目方声明：这是个人音乐流媒体服务。（[2026-09-08](../daily/2026-09-08.md)）
