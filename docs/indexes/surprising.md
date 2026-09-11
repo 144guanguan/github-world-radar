@@ -10,6 +10,7 @@ description: "容易被普通热门榜忽略、但能扩大认知边界的项目
 | --- | --- | --- | --- |
 | [ChelseaKR/habitable](../projects/ChelseaKR--habitable.md) | 社会、公共事务与公益 | 新进入视野 | [2026-08-28](../daily/2026-08-28.md) |
 | [civic-dashboard/civic-dashboard-web](../projects/civic-dashboard--civic-dashboard-web.md) | 社会、公共事务与公益 | 新进入视野 | [2026-09-02](../daily/2026-09-02.md) |
+| [commaai/openpilot](../projects/commaai--openpilot.md) | 硬件、机器人与 Maker | 重大进展 | [2026-09-11](../daily/2026-09-11.md) |
 | [datopian/portaljs](../projects/datopian--portaljs.md) | 数据、地图与档案 | 新进入视野 | [2026-09-08](../daily/2026-09-08.md) |
 | [dososo/chinese-traditional-patterns](../projects/dososo--chinese-traditional-patterns.md) | 文化遗产与开放图录 | 新进入视野 | [2026-08-25](../daily/2026-08-25.md) |
 | [ellisonleao/magictools](../projects/ellisonleao--magictools.md) | 游戏与互动体验 | 新进入视野 | [2026-09-08](../daily/2026-09-08.md) |
@@ -21,6 +22,7 @@ description: "容易被普通热门榜忽略、但能扩大认知边界的项目
 | [OpenPhantom/OpenPhantom](../projects/OpenPhantom--OpenPhantom.md) | 游戏与互动体验 | 新进入视野 | [2026-08-29](../daily/2026-08-29.md) |
 | [phoenixbf/aton](../projects/phoenixbf--aton.md) | 数据、地图与档案 | 新进入视野 | [2026-08-31](../daily/2026-08-31.md) |
 | [plausible/analytics](../projects/plausible--analytics.md) | 个人生活与生产力 | 新进入视野 | [2026-09-10](../daily/2026-09-10.md) |
+| [Revolutionary-Games/Thrive](../projects/Revolutionary-Games--Thrive.md) | 科学研究 | 新进入视野 | [2026-09-11](../daily/2026-09-11.md) |
 | [s010s/prehistoric-animal-museum](../projects/s010s--prehistoric-animal-museum.md) | 教育与知识传播 | 判断修正 | [2026-08-31](../daily/2026-08-31.md) |
 | [tillitis/tillitis-key1](../projects/tillitis--tillitis-key1.md) | 硬件、机器人与 Maker | 新进入视野 | [2026-09-10](../daily/2026-09-10.md) |
 | [uprightsleepy/badger-politics](../projects/uprightsleepy--badger-politics.md) | 社会、公共事务与公益 | 新进入视野 | [2026-09-01](../daily/2026-09-01.md) |

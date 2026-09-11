@@ -54,6 +54,7 @@ description: "按问题领域浏览当前收录项目"
 ## 教育与知识传播
 
 - [cds-astro/a-FAIR-journey-for-astronomical-data](../projects/cds-astro--a-FAIR-journey-for-astronomical-data.md) — 项目方称这是面向天文学研究者的开放科学课程，介绍如何通过 CDS VizieR 发布 FAIR 数据并接入欧洲开放科学云。（[2026-09-01](../daily/2026-09-01.md)）
+- [EbookFoundation/free-programming-books](../projects/EbookFoundation--free-programming-books.md) — 项目方声明：这是免费编程书籍清单。（[2026-09-11](../daily/2026-09-11.md)）
 - [foundation50/classroom50](../projects/foundation50--classroom50.md) — 项目方将其描述为 GitHub Classroom 的开源替代，用于创建、管理和自动批改编程作业。（[2026-08-28](../daily/2026-08-28.md)）
 - [freeCodeCamp/freeCodeCamp](../projects/freeCodeCamp--freeCodeCamp.md) — 项目方声明：这是免费学习数学、编程和计算机科学的开源课程与代码库。（[2026-09-09](../daily/2026-09-09.md)）
 - [iiab/iiab](../projects/iiab--iiab.md) — 项目方声明：Internet-in-a-Box 可在 Raspberry Pi 上构建离线的“亚历山大图书馆”。（[2026-09-10](../daily/2026-09-10.md)）
@@ -80,7 +81,7 @@ description: "按问题领域浏览当前收录项目"
 
 - [catalyst-cooperative/pudl](../projects/catalyst-cooperative--pudl.md) — 项目方声明：PUDL 为倡议者、研究者、政策制定者和记者提供可分析的能源系统数据。（[2026-09-10](../daily/2026-09-10.md)）
 - [CliMA/ClimaAtmos.jl](../projects/CliMA--ClimaAtmos.jl.md) — 项目方称其为 CliMA 地球系统模型中的 GPU 全球大气模型，支持数据同化和机器学习校准。（[2026-08-28](../daily/2026-08-28.md)）
-- [CliMA/Oceananigans.jl](../projects/CliMA--Oceananigans.jl.md) — 项目方称其为可在 CPU 和 GPU 上运行的 Julia 海洋流体动力学模拟软件。（[2026-08-27](../daily/2026-08-27.md)）
+- [CliMA/Oceananigans.jl](../projects/CliMA--Oceananigans.jl.md) — 项目方声明：这是海洋模拟工具。（[2026-09-11](../daily/2026-09-11.md)）
 - [electricitymaps/electricitymaps-contrib](../projects/electricitymaps--electricitymaps-contrib.md) — 项目方声明：这是为 Electricity Maps 平台提供电力数据解析器的开源仓库。（[2026-09-09](../daily/2026-09-09.md)）
 - [nco/nco](../projects/nco--nco.md) — 项目方称其提供 netCDF/HDF/DAP 科学数据命令行算子，用于统计、重映射、气候平均与元数据处理。（[2026-08-31](../daily/2026-08-31.md)）
 - [OceanBioME/OceanBioME.jl](../projects/OceanBioME--OceanBioME.jl.md) — 项目方称其用于耦合海洋生物地球化学、碳酸盐化学与物理过程的建模。（[2026-09-02](../daily/2026-09-02.md)）
@@ -106,7 +107,7 @@ description: "按问题领域浏览当前收录项目"
 ## 硬件、机器人与 Maker
 
 - [bluerobotics/BlueOS](../projects/bluerobotics--BlueOS.md) — 项目方称其为面向 ROV、USV 等机器人系统运行、开发和扩展的开源平台。（[2026-08-27](../daily/2026-08-27.md)）
-- [commaai/openpilot](../projects/commaai--openpilot.md) — 项目方声明：openpilot 是面向机器人系统、可升级部分车辆驾驶辅助的操作系统。（[2026-09-08](../daily/2026-09-08.md)）
+- [commaai/openpilot](../projects/commaai--openpilot.md) — 项目方声明：openpilot 可升级部分车辆驾驶辅助。（[2026-09-11](../daily/2026-09-11.md)）
 - [engmung/Patternflow](../projects/engmung--Patternflow.md) — 项目方称 Patternflow 是开放的 LED 合成器，以旋钮实时生成灯光图案，并公开原理图、固件、3D 模型和制作指南。（[2026-09-01](../daily/2026-09-01.md)）
 - [facebookresearch/project_superdex](../projects/facebookresearch--project_superdex.md) — 项目方称 SuperDex 是统一灵巧操作研究平台，包含接触物理引擎、机器人 SDK、场景编辑器和 RL/MPC 接口。（[2026-08-29](../daily/2026-08-29.md)）
 - [OpenDrone-hw/OpenESC-20x20](../projects/OpenDrone-hw--OpenESC-20x20.md) — 项目方称其为 20×20 毫米、四通道、6S 的开源无人机电子调速器，提供 KiCad 设计和 AM32/DShot 支持。（[2026-08-28](../daily/2026-08-28.md)）
@@ -123,12 +124,14 @@ description: "按问题领域浏览当前收录项目"
 - [mysociety/fixmystreet](../projects/mysociety--fixmystreet.md) — 项目方称其为地图式公共问题报告平台，帮助居民上报坑洞、路灯等街道问题并路由至相应机构。（[2026-08-29](../daily/2026-08-29.md)）
 - [openaustralia/planningalerts](../projects/openaustralia--planningalerts.md) — 项目方称其帮助居民获知所在地区正在建设或拆除什么，并参与地方规划。（[2026-08-26](../daily/2026-08-26.md)）
 - [schemalabz/opencouncil](../projects/schemalabz--opencouncil.md) — 项目方称其将市政会议转为可搜索的转录和摘要，帮助公民理解地方治理，由 Schema Labs 非营利组织开发。（[2026-08-31](../daily/2026-08-31.md)）
+- [suitenumerique/docs](../projects/suitenumerique--docs.md) — 项目方声明：这是协作文档服务。（[2026-09-11](../daily/2026-09-11.md)）
 - [uprightsleepy/badger-politics](../projects/uprightsleepy--badger-politics.md) — 项目方称其从官方记录重建威斯康星州法案、投票、听证、竞选资金、游说及地方议会数据，并保留来源链接。（[2026-09-01](../daily/2026-09-01.md)）
 
 ## 科学研究
 
 - [JuliaLang/julia](../projects/JuliaLang--julia.md) — 项目方声明：Julia 是一门面向高性能技术计算的编程语言。（[2026-09-10](../daily/2026-09-10.md)）
 - [ml-rust/numr](../projects/ml-rust--numr.md) — 项目方称其为受NumPy启发、支持GPU加速的Rust数值计算库。（[2026-09-02](../daily/2026-09-02.md)）
+- [Revolutionary-Games/Thrive](../projects/Revolutionary-Games--Thrive.md) — 项目方声明：Thrive 是进化主题模拟游戏。（[2026-09-11](../daily/2026-09-11.md)）
 - [Stellarium/stellarium](../projects/Stellarium--stellarium.md) — 项目方称其为免费开源桌面天文馆，可展示肉眼、双筒望远镜和天文望远镜所见的三维星空。（[2026-08-31](../daily/2026-08-31.md)）
 - [synthetic-sciences/openscience](../projects/synthetic-sciences--openscience.md) — 项目方称其为面向科学研究的开源 AI 工作台，可覆盖文献检索、假设、代码、实验与写作。（[2026-08-29](../daily/2026-08-29.md)）
 
@@ -140,7 +143,7 @@ description: "按问题领域浏览当前收录项目"
 - [koel/koel](../projects/koel--koel.md) — 项目方声明：Koel 是音乐流媒体解决方案。（[2026-09-10](../daily/2026-09-10.md)）
 - [liebharc/homr](../projects/liebharc--homr.md) — 项目方称其能把纸质乐谱图像转换为可编辑的 MusicXML，并提供在线示例及关联的移动端项目。（[2026-08-31](../daily/2026-08-31.md)）
 - [n1m21n/Infinite](../projects/n1m21n--Infinite.md) — 项目方称其为节点式实时音视频工作站，把 GPU 合成、程序化 3D、模块合成、DSP 与插件托管放进统一调制图。（[2026-08-28](../daily/2026-08-28.md)）
-- [navidrome/navidrome](../projects/navidrome--navidrome.md) — 项目方声明：这是个人音乐流媒体服务。（[2026-09-08](../daily/2026-09-08.md)）
+- [navidrome/navidrome](../projects/navidrome--navidrome.md) — 项目方声明：这是个人音乐流媒体服务。（[2026-09-11](../daily/2026-09-11.md)）
 - [zz-plant/stims](../projects/zz-plant--stims.md) — 项目方称其是浏览器原生、受MilkDrop启发的WebGL音乐可视化器。（[2026-09-02](../daily/2026-09-02.md)）
 
 ## 跨学科与实验项目
